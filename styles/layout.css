@@ -3,6 +3,7 @@
 *::after {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 @font-face {
@@ -46,6 +47,7 @@
 .content-section {
   height: calc(100% - 50px);
   width: 100%;
+  padding: 10px;
 }
 
 .logo-container {
