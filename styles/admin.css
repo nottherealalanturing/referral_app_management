@@ -1,0 +1,32 @@
+div.page-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    button{
+        padding: 10px 20px;
+        border: none;
+        background: #f56100;
+        color: #fff;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border-radius: 5px;
+    }
+}
+
+
+@media (max-width: 992px) {
+
+}
+@media (max-width: 768px) {
+    div.page-header{
+        button{
+            span{
+                display: none;
+            }
+        }
+    }
+}
+@media (max-width: 576px) {}
