@@ -12,12 +12,17 @@
   font-style: normal;
 }
 
+body{
+  /* overflow-x: hidden; */
+}
+
 .container {
   width: 100vw;
   height: 100vh;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
+  background: #f0f2fa;
 }
 
 .sidebar {
@@ -46,6 +51,7 @@
 .content-section {
   height: calc(100% - 50px);
   width: 100%;
+  padding: 20px 20px 40px;
 }
 
 .logo-container {
