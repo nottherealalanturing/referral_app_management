@@ -11,40 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
     mobileNavMenu.style.display = 'none';
   });
 });
-/* 
-document.addEventListener('DOMContentLoaded', () => {
-  const navLinks = document.querySelectorAll('.nav-link');
-
-  const contentSection = document.querySelector('.content-section');
-
-  const loadContent = async (page) => {
-    try {
-      const response = await fetch(`../pages/${page}.html`);
-      if (response.ok) {
-        const content = await response.text();
-
-        contentSection.innerHTML = content;
-      } else {
-        contentSection.innerHTML = `<p>Error loading page: ${page}.html</p>`;
-      }
-    } catch (error) {
-      console.error('Error fetching content:', error);
-      contentSection.innerHTML = '<p>Error fetching content.</p>';
-    }
-  };
-
-  navLinks.forEach((link) => {
-    link.addEventListener('click', (event) => {
-      event.preventDefault();
-
-      const page = link.getAttribute('href').substring(1);
-
-      loadContent(page);
-    });
-  });
-
-  loadContent('dashboard');
-}); */
 
 document.addEventListener('DOMContentLoaded', () => {
   const navItems = document.querySelectorAll('.nav-item');
@@ -57,57 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-/* document.addEventListener('DOMContentLoaded', () => {
-  const contentSection = document.querySelector('.content-section');
-
-  const loadContent = async (url) => {
-    try {
-    
-      const response = await fetch(url);
-      if (response.ok) {
-        const content = await response.text();
-        contentSection.innerHTML = content;
-        window.history.pushState({ url }, '', url);
-        initializeSubRoutes();
-      } else {
-        contentSection.innerHTML = `<p>Error loading page: ${url}</p>`;
-      }
-    } catch (error) {
-      console.error('Error fetching content:', error);
-      contentSection.innerHTML = '<p>Error fetching content.</p>';
-    }
-  };
-
-  const handleNavigationClick = (event) => {
-    event.preventDefault();
-    const url = event.target.dataset.url || event.target.getAttribute('href');
-    if (url) loadContent(url);
-  };
-
-  document.querySelectorAll('.nav-link').forEach((link) => {
-    link.addEventListener('click', handleNavigationClick);
-  });
-
-  function initializeSubRoutes() {
-    document.querySelectorAll('.internal-link').forEach((link) => {
-      link.addEventListener('click', handleNavigationClick);
-    });
-  }
-
-  window.addEventListener('popstate', (event) => {
-    if (event.state && event.state.url) {
-      loadContent(event.state.url);
-    } else {
-      loadContent('../pages/dashboard.html');
-    }
-  });
-
-  const initialUrl =
-    window.location.pathname.substring(1) || '../pages/dashboard.html';
-  loadContent(initialUrl);
-});
- */
-
 document.addEventListener('DOMContentLoaded', () => {
   const contentSection = document.querySelector('.content-section');
 
@@ -118,7 +33,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const content = await response.text();
         contentSection.innerHTML = content;
         window.history.pushState({ url }, '', url);
-        initializeInternalLinks(); // Initialize internal links after loading new content
+        initializeInternalLinks();
+        handleScripts(contentSection);
       } else {
         contentSection.innerHTML = `<p>Error loading page: ${url}</p>`;
       }
@@ -139,6 +55,19 @@ document.addEventListener('DOMContentLoaded', () => {
   const initializeInternalLinks = () => {
     document.querySelectorAll('.internal-link').forEach((link) => {
       link.addEventListener('click', handleNavigationClick);
+    });
+  };
+
+  const handleScripts = (content) => {
+    const scripts = content.querySelectorAll('script');
+    scripts.forEach((script) => {
+      const newScript = document.createElement('script');
+      if (script.src) {
+        newScript.src = script.src;
+      } else {
+        newScript.textContent = script.textContent;
+      }
+      document.body.appendChild(newScript).parentNode.removeChild(newScript);
     });
   };
 
