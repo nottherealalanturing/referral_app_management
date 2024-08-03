@@ -1,223 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RAM Portal</title>
-    <link rel="stylesheet" href="../styles/layout.css" />
-    <link rel="stylesheet" href="../styles/user.css">
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
-  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css">
-  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css">
-  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css">
-  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css">
-    <script src="../scripts/layout.js" defer></script>
-  </head>
-  <body>
-    <div class="container">
-      <div class="sidebar">
-        <a class="logo-container" href="/">
-          <img
-            src="../assets/images/app_logo.png"
-            alt="app logo"
-            class="app-logo"
-          />
-        </a>
-        <ul>
-          <li class="nav-item active">
-            <a href="#dashboard" class="nav-link">
-              <img
-                src="../assets/images/dashboard-icon.png"
-                alt="Dashboard"
-                class="nav-item-image"
-              />
-              <span class="nav-text">Dashboard</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#business" class="nav-link">
-              <img
-                src="../assets/images/business-icon.png"
-                alt="Business"
-                class="nav-item-image"
-              />
-              <span class="nav-text">Business</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#admins" class="nav-link">
-              <img
-                src="../assets/images/admins-icon.png"
-                alt="Admins"
-                class="nav-item-image"
-              />
-              <span class="nav-text">Admins</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#users" class="nav-link">
-              <img
-                src="../assets/images/users-icon.png"
-                alt="Users"
-                class="nav-item-image"
-              />
-              <span class="nav-text">Users</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#reports" class="nav-link">
-              <img
-                src="../assets/images/report-icon.png"
-                alt="Report"
-                class="nav-item-image"
-              />
-              <span class="nav-text">Report</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="main-section">
-        <div class="header">
-          <div class="mob-app-logo-container">
-            <img
-              src="../assets/images/app_logo.png"
-              alt="app logo"
-              class="mobile-app-logo"
-            />
-          </div>
 
-          <label for="search-input" class="header-search-container">
-            <img
-              src="../assets/images/search-icon.svg"
-              alt="search"
-              class="search-icon"
-            />
-            <input
-              type="text"
-              id="search"
-              class="search-input"
-              placeholder="What are you looking for?"
-            />
-          </label>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RAM Portal</title>
+  <link rel="stylesheet" href="../styles/layout.css" />
+  <link rel="stylesheet" href="../styles/user.css" />
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css" />
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css" />
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css" />
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css" />
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css" />
+  <script src="../scripts/layout.js" defer></script>
+</head>
 
-          <div class="header-profile-container">
-            <img
-              src="../assets/images/notification-bell-icon.svg"
-              alt="notification-bell-icon"
-              class="notification-bell-icon"
-            />
-            <span class="user-profile-div">
-              <img
-                src="../assets/images/user-profile-pic.png"
-                alt="user"
-                class="user-profile-pic"
-              />
-              <p class="user-profile-name">Dami Oguns</p>
-            </span>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <a class="logo-container" href="/">
+        <img src="../assets/images/app_logo.png" alt="app logo" class="app-logo" />
+      </a>
+      <ul>
+        <li class="nav-item active">
+          <a href="#dashboard" class="nav-link">
+            <img src="../assets/images/dashboard-icon.png" alt="Dashboard" class="nav-item-image" />
+            <span class="nav-text">Dashboard</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#business" class="nav-link">
+            <img src="../assets/images/business-icon.png" alt="Business" class="nav-item-image" />
+            <span class="nav-text">Business</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#admins" class="nav-link">
+            <img src="../assets/images/admins-icon.png" alt="Admins" class="nav-item-image" />
+            <span class="nav-text">Admins</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#users" class="nav-link">
+            <img src="../assets/images/users-icon.png" alt="Users" class="nav-item-image" />
+            <span class="nav-text">Users</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#reports" class="nav-link">
+            <img src="../assets/images/report-icon.png" alt="Report" class="nav-item-image" />
+            <span class="nav-text">Report</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="main-section">
+      <div class="header">
+        <div class="mob-app-logo-container">
+          <img src="../assets/images/app_logo.png" alt="app logo" class="mobile-app-logo" />
+        </div>
 
-            <img
-              src="../assets/images/caret-down-icon.svg"
-              alt="caretdown"
-              class="caretdown"
-            />
+        <label for="search-input" class="header-search-container">
+          <img src="../assets/images/search-icon.svg" alt="search" class="search-icon" />
+          <input type="text" id="search" class="search-input" placeholder="What are you looking for?" />
+        </label>
 
-            <button class="open-mobile-nav">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                width="24"
-                height="24"
-                class="hamburger-icon"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16m-7 6h7"
-                />
+        <div class="header-profile-container">
+          <img src="../assets/images/notification-bell-icon.svg" alt="notification-bell-icon"
+            class="notification-bell-icon" />
+          <span class="user-profile-div">
+            <img src="../assets/images/user-profile-pic.png" alt="user" class="user-profile-pic" />
+            <p class="user-profile-name">Dami Oguns</p>
+          </span>
+
+          <img src="../assets/images/caret-down-icon.svg" alt="caretdown" class="caretdown" />
+
+          <button class="open-mobile-nav">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="24"
+              height="24" class="hamburger-icon">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="mobile-nav-menu">
+          <div class="mobile-nav-menu-button">
+            <button class="close-mobile-nav">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="24"
+                height="24" class="close-icon">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
           </div>
-
-          <div class="mobile-nav-menu">
-            <div class="mobile-nav-menu-button">
-              <button class="close-mobile-nav">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  width="24"
-                  height="24"
-                  class="close-icon"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
-              </button>
-            </div>
-            <ul class="mobile-nav-menu-list">
-              <li class="mobile-nav-menu-item">
-                <a href="#dashboard" class="nav-link">
-                  <img
-                    src="../assets/images/dashboard-icon.png"
-                    alt="Dashboard"
-                    class="nav-item-image"
-                  />
-                  <span class="nav-text">Dashboard</span>
-                </a>
-              </li>
-              <li class="mobile-nav-menu-item">
-                <a href="#business" class="nav-link">
-                  <img
-                    src="../assets/images/business-icon.png"
-                    alt="Business"
-                    class="nav-item-image"
-                  />
-                  <span class="nav-text">Business</span>
-                </a>
-              </li>
-              <li class="mobile-nav-menu-item">
-                <a href="#admins" class="nav-link">
-                  <img
-                    src="../assets/images/admins-icon.png"
-                    alt="Admins"
-                    class="nav-item-image"
-                  />
-                  <span class="nav-text">Admins</span>
-                </a>
-              </li>
-              <li class="mobile-nav-menu-item">
-                <a href="#users" class="nav-link">
-                  <img
-                    src="../assets/images/users-icon.png"
-                    alt="Users"
-                    class="nav-item-image"
-                  />
-                  <span class="nav-text">Users</span>
-                </a>
-              </li>
-              <li class="mobile-nav-menu-item">
-                <a href="#reports" class="nav-link">
-                  <img
-                    src="../assets/images/report-icon.png"
-                    alt="Report"
-                    class="nav-item-image"
-                  />
-                  <span class="nav-text">Report</span>
-                </a>
-              </li>
-            </ul>
-          </div>
+          <ul class="mobile-nav-menu-list">
+            <li class="mobile-nav-menu-item">
+              <a href="#dashboard" class="nav-link">
+                <img src="../assets/images/dashboard-icon.png" alt="Dashboard" class="nav-item-image" />
+                <span class="nav-text">Dashboard</span>
+              </a>
+            </li>
+            <li class="mobile-nav-menu-item">
+              <a href="#business" class="nav-link">
+                <img src="../assets/images/business-icon.png" alt="Business" class="nav-item-image" />
+                <span class="nav-text">Business</span>
+              </a>
+            </li>
+            <li class="mobile-nav-menu-item">
+              <a href="#admins" class="nav-link">
+                <img src="../assets/images/admins-icon.png" alt="Admins" class="nav-item-image" />
+                <span class="nav-text">Admins</span>
+              </a>
+            </li>
+            <li class="mobile-nav-menu-item">
+              <a href="#users" class="nav-link">
+                <img src="../assets/images/users-icon.png" alt="Users" class="nav-item-image" />
+                <span class="nav-text">Users</span>
+              </a>
+            </li>
+            <li class="mobile-nav-menu-item">
+              <a href="#reports" class="nav-link">
+                <img src="../assets/images/report-icon.png" alt="Report" class="nav-item-image" />
+                <span class="nav-text">Report</span>
+              </a>
+            </li>
+          </ul>
         </div>
-        <div class="content-section"></div>
       </div>
+      <div class="content-section"></div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>

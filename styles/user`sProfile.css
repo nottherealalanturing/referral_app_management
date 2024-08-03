@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+.usersProfile {
+    padding: 1.25rem;
+    background: rgb(240, 242, 250);
+    font-family: "Mulish", sans-serif;
+}
+
+.usersHeaderDiv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.usersHeaderDiv h3 {
+    color: #353535;
+}
+
+.usersHeaderDiv a {
+    color: #ff7a00;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.userProfileDiv {
+    background: #fff;
+    display: flex;
+    margin-top: 2%;
+}
+
+.userProfileDiv .profileImage {
+    border-right: 1px solid #f3f5f6;
+    padding: 1.25rem 2.5rem;
+}
+
+.profileImage p {
+    font-weight: 800;
+    color: #353535;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.profileDetails {
+    width: 100%;
+}
+
+.profileDetails .row1 {
+    display: flex;
+    padding: 1.25rem 1.875rem;
+    justify-content: space-between;
+    border-bottom: 1px solid #f3f5f6;
+}
+
+.detailsChild {
+    display: flex;
+    gap: 10rem;
+}
+
+.detailsChild .business-name {
+    display: none;
+}
+
+.profileDetails .row1 label {
+    font-weight: 500;
+    font-size: 0.625rem;
+    color: #7a7c87;
+}
+
+.profileDetails .row1 p {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #353535;
+    margin-top: 6px;
+}
+
+.profileDetails .row2 {
+    display: flex;
+    padding: 1.25rem 1.875rem;
+    gap: 3.875rem;
+    border-bottom: 1px solid #f3f5f6;
+}
+
+.profileDetails .row2 label {
+    font-weight: 500;
+    font-size: 0.625rem;
+    color: #7a7c87;
+}
+
+.profileDetails .row2 p {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #353535;
+}
+
+.profileDetails .row2 .usersProfile-Active {
+    font-weight: 700;
+    color: #00b388;
+}
+
+.profileDetails .row3 {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.25rem 1.875rem;
+}
+
+.row3 .usersEdit {
+    border: 1px solid #ff6600;
+    color: #ff6600;
+    font-weight: 700;
+    background: #c615311a;
+    padding: 0.75rem 3.75rem;
+    border-radius: 0.3125rem;
+    cursor: pointer;
+    font-family: "Mulish", sans-serif;
+}
+
+.row3 .usersStart-chat {
+    padding: 0.75rem 2.5rem;
+    border-radius: 0.3125rem;
+    background: #ff6600;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    font-family: "Mulish", sans-serif;
+}
+
+.row3 .usersDisable {
+    padding: 0.75rem 3.75rem;
+    background: #c61531;
+    color: #fff;
+    border: none;
+    border-radius: 0.3125rem;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: "Mulish", sans-serif;
+}
+
+.usersProfile-activity {
+    margin-top: 2%;
+}
+
+.activityBtn {
+    border: none;
+    font-weight: 700;
+    color: #ff6600;
+    background: #fff;
+    cursor: pointer;
+    padding: 0.5625rem 3.125rem;
+    border-radius: 0.3125rem;
+    font-family: "Mulish", sans-serif;
+}
+
+.activityBtn p {
+    padding: 5px;
+    border-bottom: 3px solid #ff6600;
+}
+
+.chatsBtn {
+    border: none;
+    font-weight: 700;
+    background: #ff6600;
+    color: #fff;
+    cursor: pointer;
+    padding: 0.5625rem 3.125rem;
+    border-radius: 0.3125rem;
+    font-family: "Mulish", sans-serif;
+}
+
+.chatsBtn p {
+    padding: 0.3125rem;
+}
+
+.activityTable {
+    background: #fff;
+}
+
+.activity-th {
+    font-size: 0.9375rem;
+    font-weight: 700;
+    padding: 1.25rem 3.125rem;
+}
+
+.activity-td {
+    display: flex;
+    font-size: 0.875rem;
+    padding: 1.25rem 3.125rem;
+    border-top: 1px solid #f3f5f6;
+    justify-content: space-between;
+}
+
+.left-td {
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+}
+
+.left-td .fa-circle {
+    font-size: 0.75rem;
+    color: #ff7a00;
+}
+
+.activity-view {
+    background: #ff7a00;
+    color: #fff;
+    padding: 0.3125rem 1.5625rem;
+    border-radius: 0.3125rem;
+    cursor: pointer;
+}
