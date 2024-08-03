@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const checkbox = document.getElementById('toggleCheckbox');
+        const divA = document.getElementById('divA');
+        const divB = document.getElementById('divB');
+
+        const toggleDivs = () => {
+          if (checkbox.checked) {
+            divA.style.display = 'block';
+            divB.style.display = 'none';
+          } else {
+            divA.style.display = 'none';
+            divB.style.display = 'block';
+          }
+        };
+
+        checkbox.addEventListener('change', toggleDivs);
+        toggleDivs();
+      });
+    </script>
+  </head>
+  <body>
+    <div
+      class="w-full h-full flex flex-col items-start justify-start bg-[#f0f2fa] py-2"
+    >
+      <div class="flex items-center justify-between w-full">
+        <h1 class="font-black circular-std text-2xl leading-7 text-[#585858]">
+          Reports
+        </h1>
+
+        <div class="flex items-center justify-start gap-4">
+          <label
+            class="text-[#7F8B94] text-base leading-4 font-medium circular-std"
+            >Showing data from:</label
+          >
+          <select
+            name="fromDate"
+            id="fromDate"
+            class="border border-[#7F8B9480] bg-[#FFFFFF] rounded-sm p-1"
+          >
+            <option value="WedMarch292020" selected>Wed March 29 2020</option>
+          </select>
+          <select
+            name="toDate"
+            id="toDate"
+            class="border border-[#7F8B9480] bg-[#FFFFFF] rounded-sm p-1"
+          >
+            <option value="WedMarch292020" selected>Wed March 29 2020</option>
+          </select>
+        </div>
+      </div>
+
+      <p class="font-bold circular-std text-2xl leading-7 text-[#FF7A00]">
+        Heirs Holding
+      </p>
+
+      <div
+        class="border-b-[.5px] border-b-[#9F9F9F] w-full flex items-baseline justify-between"
+      >
+        <p
+          class="circular-std font-black text-base leading-5 text-[#585858] border-b-[3px] border-b-[#142E65]"
+        >
+          Sales Report
+        </p>
+
+        <div class="flex items-baseline justify-between gap-2 py-[2px]">
+          <a
+            href="#reports"
+            data-url="/pages/reports.html"
+            class="internal-link flex items-center justify-start gap-2"
+            ><img
+              src="/assets/images/backTotalsSales.svg"
+              alt="backTotalsSales"
+            />
+            <p class="text-[#142E65] text-sm leading-6 font-bold">
+              Back To Report
+            </p></a
+          >
+          <button
+            type="button"
+            data-twe-toggle="modal"
+            data-twe-target="#exampleModalCenteredScrollable"
+            data-twe-ripple-init
+            data-twe-ripple-color="light"
+            class="flex items-center justify-start gap-2 py-2 px-4 bg-[#FF7A00] rounded-sm"
+          >
+            <img
+              src="/assets/images/exportTotalSales.svg"
+              alt="exportTotalSales"
+            />
+            <p
+              class="font-medium text-base leading-5 circular-std text-[#ffffff]"
+            >
+              Export Report
+            </p>
+          </button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 lg:grid-cols-4 py-4 w-full gap-4">
+        <div class="flex flex-col items-start justify-between bg-[#ffffff]">
+          <div
+            class="flex items-[unset] justify-between py-2 px-6 gap-4 w-full"
+          >
+            <div class="flex items-baseline justify-start gap-6">
+              <img
+                src="/assets/images/totalSalesGrid1a.svg"
+                alt="totalSalesGrid1a"
+              />
+              <div class="flex flex-col items-start justify-start">
+                <p
+                  class="circular-std font-black text-4xl leading-10 text-[#585858]"
+                >
+                  134
+                </p>
+                <p class="text-[#7F8B94] font-medium text-xs leading-3">
+                  Products Bought
+                </p>
+              </div>
+            </div>
+            <img
+              src="/assets/images/totalSalesGrid1b.svg"
+              alt="totalSalesGrid1b"
+            />
+          </div>
+          <div class="flex items-center justify-end bg-[#0277E640] w-full p-2">
+            <p
+              class="font-semibold text-[10px] leading-[12px] circular-std text-[#585858]"
+            >
+              See Breakdown
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-col items-start justify-start bg-[#ffffff]">
+          <div
+            class="flex items-[unset] justify-between py-2 px-6 gap-4 w-full"
+          >
+            <div class="flex items-baseline justify-start gap-6">
+              <img
+                src="/assets/images/totalSalesGrid2a.svg"
+                alt="totalSalesGrid1a"
+              />
+              <div class="flex flex-col items-start justify-start">
+                <p
+                  class="circular-std font-black text-4xl leading-10 text-[#585858]"
+                >
+                  78
+                </p>
+                <p class="text-[#7F8B94] font-medium text-xs leading-3">
+                  Active Policies
+                </p>
+              </div>
+            </div>
+            <img
+              src="/assets/images/totalSalesGrid1b.svg"
+              alt="totalSalesGrid1b"
+            />
+          </div>
+          <div
+            class="flex items-center justify-around bg-[#00B38840] w-full p-2"
+          >
+            <div class="flex items-center justify-start gap-2">
+              <img
+                src="/assets/images/totalSalesGridBuilding.svg"
+                alt="totalSales"
+              />
+
+              <p
+                class="font-semibold text-[10px] leading-[12px] circular-std text-[#00B388]"
+              >
+                Corporate:
+                <span
+                  class="text-black font-semibold text-[10px] leading-[12px] circular-std"
+                >
+                  10
+                </span>
+              </p>
+            </div>
+
+            <div class="flex items-center justify-start gap-2">
+              <img
+                src="/assets/images/totalSalesGridPerson.svg"
+                alt="totalSales"
+              />
+
+              <p
+                class="font-semibold text-[10px] leading-[12px] circular-std text-[#00B388]"
+              >
+                Individual:
+                <span
+                  class="text-black font-semibold text-[10px] leading-[12px] circular-std"
+                >
+                  40
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col items-start justify-start bg-[#ffffff]">
+          <div
+            class="flex items-[unset] justify-between py-2 px-6 gap-4 w-full"
+          >
+            <div class="flex items-baseline justify-start gap-6">
+              <img
+                src="/assets/images/totalSalesGrid3a.svg"
+                alt="totalSalesGrid1a"
+              />
+              <div class="flex flex-col items-start justify-start">
+                <p
+                  class="circular-std font-black text-4xl leading-10 text-[#585858]"
+                >
+                  20
+                </p>
+                <p class="text-[#7F8B94] font-medium text-xs leading-3">
+                  Drop Offs
+                </p>
+              </div>
+            </div>
+            <img
+              src="/assets/images/totalSalesGrid1a.svg"
+              alt="totalSalesGrid1b"
+            />
+          </div>
+          <div
+            class="flex items-center justify-around bg-[#00B38840] w-full p-2"
+          >
+            <div class="flex items-center justify-start gap-2">
+              <img
+                src="/assets/images/totalSalesGridBuilding.svg"
+                alt="totalSales"
+              />
+
+              <p
+                class="font-semibold text-[10px] leading-[12px] circular-std text-[#00B388]"
+              >
+                Corporate:
+                <span
+                  class="text-black font-semibold text-[10px] leading-[12px] circular-std"
+                >
+                  5
+                </span>
+              </p>
+            </div>
+
+            <div class="flex items-center justify-start gap-2">
+              <img
+                src="/assets/images/totalSalesGridPerson.svg"
+                alt="totalSales"
+              />
+
+              <p
+                class="font-semibold text-[10px] leading-[12px] circular-std text-[#00B388]"
+              >
+                Individual:
+                <span
+                  class="text-black font-semibold text-[10px] leading-[12px] circular-std"
+                >
+                  15
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col items-start justify-start bg-[#ffffff]">
+          <div
+            class="flex items-[unset] justify-between py-2 px-6 gap-4 w-full"
+          >
+            <div class="flex items-baseline justify-start gap-6">
+              <img
+                src="/assets/images/totalSalesGrid1a.svg"
+                alt="totalSalesGrid4a"
+              />
+              <div class="flex flex-col items-start justify-start">
+                <p
+                  class="circular-std font-black text-4xl leading-10 text-[#585858]"
+                >
+                  5
+                </p>
+                <p class="text-[#7F8B94] font-medium text-xs leading-3">
+                  In Progess
+                </p>
+              </div>
+            </div>
+            <img
+              src="/assets/images/totalSalesGrid4b.svg"
+              alt="totalSalesGrid1b"
+            />
+          </div>
+          <div
+            class="flex items-center justify-around bg-[#00B38840] w-full p-2"
+          >
+            <div class="flex items-center justify-start gap-2">
+              <img
+                src="/assets/images/totalSalesGridBuilding.svg"
+                alt="totalSales"
+              />
+
+              <p
+                class="font-semibold text-[10px] leading-[12px] circular-std text-[#00B388]"
+              >
+                Corporate:
+                <span
+                  class="text-black font-semibold text-[10px] leading-[12px] circular-std"
+                >
+                  1
+                </span>
+              </p>
+            </div>
+
+            <div class="flex items-center justify-start gap-2">
+              <img
+                src="/assets/images/totalSalesGridPerson.svg"
+                alt="totalSales"
+              />
+
+              <p
+                class="font-semibold text-[10px] leading-[12px] circular-std text-[#00B388]"
+              >
+                Individual:
+                <span
+                  class="text-black font-semibold text-[10px] leading-[12px] circular-std"
+                >
+                  4
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="bg-[#ffffff] rounded-md mx-auto my-0 w-full p-2 flex items-center justify-center flex-col"
+      >
+        <div class="flex items-start justify-end w-full p-2">
+          <a
+            href="#"
+            data-url="/pages/reports/totalSales.html"
+            class="internal-link bg-[#142E65] px-2 py-1 rounded-sm text-[#f8f9f9] text-[11px] text-center font-medium ciruclar-std text-nowrap"
+            >Back to reports ></a
+          >
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+          <div class="bg-[#FFFFFF] p-4">
+            <img
+              src="/assets/images/incomebreakdown1.png"
+              alt="totalSalesGraph"
+              class="w-full"
+            />
+          </div>
+
+          <div class="bg-[#FFFFFF] p-4">
+            <img
+              src="/assets/images/incomebreakdown2.png"
+              alt="totalSalesGraph"
+              class="w-full"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      data-twe-modal-init
+      class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
+      id="exampleModalCenteredScrollable"
+      tabindex="-1"
+      aria-labelledby="exampleModalCenteredScrollableLabel"
+      aria-modal="true"
+      role="dialog"
+    >
+      <div
+        data-twe-modal-dialog-ref
+        class="pointer-events-none relative flex min-h-[calc(100%-1rem)] w-auto translate-y-[-50px] items-center opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:min-h-[calc(100%-3.5rem)] min-[576px]:max-w-[500px]"
+      >
+        <div
+          class="pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-white bg-clip-padding text-current shadow-4 outline-none dark:bg-surface-dark p-4"
+        >
+          <div class="flex items-start justify-between">
+            <div class="flex flex-col items-start justify-start">
+              <h1
+                class="text-[#34475E] circular-std font-extrabold text-2xl leading-7"
+                id="exampleModalCenteredScrollableLabel"
+              >
+                Report Parameters
+              </h1>
+              <p class="text-black circular-std font-medium text-sm leading-4">
+                Select parameters you want to include in your report
+              </p>
+            </div>
+
+            <button
+              type="button"
+              class="box-content rounded-none border-none text-neutral-500 hover:text-neutral-800 hover:no-underline focus:text-neutral-800 focus:opacity-100 focus:shadow-none focus:outline-none dark:text-neutral-400 dark:hover:text-neutral-300 dark:focus:text-neutral-300"
+              data-twe-modal-dismiss
+              aria-label="Close"
+            >
+              <span class="[&>svg]:h-6 [&>svg]:w-6">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </span>
+            </button>
+          </div>
+
+          <div class="relative my-2">
+            <div class="flex flex-col items-start justify-start w-full gap-2">
+              <div
+                class="flex items-center justify-start gap-2 p-2 bg-[#FFB94640] w-full"
+              >
+                <p
+                  class="text-[#34475E] font-extrabold text-sm leading-4 circular-std"
+                >
+                  Sales Overview
+                </p>
+                <p
+                  class="text-[#E30000] font-normal text-[8px] leading-3 circular-std"
+                >
+                  Change
+                </p>
+              </div>
+
+              <div class="flex items-center justify-start gap-4 w-full">
+                <label
+                  class="text-[#7F8B94] text-sm leading-4 font-medium circular-std"
+                  >Showing data from:</label
+                >
+                <select
+                  name="fromDate"
+                  id="fromDate"
+                  class="border border-[#7F8B9480] bg-[#FFFFFF] rounded-sm p-1"
+                >
+                  <option value="WedMarch292020" selected>
+                    Wed March 29 2020
+                  </option>
+                </select>
+                <select
+                  name="toDate"
+                  id="toDate"
+                  class="border border-[#7F8B9480] bg-[#FFFFFF] rounded-sm p-1"
+                >
+                  <option value="WedMarch292020" selected>
+                    Wed March 29 2020
+                  </option>
+                </select>
+              </div>
+
+              <label
+                class="flex items-center justify-start p-4 rounded-md cursor-pointer gap-2 bg-[#F5F8FA] w-full"
+              >
+                <input type="checkbox" class="" id="toggleCheckbox" checked />
+                <p class="text-[#7F8B94] font-bold text-xs circular-std">
+                  Turn on reccurent reporting
+                </p>
+              </label>
+
+              <div
+                id="divA"
+                class="flex flex-col items-start justify-start w-full"
+              >
+                <div class="flex items-center justify-start gap-2 w-full">
+                  <button
+                    class="bg-transparent underline text-[#142E65] text-xs font-bold circular-std"
+                  >
+                    Select All
+                  </button>
+                  <button
+                    class="bg-transparent underline text-[#142E65] text-xs font-bold circular-std"
+                  >
+                    Select None
+                  </button>
+                </div>
+                <div
+                  class="p-2 pb-8 border border-[#7F8B9480] flex flex-col items-start justify-start w-full"
+                >
+                  <label
+                    class="flex items-center justify-start rounded-md cursor-pointer gap-2 bg-transparent w-full"
+                  >
+                    <input type="checkbox" class="outline-[#142E65]" checked />
+                    <p class="text-[#7F8B94] font-bold text-xs circular-std">
+                      No of Active Customers
+                    </p>
+                  </label>
+                  <label
+                    class="flex items-center justify-start rounded-md cursor-pointer gap-2 bg-transparent w-full"
+                  >
+                    <input type="checkbox" class="outline-[#142E65]" checked />
+                    <p class="text-[#7F8B94] font-bold text-xs circular-std">
+                      No of Drop Off Customers (Prospects)
+                    </p>
+                  </label>
+                  <label
+                    class="flex items-center justify-start rounded-md cursor-pointer gap-2 bg-transparent w-full"
+                  >
+                    <input type="checkbox" class="outline-[#142E65]" checked />
+                    <p class="text-[#7F8B94] font-bold text-xs circular-std">
+                      No of Admin Users
+                    </p>
+                  </label>
+                  <label
+                    class="flex items-center justify-start rounded-md cursor-pointer gap-2 bg-transparent w-full"
+                  >
+                    <input type="checkbox" class="outline-[#142E65]" checked />
+                    <p class="text-[#7F8B94] font-bold text-xs circular-std">
+                      Income Statement
+                    </p>
+                  </label>
+                  <label
+                    class="flex items-center justify-start rounded-md cursor-pointer gap-2 bg-transparent w-full"
+                  >
+                    <input type="checkbox" class="outline-[#142E65]" checked />
+                    <p class="text-[#7F8B94] font-bold text-xs circular-std">
+                      Commission Payment
+                    </p>
+                  </label>
+                </div>
+                <div class="w-full flex items-center justify-end gap-2 my-1">
+                  <button
+                    type="button"
+                    class="bg-[#D4D4D4] rounded-sm text-[#ffffff] px-4 py-2 circular-std font-bold text-base"
+                    data-twe-modal-dismiss
+                    data-twe-ripple-init
+                    data-twe-ripple-color="light"
+                  >
+                    Cancel
+                  </button>
+                  <button
+                    class="bg-[#FF7A00] rounded-sm text-[#ffffff] px-4 py-2 circular-std font-bold text-base"
+                    type="button"
+                    data-twe-toggle="modal"
+                    data-twe-target="#exportsuccess"
+                    data-twe-ripple-init
+                    data-twe-ripple-color="light"
+                  >
+                    Export Report
+                  </button>
+                </div>
+              </div>
+
+              <div
+                id="divB"
+                style="display: none"
+                class="flex items-start justify-start w-full gap-4"
+              >
+                <div class="flex items-center justify-start gap-4 w-full">
+                  <label
+                    class="text-[#7F8B94] text-sm leading-4 font-medium circular-std w-1/3"
+                    >When:</label
+                  >
+                  <select
+                    name="fromDate"
+                    id="fromDate"
+                    class="border w-full border-[#7F8B9480] bg-[#FFFFFF] rounded-sm p-1"
+                  >
+                    <option class="w-full" value="efdothemonth" selected>
+                      Every first day of the month
+                    </option>
+                  </select>
+                </div>
+
+                <div class="flex items-center justify-start gap-4 w-full my-2">
+                  <label
+                    class="text-[#7F8B94] text-sm leading-4 font-medium circular-std w-1/3"
+                    >To:</label
+                  >
+                  <input
+                    type="email"
+                    placeholder="Enter Email Address"
+                    class="w-full border border-[#7F8B9480] p-2"
+                  />
+                </div>
+                <div class="flex items-start justify-start gap-4 w-full">
+                  <p
+                    class="text-[#7F8B94] text-sm leading-4 font-medium circular-std"
+                  >
+                    Format:
+                  </p>
+                  <div class="grid grid-cols-1">
+                    <div class="flex items-center justify-start gap-10">
+                      <label
+                        class="inline-block ps-[0.15rem] hover:cursor-pointer"
+                        for="flexSwitchCheckDefault"
+                        >Excel</label
+                      >
+                      <input
+                        class="me-2 bg-[#00B388] mt-[0.3rem] h-3.5 w-8 appearance-none rounded-[0.4375rem] bg-black/25 before:pointer-events-none before:absolute before:h-3.5 before:w-3.5 before:rounded-full before:bg-[#00B388] before:content-[''] after:absolute after:z-[2] after:-mt-[0.1875rem] after:h-5 after:w-5 after:rounded-full after:border-none after:bg-white after:shadow-switch-2 after:transition-[background-color_0.2s,transform_0.2s] after:content-[''] checked:bg-[#00B388] checked:after:absolute checked:after:z-[2] checked:after:-mt-[3px] checked:after:ms-[1.0625rem] checked:after:h-5 checked:after:w-5 checked:after:rounded-full checked:after:border-none checked:after:bg-primary checked:after:shadow-switch-1 checked:after:transition-[background-color_0.2s,transform_0.2s] checked:after:content-[''] hover:cursor-pointer focus:outline-none focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-switch-3 focus:before:shadow-black/60 focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-5 focus:after:w-5 focus:after:rounded-full focus:after:content-[''] checked:focus:border-[#00B388] checked:focus:bg-[#00B388] checked:focus:before:ms-[1.0625rem] checked:focus:before:scale-100 checked:focus:before:shadow-switch-3 checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] dark:bg-white/25 dark:after:bg-surface-dark dark:checked:bg-[#00B388] dark:checked:after:bg-[#00B388]"
+                        type="checkbox"
+                        role="switch"
+                        id="flexSwitchChecked"
+                        checked
+                      />
+                    </div>
+                    <div class="flex items-center justify-start gap-10">
+                      <label
+                        class="inline-block ps-[0.15rem] hover:cursor-pointer"
+                        for="flexSwitchCheckDefault"
+                        >PDF</label
+                      >
+                      <input
+                        class="me-2 bg-[#00B388] mt-[0.3rem] h-3.5 w-8 appearance-none rounded-[0.4375rem] bg-black/25 before:pointer-events-none before:absolute before:h-3.5 before:w-3.5 before:rounded-full before:bg-[#00B388] before:content-[''] after:absolute after:z-[2] after:-mt-[0.1875rem] after:h-5 after:w-5 after:rounded-full after:border-none after:bg-white after:shadow-switch-2 after:transition-[background-color_0.2s,transform_0.2s] after:content-[''] checked:bg-[#00B388] checked:after:absolute checked:after:z-[2] checked:after:-mt-[3px] checked:after:ms-[1.0625rem] checked:after:h-5 checked:after:w-5 checked:after:rounded-full checked:after:border-none checked:after:bg-primary checked:after:shadow-switch-1 checked:after:transition-[background-color_0.2s,transform_0.2s] checked:after:content-[''] hover:cursor-pointer focus:outline-none focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-switch-3 focus:before:shadow-black/60 focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-5 focus:after:w-5 focus:after:rounded-full focus:after:content-[''] checked:focus:border-[#00B388] checked:focus:bg-[#00B388] checked:focus:before:ms-[1.0625rem] checked:focus:before:scale-100 checked:focus:before:shadow-switch-3 checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] dark:bg-white/25 dark:after:bg-surface-dark dark:checked:bg-[#00B388] dark:checked:after:bg-[#00B388]"
+                        type="checkbox"
+                        role="switch"
+                        id="flexSwitchChecked"
+                        checked
+                      />
+                    </div>
+                    <div class="flex items-center justify-start gap-10">
+                      <label
+                        class="inline-block ps-[0.15rem] hover:cursor-pointer"
+                        for="flexSwitchCheckDefault"
+                        >PPT</label
+                      >
+                      <input
+                        class="me-2 bg-[#00B388] mt-[0.3rem] h-3.5 w-8 appearance-none rounded-[0.4375rem] bg-black/25 before:pointer-events-none before:absolute before:h-3.5 before:w-3.5 before:rounded-full before:bg-[#00B388] before:content-[''] after:absolute after:z-[2] after:-mt-[0.1875rem] after:h-5 after:w-5 after:rounded-full after:border-none after:bg-white after:shadow-switch-2 after:transition-[background-color_0.2s,transform_0.2s] after:content-[''] checked:bg-[#00B388] checked:after:absolute checked:after:z-[2] checked:after:-mt-[3px] checked:after:ms-[1.0625rem] checked:after:h-5 checked:after:w-5 checked:after:rounded-full checked:after:border-none checked:after:bg-primary checked:after:shadow-switch-1 checked:after:transition-[background-color_0.2s,transform_0.2s] checked:after:content-[''] hover:cursor-pointer focus:outline-none focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-switch-3 focus:before:shadow-black/60 focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-5 focus:after:w-5 focus:after:rounded-full focus:after:content-[''] checked:focus:border-[#00B388] checked:focus:bg-[#00B388] checked:focus:before:ms-[1.0625rem] checked:focus:before:scale-100 checked:focus:before:shadow-switch-3 checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] dark:bg-white/25 dark:after:bg-surface-dark dark:checked:bg-[#00B388] dark:checked:after:bg-[#00B388]"
+                        type="checkbox"
+                        role="switch"
+                        id="flexSwitchChecked"
+                        checked
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full flex items-center justify-end gap-2 my-1">
+                  <button
+                    type="button"
+                    class="bg-[#D4D4D4] rounded-sm text-[#ffffff] px-4 py-2 circular-std font-bold text-base"
+                    data-twe-modal-dismiss
+                    data-twe-ripple-init
+                    data-twe-ripple-color="light"
+                  >
+                    Cancel
+                  </button>
+                  <button
+                    class="bg-[#FF7A00] rounded-sm text-[#ffffff] px-4 py-2 circular-std font-bold text-base"
+                    type="button"
+                    data-twe-toggle="modal"
+                    data-twe-target="#exportsuccess"
+                    data-twe-ripple-init
+                    data-twe-ripple-color="light"
+                  >
+                    Export
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- export success -->
+
+      <div
+        data-twe-modal-init
+        class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
+        id="exportsuccess"
+        tabindex="-1"
+        aria-labelledby="exportsuccessLabel"
+        aria-modal="true"
+        role="dialog"
+      >
+        <div
+          data-twe-modal-dialog-ref
+          class="pointer-events-none relative flex min-h-[calc(100%-1rem)] w-auto translate-y-[-50px] items-center opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:min-h-[calc(100%-3.5rem)] min-[576px]:max-w-[500px]"
+        >
+          <div
+            class="pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-white bg-clip-padding text-current shadow-4 outline-none dark:bg-surface-dark p-4"
+          >
+            <div class="flex flex-col items-center justify-center w-full gap-5">
+              <h1
+                class="circular-std font-medium leading-10 text-2xl text-center w-2/3"
+              >
+                Report exported successfully
+              </h1>
+              <img src="/assets/images/exportsuccess.svg" alt="exportsuccess" />
+              <button
+                class="bg-[#FF7A00] rounded-sm text-[#ffffff] px-4 py-2 circular-std font-bold text-base"
+                type="button"
+                data-twe-modal-dismiss
+                data-twe-ripple-init
+                data-twe-ripple-color="light"
+              >
+                Back
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--     <script src="/scripts/reports.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/js/tw-elements.umd.min.js"></script>
+  </body>
+</html>
