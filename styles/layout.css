@@ -686,3 +686,6 @@ main {
 /* import users styles here */
 @import url(/styles/users/usersHomepage.css);
 @import url(/styles/users/usersProfile.css);
+
+/* import for admin */
+@import url(/styles/admin.css);
