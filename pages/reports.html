@@ -1,12 +1,965 @@
-<div class="report-content">
-  <h1>Report Overview</h1>
-  <p>
-    Welcome to the report section. Here you will find various reports related to
-    your projects.
-  </p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div
+      class="w-full bg-[#f0f2fa] flex flex-col justify-start items-start gap-4"
+    >
+      <div class="w-full flex justify-between items-center mb-4">
+        <h1 class="font-black circular-std text-2xl leading-7 text-[#585858]">
+          Reports
+        </h1>
 
-  <h2>Available Reports</h2>
-  <a href="#homepage" data-url="./reports/homepage.html" class="internal-link"
-    >home page</a
-  >
-</div>
+        <button
+          type="button"
+          data-twe-toggle="modal"
+          data-twe-target="#exampleModalCenteredScrollable"
+          data-twe-ripple-init
+          data-twe-ripple-color="light"
+          class="flex items-center justify-center gap-1 bg-[#FF7A00] px-4 py-2 rounded-sm"
+        >
+          <span
+            class="text-[#FFFFFF] circular-std font-bold text-base leading-5"
+            >+</span
+          >
+          <p class="text-[#FFFFFF] circular-std font-bold text-base leading-5">
+            Create Report
+          </p>
+        </button>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full">
+        <a
+          href="#totalSales"
+          data-url="/pages/reports/totalSales.html"
+          class="internal-link grid grid-cols-1 bg-[#142E65] p-4 rounded-md"
+        >
+          <div class="w-full flex items-center justify-start pl-2">
+            <p class="font-bold text-lg leading-5 text-[#F3F5F6] circular-std">
+              Total Sales
+            </p>
+          </div>
+          <div class="w-full flex items-center justify-end pr-2">
+            <p class="font-bold text-xl leading-6 text-[#F3F5F6] circular-std">
+              NGN 3,000,000
+            </p>
+          </div>
+        </a>
+        <a
+          href="#totalSales"
+          data-url="/pages/reports/totalSales.html"
+          class="internal-link grid grid-cols-1 bg-[#E6B014] p-4 rounded-md"
+        >
+          <div class="w-full flex items-center justify-start pl-2">
+            <p class="font-bold text-lg leading-5 text-[#F3F5F6] circular-std">
+              Total Converts
+            </p>
+          </div>
+          <div class="w-full flex items-center justify-end pr-2">
+            <p
+              class="font-bold text-6xl leading-[75px] text-[#F3F5F6] circular-std"
+            >
+              150
+            </p>
+          </div>
+        </a>
+        <a
+          href="#totalSales"
+          data-url="/pages/reports/totalSales.html"
+          class="internal-link grid grid-cols-1 bg-[#0277E6] p-4 rounded-md"
+        >
+          <div class="w-full flex items-center justify-start pl-2">
+            <p class="font-bold text-lg leading-5 text-[#F3F5F6] circular-std">
+              Prospects
+            </p>
+          </div>
+          <div class="w-full flex items-center justify-end pr-2">
+            <p
+              class="font-bold text-6xl leading-[75px] text-[#F3F5F6] circular-std"
+            >
+              150
+            </p>
+          </div>
+        </a>
+        <a
+          href="#totalSales"
+          data-url="/pages/reports/totalSales.html"
+          class="internal-link grid grid-cols-1 bg-[#00B388] p-4 rounded-md"
+        >
+          <div class="w-full flex items-center justify-start pl-2">
+            <p class="font-bold text-lg leading-5 text-[#F3F5F6] circular-std">
+              Users
+            </p>
+          </div>
+          <div class="w-full flex items-center justify-end pr-2">
+            <p
+              class="font-bold text-6xl leading-[75px] text-[#F3F5F6] circular-std"
+            >
+              150
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 w-full">
+        <table class="table-auto w-full bg-[#FFFFFF] rounded-md">
+          <thead class="text-left">
+            <tr>
+              <th
+                class="circular-std font-bold text-lg leading-5 text-[#222B45] w-3/5 p-4"
+              >
+                Recent Reports
+              </th>
+              <th class="w-1/5"></th>
+              <th class="w-1/5">
+                <button
+                  class="circular-std border border-[#142E65] bg-[#142E651A] rounded-sm px-2 py-0 text-[#142E65]"
+                >
+                  View All
+                </button>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-t border-t-[#EDF2F6]">
+              <td class="flex justify-start items-center gap-4 p-4">
+                <span class="circular-std font-medium text-sm leading-4"
+                  >01</span
+                >
+                <span class="circular-std font-medium text-sm leading-4"
+                  >Report 001</span
+                >
+              </td>
+              <td>
+                <p
+                  class="font-normal circular-std leading-4 text-center text-xs text-[#96A5B8]"
+                >
+                  05 Jan 2023
+                </p>
+              </td>
+              <td>
+                <a
+                  href="#totalSales"
+                  data-url="/pages/reports/totalSales.html"
+                  class="internal-link bg-[#142E65] border border-[#ffffff] rounded-sm text-[#ffffff] font-normal text-xs leading-3 px-2 py-1"
+                >
+                  View
+                </a>
+              </td>
+            </tr>
+            <tr class="border-t border-t-[#EDF2F6]">
+              <td class="flex justify-start items-center gap-4 p-4">
+                <span class="circular-std font-medium text-sm leading-4"
+                  >02</span
+                >
+                <span class="circular-std font-medium text-sm leading-4"
+                  >Report 002</span
+                >
+              </td>
+              <td>
+                <p
+                  class="font-normal circular-std leading-4 text-center text-xs text-[#96A5B8]"
+                >
+                  05 Jan 2023
+                </p>
+              </td>
+              <td>
+                <a
+                  href="#totalSales"
+                  data-url="/pages/reports/totalSales.html"
+                  class="internal-link bg-[#142E65] border border-[#ffffff] rounded-sm text-[#ffffff] font-normal text-xs leading-3 px-2 py-1"
+                >
+                  View
+                </a>
+              </td>
+            </tr>
+            <tr class="border-t border-t-[#EDF2F6]">
+              <td class="flex justify-start items-center gap-4 p-4">
+                <span class="circular-std font-medium text-sm leading-4"
+                  >03</span
+                >
+                <span class="circular-std font-medium text-sm leading-4"
+                  >Report 003</span
+                >
+              </td>
+              <td>
+                <p
+                  class="font-normal circular-std leading-4 text-center text-xs text-[#96A5B8]"
+                >
+                  05 Jan 2023
+                </p>
+              </td>
+              <td>
+                <a
+                  href="#totalSales"
+                  data-url="/pages/reports/totalSales.html"
+                  class="internal-link bg-[#142E65] border border-[#ffffff] rounded-sm text-[#ffffff] font-normal text-xs leading-3 px-2 py-1"
+                >
+                  View
+                </a>
+              </td>
+            </tr>
+            <tr class="border-t border-t-[#EDF2F6]">
+              <td class="flex justify-start items-center gap-4 p-4">
+                <span class="circular-std font-medium text-sm leading-4"
+                  >04</span
+                >
+                <span class="circular-std font-medium text-sm leading-4"
+                  >Report 004</span
+                >
+              </td>
+              <td>
+                <p
+                  class="font-normal circular-std leading-4 text-center text-xs text-[#96A5B8]"
+                >
+                  05 Jan 2023
+                </p>
+              </td>
+              <td>
+                <a
+                  href="#totalSales"
+                  data-url="/pages/reports/totalSales.html"
+                  class="internal-link bg-[#142E65] border border-[#ffffff] rounded-sm text-[#ffffff] font-normal text-xs leading-3 px-2 py-1"
+                >
+                  View
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div
+          class="flex flex-col items-start justify-start bg-[#FFFFFF] rounded-md px-4 py-2"
+        >
+          <div class="w-full flex justify-between items-center px-4">
+            <p class="circular-std font-bold text-lg leading-5 text-[#222B45]">
+              Top Products
+            </p>
+            <button
+              class="bg-[#142E65] border border-[#ffffff] rounded-sm text-[#ffffff] font-normal text-xs leading-3 px-2 py-1"
+            >
+              View Report
+            </button>
+          </div>
+          <table class="table-auto w-full">
+            <thead class="text-left">
+              <tr>
+                <th
+                  class="circular-std font-medium text-xs leading-3 text-[#96A5B8] w-1/5 p-4"
+                >
+                  #
+                </th>
+                <th
+                  class="circular-std font-medium text-xs leading-3 text-[#96A5B8] w-1/5 p-4"
+                >
+                  Name
+                </th>
+                <th
+                  class="circular-std font-medium text-xs leading-3 text-[#96A5B8] w-3/5"
+                >
+                  Popularity
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-t border-t-[#EDF2F6]">
+                <td class="p-4 w-1/5">
+                  <span
+                    class="circular-std font-medium text-sm leading-4 text-[#222B45]"
+                    >01</span
+                  >
+                </td>
+                <td class="p-4 w-1/5">
+                  <p
+                    class="circular-std font-medium text-sm leading-4 text-[#222B45] text-nowrap"
+                  >
+                    Motor
+                  </p>
+                </td>
+                <td class="w-3/5">
+                  <div class="flex items-center justify-start gap-4">
+                    <div
+                      class="relative w-2/3 before:absolute before:left-0 before:top-0 before:w-full before:h-[2px] before:block before:bg-[#00E096] after:w-[40%] after:h-[2px] after:bg-[#8CFAC7] after:block after:absolute after:left-[60%] after:top-0"
+                    ></div>
+
+                    <p
+                      class="px-2 py-1 rounded-md border w-[50px] text-center circular-std font-medium text-sm leading-4 border-[#00E096] text-[#00E096]"
+                    >
+                      40%
+                    </p>
+                  </div>
+                </td>
+              </tr>
+              <tr class="border-t border-t-[#EDF2F6]">
+                <td class="p-4 w-1/5">
+                  <span
+                    class="circular-std font-medium text-sm leading-4 text-[#222B45]"
+                    >02</span
+                  >
+                </td>
+                <td class="p-4 w-1/5">
+                  <p
+                    class="circular-std font-medium text-sm leading-4 text-[#222B45] text-nowrap"
+                  >
+                    Term Life
+                  </p>
+                </td>
+                <td class="w-3/5">
+                  <div class="flex items-center justify-start gap-4">
+                    <div
+                      class="relative w-2/3 before:absolute before:left-0 before:top-0 before:w-full before:h-[2px] before:block before:bg-[#0095FF] after:w-[82%] after:h-[2px] after:bg-[#CDE7FF] after:block after:absolute after:left-[18%] after:top-0"
+                    ></div>
+
+                    <p
+                      class="px-2 py-1 rounded-md border w-[50px] text-center circular-std font-medium text-sm leading-4 border-[#0095FF] text-[#0095FF]"
+                    >
+                      22%
+                    </p>
+                  </div>
+                </td>
+              </tr>
+              <tr class="border-t border-t-[#EDF2F6]">
+                <td class="p-4 w-1/5">
+                  <span
+                    class="circular-std font-medium text-sm leading-4 text-[#222B45]"
+                    >03</span
+                  >
+                </td>
+                <td class="p-4 w-1/5">
+                  <p
+                    class="circular-std font-medium text-sm leading-4 text-[#222B45] text-nowrap"
+                  >
+                    Group Life
+                  </p>
+                </td>
+                <td class="w-3/5">
+                  <div class="flex items-center justify-start gap-4">
+                    <div
+                      class="relative w-2/3 before:absolute before:left-0 before:top-0 before:w-full before:h-[2px] before:block before:bg-[#884DFF] after:w-[92%] after:h-[2px] after:bg-[#C5A8FF] after:block after:absolute after:left-[8%] after:top-0"
+                    ></div>
+
+                    <p
+                      class="px-2 py-1 rounded-md border w-[50px] text-center circular-std font-medium text-sm leading-4 border-[#0095FF] text-[#0095FF]"
+                    >
+                      8%
+                    </p>
+                  </div>
+                </td>
+              </tr>
+              <tr class="border-t border-t-[#EDF2F6]">
+                <td class="p-4 w-1/5">
+                  <span
+                    class="circular-std font-medium text-sm leading-4 text-[#222B45]"
+                    >04</span
+                  >
+                </td>
+                <td class="p-4 w-1/5">
+                  <p
+                    class="circular-std font-medium text-sm leading-4 text-[#222B45] text-nowrap"
+                  >
+                    Leadway Savings
+                  </p>
+                </td>
+                <td class="w-3/5">
+                  <div class="flex items-center justify-start gap-4">
+                    <div
+                      class="relative w-2/3 before:absolute before:left-0 before:top-0 before:w-full before:h-[2px] before:block before:bg-[#FF8F0D] after:w-[70%] after:h-[2px] after:bg-[#FFD5A4] after:block after:absolute after:left-[30%] after:top-0"
+                    ></div>
+
+                    <p
+                      class="px-2 py-1 rounded-md border w-[50px] text-center circular-std font-medium text-sm leading-4 border-[#FF8F0D] text-[#FF8F0D]"
+                    >
+                      30%
+                    </p>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full py-4 gap-4"
+      >
+        <div
+          class="flex flex-col justify-start items-start gap-2 py-1 px-3 bg-[#ffff] w-full"
+        >
+          <h1 class="circular-std font-bold text-lg leading-5 text-[#222B45]">
+            Top Referrals
+          </h1>
+          <div
+            class="flex flex-col justify-around items-start gap-2 w-full h-full"
+          >
+            <div
+              class="flex items-center justify-between w-full border-b border-b-[#EDF2F6]"
+            >
+              <div class="flex items-center justify-start gap-2">
+                <img
+                  src="/assets/images/esther.png"
+                  alt="Esther"
+                  class="p-2 h-[30px] w-[30px]"
+                />
+                <p
+                  class="circular-std font-medium text-xs text-right text-[#96A5B8] text-nowrap"
+                >
+                  Esther Abodunrin
+                </p>
+              </div>
+              <p
+                class="circular-std font-medium text-sm text-right text-[#222B45] text-nowrap"
+              >
+                NGN 52,446
+              </p>
+            </div>
+
+            <div
+              class="flex items-center justify-between w-full border-b border-b-[#EDF2F6]"
+            >
+              <div class="flex items-center justify-start gap-2">
+                <img
+                  src="/assets/images/johnny.png"
+                  alt="Esther"
+                  class="p-2 h-[30px] w-[30px]"
+                />
+                <p
+                  class="circular-std font-medium text-xs text-right text-[#96A5B8] text-nowrap"
+                >
+                  Johny Jack
+                </p>
+              </div>
+              <p
+                class="circular-std font-medium text-sm text-right text-[#222B45] text-nowrap"
+              >
+                NGN 52,446
+              </p>
+            </div>
+
+            <div class="flex items-center justify-between w-full">
+              <div class="flex items-center justify-start gap-2">
+                <img
+                  src="/assets/images/ahmed.png"
+                  alt="Esther"
+                  class="p-2 h-[30px] w-[30px]"
+                />
+                <p
+                  class="circular-std font-medium text-xs text-right text-[#96A5B8] text-nowrap"
+                >
+                  Ahmed Koffi
+                </p>
+              </div>
+              <p
+                class="circular-std font-medium text-sm text-right text-[#222B45] text-nowrap"
+              >
+                NGN 52,446
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col justify-start items-start gap-2 py-1 px-3 bg-[#ffff] w-full"
+        >
+          <div
+            class="flex flex-col justify-start items-start gap-2 py-1 px-3 bg-[#ffff] w-full"
+          >
+            <h1 class="circular-std font-bold text-lg leading-5 text-[#222B45]">
+              Top Referrals
+            </h1>
+            <img src="/assets//images/report-chart-1.svg" alt="report-chart" />
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col justify-start items-start gap-2 py-1 px-3 bg-[#ffff] w-full"
+        >
+          <h1 class="circular-std font-bold text-lg leading-5 text-[#222B45]">
+            Top Branches
+          </h1>
+          <div
+            class="flex flex-col justify-around items-start gap-2 w-full h-full"
+          >
+            <div
+              class="flex items-center justify-between py-1 w-full border-b border-b-[#EDF2F6]"
+            >
+              <div class="flex items-center justify-start gap-2">
+                <p
+                  class="h-[30px] w-[30px] text-center bg-[#0070BF] rounded-full text-sm text-[#ffff] p-1"
+                >
+                  L
+                </p>
+
+                <p
+                  class="circular-std font-medium text-xs text-right text-[#96A5B8] text-nowrap"
+                >
+                  Lagos
+                </p>
+              </div>
+              <p
+                class="circular-std font-medium text-sm text-right text-[#222B45] text-nowrap"
+              >
+                5400
+              </p>
+            </div>
+
+            <div
+              class="flex items-center justify-between w-full border-b border-b-[#EDF2F6] py-1"
+            >
+              <div class="flex items-center justify-start gap-2">
+                <p
+                  class="h-[30px] w-[30px] text-center bg-[#F66B22] rounded-full text-sm text-[#ffff] p-1"
+                >
+                  P
+                </p>
+
+                <p
+                  class="circular-std font-medium text-xs text-right text-[#96A5B8] text-nowrap"
+                >
+                  Port Harcourt
+                </p>
+              </div>
+              <p
+                class="circular-std font-medium text-sm text-right text-[#222B45] text-nowrap"
+              >
+                3200
+              </p>
+            </div>
+
+            <div class="flex items-center justify-between w-full">
+              <div class="flex items-center justify-start gap-2">
+                <p
+                  class="h-[30px] w-[30px] text-center bg-[#47A51A] rounded-full text-sm text-[#ffff] p-1"
+                >
+                  A
+                </p>
+
+                <p
+                  class="circular-std font-medium text-xs text-right text-[#96A5B8] text-nowrap"
+                >
+                  Abuja
+                </p>
+              </div>
+              <p
+                class="circular-std font-medium text-sm text-right text-[#222B45] text-nowrap"
+              >
+                987
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      data-twe-modal-init
+      class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
+      id="exampleModalCenteredScrollable"
+      tabindex="-1"
+      aria-labelledby="exampleModalCenteredScrollableLabel"
+      aria-modal="true"
+      role="dialog"
+    >
+      <div
+        data-twe-modal-dialog-ref
+        class="pointer-events-none relative flex min-h-[calc(100%-1rem)] w-auto translate-y-[-50px] items-center opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:min-h-[calc(100%-3.5rem)] min-[576px]:max-w-[500px]"
+      >
+        <div
+          class="pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-white bg-clip-padding text-current shadow-4 outline-none dark:bg-surface-dark p-4"
+        >
+          <div class="flex items-start justify-between">
+            <div class="flex flex-col items-start justify-start">
+              <h1
+                class="text-[#34475E] circular-std font-extrabold text-2xl leading-7"
+                id="exampleModalCenteredScrollableLabel"
+              >
+                Report Parameters
+              </h1>
+              <p class="text-black circular-std font-medium text-sm leading-4">
+                Select parameters you want to include in your report
+              </p>
+            </div>
+
+            <button
+              type="button"
+              class="box-content rounded-none border-none text-neutral-500 hover:text-neutral-800 hover:no-underline focus:text-neutral-800 focus:opacity-100 focus:shadow-none focus:outline-none dark:text-neutral-400 dark:hover:text-neutral-300 dark:focus:text-neutral-300"
+              data-twe-modal-dismiss
+              aria-label="Close"
+            >
+              <span class="[&>svg]:h-6 [&>svg]:w-6">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </span>
+            </button>
+          </div>
+
+          <div class="relative my-2">
+            <div class="flex flex-col items-start justify-start w-full gap-2">
+              <label
+                for="searchbusiness"
+                class="px-2 py-1 border border-[#7F8B94] bg-[#F8F8F8] flex items-center justify-start w-full rounded-md"
+              >
+                <img src="/assets/images/searchicon1.svg" alt="search" />
+                <input
+                  type="text"
+                  class="bg-transparent outline-none border-none text-[#353535] font-medium circular-std text-base w-full"
+                />
+                <img src="/assets/images/searchicon2.svg" alt="searchicons2" />
+              </label>
+              <div
+                class="flex items-center justify-start gap-2 p-2 bg-[#FFB94640] w-full"
+              >
+                <p
+                  class="text-[#34475E] font-extrabold text-sm leading-4 circular-std"
+                >
+                  Sales Overview
+                </p>
+                <p
+                  class="text-[#E30000] font-normal text-[8px] leading-3 circular-std"
+                >
+                  Change
+                </p>
+              </div>
+
+              <div class="flex items-center justify-start gap-4 w-full">
+                <label
+                  class="text-[#7F8B94] text-sm leading-4 font-medium circular-std"
+                  >Showing data from:</label
+                >
+                <select
+                  name="fromDate"
+                  id="fromDate"
+                  class="border border-[#7F8B9480] bg-[#FFFFFF] rounded-sm p-1"
+                >
+                  <option value="WedMarch292020" selected>
+                    Wed March 29 2020
+                  </option>
+                </select>
+                <select
+                  name="toDate"
+                  id="toDate"
+                  class="border border-[#7F8B9480] bg-[#FFFFFF] rounded-sm p-1"
+                >
+                  <option value="WedMarch292020" selected>
+                    Wed March 29 2020
+                  </option>
+                </select>
+              </div>
+
+              <label
+                class="flex items-center justify-start p-4 rounded-md cursor-pointer gap-2 bg-[#F5F8FA] w-full"
+              >
+                <input type="checkbox" class="" id="toggleCheckbox" checked />
+                <p class="text-[#7F8B94] font-bold text-xs circular-std">
+                  Turn on reccurent reporting
+                </p>
+              </label>
+
+              <div
+                id="divA"
+                class="flex flex-col items-start justify-start w-full"
+              >
+                <div class="flex items-center justify-start gap-2 w-full">
+                  <button
+                    class="bg-transparent underline text-[#142E65] text-xs font-bold circular-std"
+                  >
+                    Select All
+                  </button>
+                  <button
+                    class="bg-transparent underline text-[#142E65] text-xs font-bold circular-std"
+                  >
+                    Select None
+                  </button>
+                </div>
+                <div
+                  class="p-2 pb-8 border border-[#7F8B9480] flex flex-col items-start justify-start w-full"
+                >
+                  <label
+                    class="flex items-center justify-start rounded-md cursor-pointer gap-2 bg-transparent w-full"
+                  >
+                    <input type="checkbox" class="outline-[#142E65]" checked />
+                    <p class="text-[#7F8B94] font-bold text-xs circular-std">
+                      No of New Customers
+                    </p>
+                  </label>
+                  <label
+                    class="flex items-center justify-start rounded-md cursor-pointer gap-2 bg-transparent w-full"
+                  >
+                    <input type="checkbox" class="outline-[#142E65]" checked />
+                    <p class="text-[#7F8B94] font-bold text-xs circular-std">
+                      No of New Corporate Customers
+                    </p>
+                  </label>
+                  <label
+                    class="flex items-center justify-start rounded-md cursor-pointer gap-2 bg-transparent w-full"
+                  >
+                    <input type="checkbox" class="outline-[#142E65]" checked />
+                    <p class="text-[#7F8B94] font-bold text-xs circular-std">
+                      No of New Retails Customers
+                    </p>
+                  </label>
+                  <label
+                    class="flex items-center justify-start rounded-md cursor-pointer gap-2 bg-transparent w-full"
+                  >
+                    <input type="checkbox" class="outline-[#142E65]" checked />
+                    <p class="text-[#7F8B94] font-bold text-xs circular-std">
+                      No of Active Customers
+                    </p>
+                  </label>
+                  <label
+                    class="flex items-center justify-start rounded-md cursor-pointer gap-2 bg-transparent w-full"
+                  >
+                    <input type="checkbox" class="outline-[#142E65]" checked />
+                    <p class="text-[#7F8B94] font-bold text-xs circular-std">
+                      No of Inactive Customers
+                    </p>
+                  </label>
+                  <label
+                    class="flex items-center justify-start rounded-md cursor-pointer gap-2 bg-transparent w-full"
+                  >
+                    <input type="checkbox" class="outline-[#142E65]" checked />
+                    <p class="text-[#7F8B94] font-bold text-xs circular-std">
+                      No of Customers with Active Products
+                    </p>
+                  </label>
+                  <label
+                    class="flex items-center justify-start rounded-md cursor-pointer gap-2 bg-transparent w-full"
+                  >
+                    <input type="checkbox" class="outline-[#142E65]" checked />
+                    <p class="text-[#7F8B94] font-bold text-xs circular-std">
+                      No of Current Prospects
+                    </p>
+                  </label>
+                  <label
+                    class="flex items-center justify-start rounded-md cursor-pointer gap-2 bg-transparent w-full"
+                  >
+                    <input type="checkbox" class="outline-[#142E65]" checked />
+                    <p class="text-[#7F8B94] font-bold text-xs circular-std">
+                      No of Prospects Turned to Customers
+                    </p>
+                  </label>
+                  <label
+                    class="flex items-center justify-start rounded-md cursor-pointer gap-2 bg-transparent w-full"
+                  >
+                    <input type="checkbox" class="outline-[#142E65]" checked />
+                    <p class="text-[#7F8B94] font-bold text-xs circular-std">
+                      No of Customers Who Made Claims
+                    </p>
+                  </label>
+                  <label
+                    class="flex items-center justify-start rounded-md cursor-pointer gap-2 bg-transparent w-full"
+                  >
+                    <input type="checkbox" class="outline-[#142E65]" checked />
+                    <p class="text-[#7F8B94] font-bold text-xs circular-std">
+                      No of Customers Who Made Renewals
+                    </p>
+                  </label>
+                  <label
+                    class="flex items-center justify-start rounded-md cursor-pointer gap-2 bg-transparent w-full"
+                  >
+                    <input type="checkbox" class="outline-[#142E65]" checked />
+                    <p class="text-[#7F8B94] font-bold text-xs circular-std">
+                      No of Customers Who Made Claims
+                    </p>
+                  </label>
+                  <label
+                    class="flex items-center justify-start rounded-md cursor-pointer gap-2 bg-transparent w-full"
+                  >
+                    <input type="checkbox" class="outline-[#142E65]" checked />
+                    <p class="text-[#7F8B94] font-bold text-xs circular-std">
+                      No of Customers Who Made Claims
+                    </p>
+                  </label>
+                </div>
+                <div class="w-full flex items-center justify-end gap-2 my-1">
+                  <button
+                    type="button"
+                    class="bg-[#D4D4D4] rounded-sm text-[#ffffff] px-4 py-2 circular-std font-bold text-base"
+                    data-twe-modal-dismiss
+                    data-twe-ripple-init
+                    data-twe-ripple-color="light"
+                  >
+                    Cancel
+                  </button>
+                  <button
+                    class="bg-[#FF7A00] rounded-sm text-[#ffffff] px-4 py-2 circular-std font-bold text-base"
+                    type="button"
+                    data-twe-toggle="modal"
+                    data-twe-target="#exportsuccess"
+                    data-twe-ripple-init
+                    data-twe-ripple-color="light"
+                  >
+                    Create Report
+                  </button>
+                </div>
+              </div>
+
+              <div
+                id="divB"
+                style="display: none"
+                class="flex items-start justify-start w-full gap-4"
+              >
+                <div class="flex items-center justify-start gap-4 w-full">
+                  <label
+                    class="text-[#7F8B94] text-sm leading-4 font-medium circular-std w-1/3"
+                    >When:</label
+                  >
+                  <select
+                    name="fromDate"
+                    id="fromDate"
+                    class="border w-full border-[#7F8B9480] bg-[#FFFFFF] rounded-sm p-1"
+                  >
+                    <option class="w-full" value="efdothemonth" selected>
+                      Every first day of the month
+                    </option>
+                  </select>
+                </div>
+
+                <div class="flex items-center justify-start gap-4 w-full my-2">
+                  <label
+                    class="text-[#7F8B94] text-sm leading-4 font-medium circular-std w-1/3"
+                    >To:</label
+                  >
+                  <input
+                    type="email"
+                    placeholder="Enter Email Address"
+                    class="w-full border border-[#7F8B9480] p-2"
+                  />
+                </div>
+                <div class="flex items-start justify-start gap-4 w-full">
+                  <p
+                    class="text-[#7F8B94] text-sm leading-4 font-medium circular-std"
+                  >
+                    Format:
+                  </p>
+                  <div class="grid grid-cols-1">
+                    <div class="flex items-center justify-start gap-10">
+                      <label
+                        class="inline-block ps-[0.15rem] hover:cursor-pointer"
+                        for="flexSwitchCheckDefault"
+                        >Excel</label
+                      >
+                      <input
+                        class="me-2 bg-[#00B388] mt-[0.3rem] h-3.5 w-8 appearance-none rounded-[0.4375rem] bg-black/25 before:pointer-events-none before:absolute before:h-3.5 before:w-3.5 before:rounded-full before:bg-[#00B388] before:content-[''] after:absolute after:z-[2] after:-mt-[0.1875rem] after:h-5 after:w-5 after:rounded-full after:border-none after:bg-white after:shadow-switch-2 after:transition-[background-color_0.2s,transform_0.2s] after:content-[''] checked:bg-[#00B388] checked:after:absolute checked:after:z-[2] checked:after:-mt-[3px] checked:after:ms-[1.0625rem] checked:after:h-5 checked:after:w-5 checked:after:rounded-full checked:after:border-none checked:after:bg-primary checked:after:shadow-switch-1 checked:after:transition-[background-color_0.2s,transform_0.2s] checked:after:content-[''] hover:cursor-pointer focus:outline-none focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-switch-3 focus:before:shadow-black/60 focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-5 focus:after:w-5 focus:after:rounded-full focus:after:content-[''] checked:focus:border-[#00B388] checked:focus:bg-[#00B388] checked:focus:before:ms-[1.0625rem] checked:focus:before:scale-100 checked:focus:before:shadow-switch-3 checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] dark:bg-white/25 dark:after:bg-surface-dark dark:checked:bg-[#00B388] dark:checked:after:bg-[#00B388]"
+                        type="checkbox"
+                        role="switch"
+                        id="flexSwitchChecked"
+                        checked
+                      />
+                    </div>
+                    <div class="flex items-center justify-start gap-10">
+                      <label
+                        class="inline-block ps-[0.15rem] hover:cursor-pointer"
+                        for="flexSwitchCheckDefault"
+                        >PDF</label
+                      >
+                      <input
+                        class="me-2 bg-[#00B388] mt-[0.3rem] h-3.5 w-8 appearance-none rounded-[0.4375rem] bg-black/25 before:pointer-events-none before:absolute before:h-3.5 before:w-3.5 before:rounded-full before:bg-[#00B388] before:content-[''] after:absolute after:z-[2] after:-mt-[0.1875rem] after:h-5 after:w-5 after:rounded-full after:border-none after:bg-white after:shadow-switch-2 after:transition-[background-color_0.2s,transform_0.2s] after:content-[''] checked:bg-[#00B388] checked:after:absolute checked:after:z-[2] checked:after:-mt-[3px] checked:after:ms-[1.0625rem] checked:after:h-5 checked:after:w-5 checked:after:rounded-full checked:after:border-none checked:after:bg-primary checked:after:shadow-switch-1 checked:after:transition-[background-color_0.2s,transform_0.2s] checked:after:content-[''] hover:cursor-pointer focus:outline-none focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-switch-3 focus:before:shadow-black/60 focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-5 focus:after:w-5 focus:after:rounded-full focus:after:content-[''] checked:focus:border-[#00B388] checked:focus:bg-[#00B388] checked:focus:before:ms-[1.0625rem] checked:focus:before:scale-100 checked:focus:before:shadow-switch-3 checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] dark:bg-white/25 dark:after:bg-surface-dark dark:checked:bg-[#00B388] dark:checked:after:bg-[#00B388]"
+                        type="checkbox"
+                        role="switch"
+                        id="flexSwitchChecked"
+                        checked
+                      />
+                    </div>
+                    <div class="flex items-center justify-start gap-10">
+                      <label
+                        class="inline-block ps-[0.15rem] hover:cursor-pointer"
+                        for="flexSwitchCheckDefault"
+                        >PPT</label
+                      >
+                      <input
+                        class="me-2 bg-[#00B388] mt-[0.3rem] h-3.5 w-8 appearance-none rounded-[0.4375rem] bg-black/25 before:pointer-events-none before:absolute before:h-3.5 before:w-3.5 before:rounded-full before:bg-[#00B388] before:content-[''] after:absolute after:z-[2] after:-mt-[0.1875rem] after:h-5 after:w-5 after:rounded-full after:border-none after:bg-white after:shadow-switch-2 after:transition-[background-color_0.2s,transform_0.2s] after:content-[''] checked:bg-[#00B388] checked:after:absolute checked:after:z-[2] checked:after:-mt-[3px] checked:after:ms-[1.0625rem] checked:after:h-5 checked:after:w-5 checked:after:rounded-full checked:after:border-none checked:after:bg-primary checked:after:shadow-switch-1 checked:after:transition-[background-color_0.2s,transform_0.2s] checked:after:content-[''] hover:cursor-pointer focus:outline-none focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-switch-3 focus:before:shadow-black/60 focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-5 focus:after:w-5 focus:after:rounded-full focus:after:content-[''] checked:focus:border-[#00B388] checked:focus:bg-[#00B388] checked:focus:before:ms-[1.0625rem] checked:focus:before:scale-100 checked:focus:before:shadow-switch-3 checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] dark:bg-white/25 dark:after:bg-surface-dark dark:checked:bg-[#00B388] dark:checked:after:bg-[#00B388]"
+                        type="checkbox"
+                        role="switch"
+                        id="flexSwitchChecked"
+                        checked
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full flex items-center justify-end gap-2 my-1">
+                  <button
+                    type="button"
+                    class="bg-[#D4D4D4] rounded-sm text-[#ffffff] px-4 py-2 circular-std font-bold text-base"
+                    data-twe-modal-dismiss
+                    data-twe-ripple-init
+                    data-twe-ripple-color="light"
+                  >
+                    Cancel
+                  </button>
+                  <button
+                    class="bg-[#FF7A00] rounded-sm text-[#ffffff] px-4 py-2 circular-std font-bold text-base"
+                    type="button"
+                    data-twe-toggle="modal"
+                    data-twe-target="#exportsuccess"
+                    data-twe-ripple-init
+                    data-twe-ripple-color="light"
+                  >
+                    Create Report
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- export success -->
+
+      <div
+        data-twe-modal-init
+        class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
+        id="exportsuccess"
+        tabindex="-1"
+        aria-labelledby="exportsuccessLabel"
+        aria-modal="true"
+        role="dialog"
+      >
+        <div
+          data-twe-modal-dialog-ref
+          class="pointer-events-none relative flex min-h-[calc(100%-1rem)] w-auto translate-y-[-50px] items-center opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:min-h-[calc(100%-3.5rem)] min-[576px]:max-w-[500px]"
+        >
+          <div
+            class="pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-white bg-clip-padding text-current shadow-4 outline-none dark:bg-surface-dark p-4"
+          >
+            <div class="flex flex-col items-center justify-center w-full gap-5">
+              <h1
+                class="circular-std font-medium leading-10 text-2xl text-center w-2/3"
+              >
+                Report created successfully for Heirs Holdings
+              </h1>
+              <img src="/assets/images/exportsuccess.svg" alt="exportsuccess" />
+              <button
+                class="bg-[#FF7A00] rounded-sm text-[#ffffff] px-4 py-2 circular-std font-bold text-base"
+                type="button"
+                data-twe-modal-dismiss
+                data-twe-ripple-init
+                data-twe-ripple-color="light"
+              >
+                Back
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--     <script src="/scripts/reports.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/js/tw-elements.umd.min.js"></script>
+  </body>
+</html>
