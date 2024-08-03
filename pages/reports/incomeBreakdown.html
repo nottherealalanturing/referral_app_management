@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div
+      class="w-full h-full flex flex-col items-start justify-start bg-[#f0f2fa] py-2"
+    >
+      <div class="flex items-center justify-between w-full">
+        <h1 class="font-black circular-std text-2xl leading-7 text-[#585858]">
+          Reports
+        </h1>
+
+        <div class="flex items-center justify-start gap-4">
+          <label
+            class="text-[#7F8B94] text-base leading-4 font-medium circular-std"
+            >Showing data from:</label
+          >
+          <select
+            name="fromDate"
+            id="fromDate"
+            class="border border-[#7F8B9480] bg-[#FFFFFF] rounded-sm p-1"
+          >
+            <option value="WedMarch292020" selected>Wed March 29 2020</option>
+          </select>
+          <select
+            name="toDate"
+            id="toDate"
+            class="border border-[#7F8B9480] bg-[#FFFFFF] rounded-sm p-1"
+          >
+            <option value="WedMarch292020" selected>Wed March 29 2020</option>
+          </select>
+        </div>
+      </div>
+
+      <p class="font-bold circular-std text-2xl leading-7 text-[#FF7A00]">
+        Heirs Holding
+      </p>
+
+      <div
+        class="border-b-[.5px] border-b-[#9F9F9F] w-full flex items-baseline justify-between"
+      >
+        <p
+          class="circular-std font-black text-base leading-5 text-[#585858] border-b-[3px] border-b-[#142E65]"
+        >
+          Sales Report
+        </p>
+
+        <div class="flex items-baseline justify-between gap-2 py-[2px]">
+          <a
+            href="#"
+            class="internal-link flex items-center justify-start gap-2"
+            ><img
+              src="/assets/images/backTotalsSales.svg"
+              alt="backTotalsSales"
+            />
+            <p class="text-[#142E65] text-sm leading-6 font-bold">
+              Back To Report
+            </p></a
+          >
+          <a
+            href="#"
+            class="flex items-center justify-start gap-2 py-2 px-4 bg-[#FF7A00] rounded-sm"
+          >
+            <img
+              src="/assets/images/exportTotalSales.svg"
+              alt="exportTotalSales"
+            />
+            <p
+              class="font-medium text-base leading-5 circular-std text-[#ffffff]"
+            >
+              Export Report
+            </p></a
+          >
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 lg:grid-cols-4 py-4 w-full gap-4">
+        <div class="flex flex-col items-start justify-between bg-[#ffffff]">
+          <div
+            class="flex items-[unset] justify-between py-2 px-6 gap-4 w-full"
+          >
+            <div class="flex items-baseline justify-start gap-6">
+              <img
+                src="/assets/images/totalSalesGrid1a.svg"
+                alt="totalSalesGrid1a"
+              />
+              <div class="flex flex-col items-start justify-start">
+                <p
+                  class="circular-std font-black text-4xl leading-10 text-[#585858]"
+                >
+                  134
+                </p>
+                <p class="text-[#7F8B94] font-medium text-xs leading-3">
+                  Products Bought
+                </p>
+              </div>
+            </div>
+            <img
+              src="/assets/images/totalSalesGrid1b.svg"
+              alt="totalSalesGrid1b"
+            />
+          </div>
+          <div class="flex items-center justify-end bg-[#0277E640] w-full p-2">
+            <p
+              class="font-semibold text-[10px] leading-[12px] circular-std text-[#585858]"
+            >
+              See Breakdown
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-col items-start justify-start bg-[#ffffff]">
+          <div
+            class="flex items-[unset] justify-between py-2 px-6 gap-4 w-full"
+          >
+            <div class="flex items-baseline justify-start gap-6">
+              <img
+                src="/assets/images/totalSalesGrid2a.svg"
+                alt="totalSalesGrid1a"
+              />
+              <div class="flex flex-col items-start justify-start">
+                <p
+                  class="circular-std font-black text-4xl leading-10 text-[#585858]"
+                >
+                  78
+                </p>
+                <p class="text-[#7F8B94] font-medium text-xs leading-3">
+                  Active Policies
+                </p>
+              </div>
+            </div>
+            <img
+              src="/assets/images/totalSalesGrid1b.svg"
+              alt="totalSalesGrid1b"
+            />
+          </div>
+          <div
+            class="flex items-center justify-around bg-[#00B38840] w-full p-2"
+          >
+            <div class="flex items-center justify-start gap-2">
+              <img
+                src="/assets/images/totalSalesGridBuilding.svg"
+                alt="totalSales"
+              />
+
+              <p
+                class="font-semibold text-[10px] leading-[12px] circular-std text-[#00B388]"
+              >
+                Corporate:
+                <span
+                  class="text-black font-semibold text-[10px] leading-[12px] circular-std"
+                >
+                  10
+                </span>
+              </p>
+            </div>
+
+            <div class="flex items-center justify-start gap-2">
+              <img
+                src="/assets/images/totalSalesGridPerson.svg"
+                alt="totalSales"
+              />
+
+              <p
+                class="font-semibold text-[10px] leading-[12px] circular-std text-[#00B388]"
+              >
+                Individual:
+                <span
+                  class="text-black font-semibold text-[10px] leading-[12px] circular-std"
+                >
+                  40
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col items-start justify-start bg-[#ffffff]">
+          <div
+            class="flex items-[unset] justify-between py-2 px-6 gap-4 w-full"
+          >
+            <div class="flex items-baseline justify-start gap-6">
+              <img
+                src="/assets/images/totalSalesGrid3a.svg"
+                alt="totalSalesGrid1a"
+              />
+              <div class="flex flex-col items-start justify-start">
+                <p
+                  class="circular-std font-black text-4xl leading-10 text-[#585858]"
+                >
+                  20
+                </p>
+                <p class="text-[#7F8B94] font-medium text-xs leading-3">
+                  Drop Offs
+                </p>
+              </div>
+            </div>
+            <img
+              src="/assets/images/totalSalesGrid1a.svg"
+              alt="totalSalesGrid1b"
+            />
+          </div>
+          <div
+            class="flex items-center justify-around bg-[#00B38840] w-full p-2"
+          >
+            <div class="flex items-center justify-start gap-2">
+              <img
+                src="/assets/images/totalSalesGridBuilding.svg"
+                alt="totalSales"
+              />
+
+              <p
+                class="font-semibold text-[10px] leading-[12px] circular-std text-[#00B388]"
+              >
+                Corporate:
+                <span
+                  class="text-black font-semibold text-[10px] leading-[12px] circular-std"
+                >
+                  5
+                </span>
+              </p>
+            </div>
+
+            <div class="flex items-center justify-start gap-2">
+              <img
+                src="/assets/images/totalSalesGridPerson.svg"
+                alt="totalSales"
+              />
+
+              <p
+                class="font-semibold text-[10px] leading-[12px] circular-std text-[#00B388]"
+              >
+                Individual:
+                <span
+                  class="text-black font-semibold text-[10px] leading-[12px] circular-std"
+                >
+                  15
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col items-start justify-start bg-[#ffffff]">
+          <div
+            class="flex items-[unset] justify-between py-2 px-6 gap-4 w-full"
+          >
+            <div class="flex items-baseline justify-start gap-6">
+              <img
+                src="/assets/images/totalSalesGrid1a.svg"
+                alt="totalSalesGrid4a"
+              />
+              <div class="flex flex-col items-start justify-start">
+                <p
+                  class="circular-std font-black text-4xl leading-10 text-[#585858]"
+                >
+                  5
+                </p>
+                <p class="text-[#7F8B94] font-medium text-xs leading-3">
+                  In Progess
+                </p>
+              </div>
+            </div>
+            <img
+              src="/assets/images/totalSalesGrid4b.svg"
+              alt="totalSalesGrid1b"
+            />
+          </div>
+          <div
+            class="flex items-center justify-around bg-[#00B38840] w-full p-2"
+          >
+            <div class="flex items-center justify-start gap-2">
+              <img
+                src="/assets/images/totalSalesGridBuilding.svg"
+                alt="totalSales"
+              />
+
+              <p
+                class="font-semibold text-[10px] leading-[12px] circular-std text-[#00B388]"
+              >
+                Corporate:
+                <span
+                  class="text-black font-semibold text-[10px] leading-[12px] circular-std"
+                >
+                  1
+                </span>
+              </p>
+            </div>
+
+            <div class="flex items-center justify-start gap-2">
+              <img
+                src="/assets/images/totalSalesGridPerson.svg"
+                alt="totalSales"
+              />
+
+              <p
+                class="font-semibold text-[10px] leading-[12px] circular-std text-[#00B388]"
+              >
+                Individual:
+                <span
+                  class="text-black font-semibold text-[10px] leading-[12px] circular-std"
+                >
+                  4
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="bg-[#ffffff] rounded-md mx-auto my-0 w-full p-2 flex items-center justify-center flex-col"
+      >
+        <div class="flex items-start justify-end w-full p-2">
+          <a
+            href="#"
+            data-url="/pages/reports/totalSales.html"
+            class="internal-link bg-[#142E65] px-2 py-1 rounded-sm text-[#f8f9f9] text-[11px] text-center font-medium ciruclar-std text-nowrap"
+            >Back to reports ></a
+          >
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+          <div class="bg-[#FFFFFF] p-4">
+            <img
+              src="/assets/images/incomebreakdown1.png"
+              alt="totalSalesGraph"
+              class="w-full"
+            />
+          </div>
+
+          <div class="bg-[#FFFFFF] p-4">
+            <img
+              src="/assets/images/incomebreakdown2.png"
+              alt="totalSalesGraph"
+              class="w-full"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
