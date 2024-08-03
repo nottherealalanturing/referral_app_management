@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RAM Portal</title>
     <link rel="stylesheet" href="../styles/layout.css" />
+<<<<<<< HEAD
     <link rel="stylesheet" href="../styles/admin.css">
     <!-- font awesome icon -->
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
@@ -13,12 +14,65 @@
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css">
 
+=======
+    <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="../assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/css/tw-elements.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css"
+    />
+    <script src="https://cdn.tailwindcss.com/3.3.0"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          fontFamily: {
+            sans: ['Roboto', 'sans-serif'],
+            body: ['Roboto', 'sans-serif'],
+            mono: ['ui-monospace', 'monospace'],
+          },
+        },
+        corePlugins: {
+          preflight: false,
+        },
+      };
+    </script>
+>>>>>>> main
     <script src="../scripts/layout.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <div class="container">
+    <div class="container-box">
       <div class="sidebar">
-        <a class="logo-container" href="/">
+        <a class="logo-container" href="/layout">
           <img
             src="../assets/images/app_logo.png"
             alt="app logo"
@@ -27,7 +81,11 @@
         </a>
         <ul>
           <li class="nav-item active">
-            <a href="#dashboard" class="nav-link">
+            <a
+              href="#dashboard"
+              data-url="../pages/dashboard.html"
+              class="nav-link"
+            >
               <img
                 src="../assets/images/dashboard-icon.png"
                 alt="Dashboard"
@@ -37,7 +95,11 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#business" class="nav-link">
+            <a
+              href="#business"
+              data-url="../pages/business.html"
+              class="nav-link"
+            >
               <img
                 src="../assets/images/business-icon.png"
                 alt="Business"
@@ -47,7 +109,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#admins" class="nav-link">
+            <a href="#admins" data-url="../pages/admins.html" class="nav-link">
               <img
                 src="../assets/images/admins-icon.png"
                 alt="Admins"
@@ -57,7 +119,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#users" class="nav-link">
+            <a href="#users" data-url="../pages/users.html" class="nav-link">
               <img
                 src="../assets/images/users-icon.png"
                 alt="Users"
@@ -67,7 +129,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#reports" class="nav-link">
+            <a href="#report" data-url="../pages/reports.html" class="nav-link">
               <img
                 src="../assets/images/report-icon.png"
                 alt="Report"
@@ -218,7 +280,7 @@
             </ul>
           </div>
         </div>
-        <div class="content-section"></div>
+        <div class="content-section bg-[f0f2fa]"></div>
       </div>
     </div>
   </body>
