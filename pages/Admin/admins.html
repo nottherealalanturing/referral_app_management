@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="admins.css" />
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    @font-face {
+      font-family: myFont;
+      src: url(/assets/fonts/circular-std-medium-500.ttf);
+    }
+    @font-face {
+      font-family: mysecFont;
+      src: url(/assets/fonts/Product\ Sans\ Regular.ttf);
+    }
+
+    body {
+      display: flex;
+    }
+
+    .container {
+      display: flex;
+      width: 100%;
+      background-color: #f0f2fa;
+    }
+
+    .sidebar {
+      background-color: #333;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      width: 200px;
+    }
+
+    .sidebar-item {
+      padding: 20px;
+      cursor: pointer;
+    }
+
+    .sidebar-item.active {
+      background-color: #ff7b54;
+    }
+
+    .main-content {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      padding: 20px;
+    }
+    /* CSS Properties For heaader Section */
+    .headers {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      color: #585858;
+      font-size: 25px;
+    }
+
+    .header h1 {
+      font-size: 24px;
+      font-family: myFont;
+    }
+
+    .new-business {
+      background-color: #ff7a00;
+      width: 242px;
+      height: 54px;
+      border-radius: 5px;
+      color: #ffffff;
+      font-size: 16px;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      cursor: pointer;
+      font-family: myFont;
+    }
+    /* CSS Properties For the Dashboard Boxes */
+    .stats {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .stat-item {
+      background-color: #eee;
+      padding: 20px;
+      text-align: center;
+      flex-grow: 1;
+      margin: 0 10px;
+    }
+
+    .stat-item span {
+      display: block;
+      font-size: 24px;
+      font-weight: bold;
+      font-family: myFont;
+    }
+    .stat-all,
+    .stat-reg,
+    .stat-act,
+    .stat-inac {
+      width: 242px;
+      height: 127px;
+      border-radius: 5px;
+      font-weight: 700;
+      font-size: 18px;
+      padding: 10px;
+      margin-bottom: 5px;
+      font-family: myFont;
+    }
+    .stat-all {
+      background-color: #7a7c87;
+      color: #f3f5f6;
+    }
+    .stat-reg {
+      background-color: #0277e6;
+      color: #f3f5f6;
+    }
+    .stat-act {
+      background-color: #06c194;
+      color: #f3f5f6;
+    }
+    .stat-inac {
+      background-color: #ee5331;
+      color: #f3f5f6;
+    }
+    #all {
+      width: 108px;
+      height: 76px;
+      font-weight: 700;
+      line-height: 75.9px;
+      font-size: 60px;
+      margin-left: 110px;
+      font-family: myFont;
+    }
+    #reg,
+    #act,
+    #inact {
+      width: 95px;
+      height: 76px;
+      font-weight: 700;
+      line-height: 75.9px;
+      font-size: 60px;
+      margin-left: 80px;
+      font-family: myFont;
+    }
+    /* CSS Properties for Container holding Workbench and Activity */
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    /* CSS Properties for Workbench */
+    .workbench,
+    .activity {
+      background-color: #ffffff;
+      padding: 20px;
+      flex-grow: 1;
+    }
+    .workBenHead {
+      display: flex;
+      justify-content: space-between;
+    }
+    .workBenHead button {
+      width: 62px;
+      height: 25px;
+      border-radius: 3px;
+      background-color: #ff6600;
+      color: #ffffff;
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 12px;
+      border: none;
+    }
+
+    .workbench h2,
+    .activity h2 {
+      margin-bottom: 20px;
+      color: #585858;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 10px;
+      width: 84px;
+      height: 10px;
+      font-family: myFont;
+    }
+
+    .task,
+    .activity-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      font-size: 12px;
+      color: #353535;
+      font-weight: 400;
+      line-height: 15.77px;
+      text-align: center;
+      font-family: mysecFont;
+    }
+    /* CSS Properties for Activity */
+    .activityText {
+      font-size: 10px;
+      font-weight: 700;
+      line-height: 12.65px;
+      color: #585858;
+      font-family: myFont;
+    }
+    .activity-item span {
+      font-size: 6px;
+      font-weight: 500;
+      color: #c3c4c6;
+      margin-left: -150px;
+    }
+    .activity-item {
+      font-size: 10px;
+      font-weight: 700;
+      line-height: 12.65px;
+      color: #585858;
+      font-family: myFont;
+    }
+    .activityHead {
+      display: flex;
+      justify-content: space-between;
+    }
+    .activitySubH {
+      display: flex;
+      gap: 4px;
+    }
+    .activitySubH p {
+      font-size: 8px;
+      font-weight: 450;
+      line-height: 10.2px;
+      color: #6a707e;
+    }
+    .itemView {
+      font-size: 10px;
+      font-weight: 500;
+      color: #ff7a00;
+      line-height: 12.65px;
+      font-family: myFont;
+    }
+    .taskDate {
+      margin-right: -140px;
+    }
+
+    .status.pending {
+      color: #ffcd28;
+    }
+
+    .status.approved {
+      color: #00b388;
+    }
+
+    .status.rejected {
+      color: #c61531;
+    }
+    /* CSS for responsiveness on devices of 1000px and above */
+    @media (max-width: 1000px) {
+      .stat-all,
+      .stat-reg,
+      .stat-act,
+      .stat-inac {
+        margin-bottom: 20px;
+      }
+    }
+    /* CSS on responsiveness on devices of 700px and above */
+    @media (max-width: 700px) {
+      .stats {
+        flex-direction: column;
+      }
+      .stat-all,
+      .stat-reg,
+      .stat-act,
+      .stat-inac {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      .stat-item {
+        margin: 10px 0;
+      }
+    }
+    /* CSS for responsiveness */
+    @media (max-width: 576px) {
+      .sidebar {
+        width: 100px;
+      }
+
+      .sidebar-item {
+        padding: 10px;
+      }
+
+      .new-business {
+        padding: 5px 10px;
+      }
+    }
+  </style>
+  <body>
+    <!-- HTML for container holding the content -->
+    <div class="container">
+      <!-- HTML Business Section -->
+      <main class="main-content">
+        <header class="headers">
+          <h1>Welcome, Deen 👋</h1>
+          <a
+            href="#createBizForm"
+            data-url="./createBizForm.html"
+            class="internal-link"
+            ><button class="new-business">+ New Business</button></a
+          >
+        </header>
+        <section class="stats">
+          <div class="stat-all">
+            &nbsp;&nbsp;&nbsp;All Business<br /><span id="all">200</span>
+          </div>
+          <div class="stat-reg">
+            Registered Business<br /><span id="reg">150</span>
+          </div>
+          <div class="stat-act">
+            Active Business<br /><span id="act">150</span>
+          </div>
+          <div class="stat-inac">
+            Inactive Business<br /><span id="inact">150</span>
+          </div>
+        </section>
+        <!-- HTML for workbench -->
+        <section class="content">
+          <div class="workbench">
+            <div class="workBenHead">
+              <h2>Work Bench</h2>
+              <button>View All</button>
+            </div>
+            <hr />
+            <div class="task">
+              <div>Task</div>
+              <div class="taskDate">Date Received</div>
+              <div>Status</div>
+            </div>
+            <div class="task">
+              <div>Create portal for NEM Insurance</div>
+              <div>26/10/2022</div>
+              <div class="status pending">Pending</div>
+            </div>
+            <div class="task">
+              <div>Create portal for NEM Insurance</div>
+              <div>26/10/2022</div>
+              <div class="status approved">Approved</div>
+            </div>
+            <div class="task">
+              <div>Create portal for NEM Insurance</div>
+              <div>26/10/2022</div>
+              <div class="status pending">Pending</div>
+            </div>
+            <div class="task">
+              <div>Create portal for NEM Insurance</div>
+              <div>26/10/2022</div>
+              <div class="status rejected">Rejected</div>
+            </div>
+            <div class="task">
+              <div>Create portal for NEM Insurance</div>
+              <div>26/10/2022</div>
+              <div class="status pending">Pending</div>
+            </div>
+            <div class="task">
+              <div>Create portal for NEM Insurance</div>
+              <div>26/10/2022</div>
+              <div class="status pending">Pending</div>
+            </div>
+            <div class="task">
+              <div>Create portal for NEM Insurance</div>
+              <div>26/10/2022</div>
+              <div class="status approved">Approved</div>
+            </div>
+            <div class="task">
+              <div>Create portal for NEM Insurance</div>
+              <div>26/10/2022</div>
+              <div class="status approved">Approved</div>
+            </div>
+            <div class="task">
+              <div>Create portal for NEM Insurance</div>
+              <div>26/10/2022</div>
+              <div class="status pending">Pending</div>
+            </div>
+            <div class="task">
+              <div>Create portal for NEM Insurance</div>
+              <div>26/10/2022</div>
+              <div class="status pending">Pending</div>
+            </div>
+            <div class="task">
+              <div>Create portal for NEM Insurance</div>
+              <div>26/10/2022</div>
+              <div class="status rejected">Rejected</div>
+            </div>
+          </div>
+          <!-- HTML For Activity -->
+          <div class="activity">
+            <div class="activityHead">
+              <div>
+                <h2>Activity</h2>
+              </div>
+              <div class="activitySubH">
+                <p>Select View</p>
+                <img
+                  src="./images/Polygon copy.svg"
+                  alt="poly"
+                  width="7px"
+                  height="4px"
+                />
+              </div>
+            </div>
+            <hr />
+            <div class="activity-item">
+              <div class="activityText">
+                Created Portal for First Bank Nigeria<br /><span>10 mins</span>
+              </div>
+              <div class="itemView">View</div>
+            </div>
+            <div class="activity-item">
+              <div>
+                Created Portal for First Bank Nigeria<br /><span>10 mins</span>
+              </div>
+              <div class="itemView">View</div>
+            </div>
+            <div class="activity-item">
+              <div>
+                Created Portal for First Bank Nigeria<br /><span>10 mins</span>
+              </div>
+              <div class="itemView">View</div>
+            </div>
+            <div class="activity-item">
+              <div>
+                Created Portal for First Bank Nigeria<br /><span>10 mins</span>
+              </div>
+              <div class="itemView">View</div>
+            </div>
+            <div class="activity-item">
+              <div>
+                Created Portal for First Bank Nigeria<br /><span>10 mins</span>
+              </div>
+              <div class="itemView">View</div>
+            </div>
+            <div class="activity-item">
+              <div>
+                Created Portal for First Bank Nigeria<br /><span>10 mins</span>
+              </div>
+              <div class="itemView">View</div>
+            </div>
+            <div class="activity-item">
+              <div>
+                Created Portal for First Bank Nigeria<br /><span>10 mins</span>
+              </div>
+              <div class="itemView">View</div>
+            </div>
+            <div class="activity-item">
+              <div>
+                Created Portal for First Bank Nigeria<br /><span>10 mins</span>
+              </div>
+              <div class="itemView">View</div>
+            </div>
+            <div class="activity-item">
+              <div>
+                Created Portal for First Bank Nigeria<br /><span>10 mins</span>
+              </div>
+              <div class="itemView">View</div>
+            </div>
+            <!-- End -->
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
