@@ -212,7 +212,7 @@ body{
 }
 .tpc-table th{
     text-align: left;
-    padding: 5px 10px 5px;
+    padding: 10px 10px 5px;
     font-size: 12px;
     font-weight: 700;
     line-height: 15.18px;
@@ -244,6 +244,11 @@ body{
     display: flex;
     align-items: center;
     gap: 8px;
+}
+.tpc-table .th-flex{
+    display: flex;
+    align-items: center;
+    gap: 3px;
 }
 .tbactive, .tbinactive{
     display: block;
@@ -409,7 +414,12 @@ body{
     font-weight: 400;
     line-height: 16.98px;
     color: #353535;
-    padding-top: 2%;
+    padding-top: 3%;
+}
+.business-color{
+    display: flex;
+    gap: 5px;
+    align-items: center;
 }
 .card-border-bottom{
     border-bottom: 1px solid #F3F5F6;
