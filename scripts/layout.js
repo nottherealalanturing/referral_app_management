@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
         contentSection.innerHTML = content;
         window.history.pushState({ url }, '', url);
         initializeInternalLinks();
+        handleScripts(contentSection);
       } else {
         contentSection.innerHTML = `<p>Error loading page: ${url}</p>`;
       }
@@ -54,6 +55,19 @@ document.addEventListener('DOMContentLoaded', () => {
   const initializeInternalLinks = () => {
     document.querySelectorAll('.internal-link').forEach((link) => {
       link.addEventListener('click', handleNavigationClick);
+    });
+  };
+
+  const handleScripts = (content) => {
+    const scripts = content.querySelectorAll('script');
+    scripts.forEach((script) => {
+      const newScript = document.createElement('script');
+      if (script.src) {
+        newScript.src = script.src;
+      } else {
+        newScript.textContent = script.textContent;
+      }
+      document.body.appendChild(newScript).parentNode.removeChild(newScript);
     });
   };
 
