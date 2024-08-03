@@ -3,6 +3,7 @@
 *::after {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 @font-face {
@@ -12,7 +13,7 @@
   font-style: normal;
 }
 
-.container {
+.container-box {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -46,6 +47,9 @@
 .content-section {
   height: calc(100% - 50px);
   width: 100%;
+  padding: 10px;
+  background-color: #f0f2fa;
+  overflow: auto;
 }
 
 .logo-container {
@@ -676,3 +680,10 @@ main {
 
 @import url(/styles/users/usersHomepage.css);
 @import url(/styles/users/usersProfile.css);
+/* reports */
+
+.circular-std {
+  font-family: 'Circular Std Medium', system-ui, -apple-system,
+    BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    'Open Sans', 'Helvetica Neue', sans-serif;
+}
