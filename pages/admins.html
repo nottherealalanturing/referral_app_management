@@ -10,6 +10,13 @@
 </head>
 
 <body>
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="success-message-card" id="success-message-card">
+            <h3>Lanre Oseni Created as Admin for FirstBank Successfully</h3>
+            <img src="../assets/images/success-check.png" alt="Success Image">
+            <a href="view-admin.html">View</a>
+        </div>
+    </div>
     <div class="page-header">
         <h3>Create Admin</h3>
     </div>
@@ -55,10 +62,12 @@
             </div>
             <div class="bottom">
                 <a href="" class="back-btn">Back</a>
-                <a href="" class="create-admin">Create Admin</a>
+                <a href="" class="create-admin" id="show-modal">Create Admin</a>
             </div>
         </form>
     </div>
+
+    <script src="../scripts/admins.js"></script>
 </body>
 
 </html>
