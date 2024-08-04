@@ -1,148 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="/styles/users/usersProfile.css" />
-  </head>
-  <body>
-    <main class="usersProfile">
-      <div class="usersHeaderDiv">
-        <h3>User's Profile</h3>
-        <a href="#"> <i class="fa-solid fa-arrow-left"></i> Back To Users </a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="/styles/users/usersProfile.css" />
+</head>
+
+<body>
+  <main class="usersProfile">
+    <div class="usersHeaderDiv">
+      <h3>User's Profile</h3>
+      <a href="#users" data-url="/pages/users.html" class="internal-link"> <i class="fa-solid fa-arrow-left"></i> Back
+        To Users </a>
+    </div>
+
+    <div class="userProfileDiv">
+      <div class="profileImage">
+        <img src="/assets/images/user-cartoon-bigPicture.svg" alt="profile Image" />
+        <p>Ahmad Abdulkareem</p>
       </div>
 
-      <div class="userProfileDiv">
-        <div class="profileImage">
-          <img src="/images/user-cartoon-bigPicture.svg" alt="profile Image" />
-          <p>Ahmad Abdulkareem</p>
+      <div class="profileDetails">
+        <div class="row1">
+          <div class="detailsChild">
+            <span>
+              <label for="name">Name</label>
+              <p>Ahmadogo</p>
+            </span>
+
+            <span class="business-name">
+              <label for="business">Business Name</label>
+              <p>A.k Designs</p>
+            </span>
+
+            <span>
+              <label for="date">Date Added</label>
+              <p>04 Jan 2023</p>
+            </span>
+
+            <span class="users-status">
+              <label for="status">Status</label>
+              <p>Disabled</p>
+            </span>
+          </div>
+
+          <span>
+            <i class="fa-solid fa-circle-caret-up" style="color: #f45c1a"></i>
+          </span>
         </div>
 
-        <div class="profileDetails">
-          <div class="row1">
-            <div class="detailsChild">
-              <span>
-                <label for="name">Name</label>
-                <p>Ahmadogo</p>
-              </span>
+        <div class="row2">
+          <span>
+            <label for="email">Email Address</label>
+            <p>ahmadogo@leadway.com</p>
+          </span>
 
-              <span class="business-name">
-                <label for="business">Business Name</label>
-                <p>A.k Designs</p>
-              </span>
+          <span>
+            <label for="status">Status</label>
+            <p class="usersProfile-Active">Active</p>
+          </span>
+        </div>
 
-              <span>
-                <label for="date">Date Added</label>
-                <p>04 Jan 2023</p>
-              </span>
+        <div class="row3">
+          <span>
+            <button class="usersEdit">Edit</button>
+            <button class="usersStart-chat">Start a Chats</button>
+          </span>
+          <span>
+            <button class="usersRe-activate">Re-activate</button>
+            <button class="usersDisable">Disable</button>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="usersProfile-activity">
+      <div class="activityButtons">
+        <button class="activityBtn " id="activityActive">
+          <p>Activity</p>
+        </button>
+        <button class="chatsBtn " id="chatsActive">
+          <p>Chats</p>
+        </button>
+      </div>
+
+      <div class="activityTable">
+        <div class="activity-th">
+          <p>Activity Summary Today</p>
+        </div>
+
+        <div class="activity-td">
+          <span class="left-td">
+            <i class="fa-solid fa-circle"></i>
+            <p>Ahmad would like to update his email address</p>
+          </span>
+          <span>
+            <p>9:35 am</p>
+          </span>
+        </div>
+
+        <div class="activity-td">
+          <span class="left-td">
+            <i class="fa-solid fa-circle"></i>
+            <p>Ahmad replied to your chat</p>
+          </span>
+          <span class="activity-view">
+            <p>view</p>
+          </span>
+        </div>
+
+        <div class="activity-td">
+          <span class="left-td">
+            <i class="fa-solid fa-circle"></i>
+            <p>Ahmad would like to update his first name</p>
+          </span>
+          <span>
+            <p>9:35 am</p>
+          </span>
+        </div>
+
+        <div class="activity-td">
+          <span class="left-td">
+            <i class="fa-solid fa-circle"></i>
+            <p>Ahmad would like to update his email address</p>
+          </span>
+          <span>
+            <p>9:35 am</p>
+          </span>
+        </div>
+
+        <div class="activity-td">
+          <span class="left-td">
+            <i class="fa-solid fa-circle"></i>
+            <p>Ahmad would like to update his email address</p>
+          </span>
+          <span>
+            <p>9:35 am</p>
+          </span>
+        </div>
+
+        <div class="activity-td">
+          <span class="left-td">
+            <i class="fa-solid fa-circle"></i>
+            <p>Ahmad would like to update his email address</p>
+          </span>
+          <span>
+            <p>9:35 am</p>
+          </span>
+        </div>
+      </div>
+
+      <div class="chatSection">
+        <div class="userDiv">
+          <div class="user">
+            <span> <img src="/assets/images/customer-pics.svg" alt="user image"> </span>
+            <span class="userChat">Hello, I would like to update my email address please</span>
+            <small>04 Jan 2023 | 12:02pm</small>
+          </div>
+
+          <div class="empty"></div>
+        </div>
+
+        <div class="customerCareDiv">
+          <div class="empty"></div>
+
+          <div class="customerCare-bg">
+            <div class="customerCare">
+              <small>04 Jan 2023 | 12:02pm</small>
+              <span class="customerChat">Alright please hold on</span>
+              <span> <img src="/assets/images/customer-care-pics.svg" alt="customer-care-pics image"> </span>
             </div>
 
-            <span>
-              <i class="fa-solid fa-circle-caret-up" style="color: #f45c1a"></i>
-            </span>
+            <div class="scroller"></div>
+          </div>
+        </div>
+
+        <div class="userDiv">
+          <div class="user">
+            <span> <img src="/assets/images/customer-pics.svg " alt="profile image"> </span>
+            <span class="userChat">Thank you very much.</span>
+            <small>04 Jan 2023 | 12:02pm</small>
           </div>
 
-          <div class="row2">
-            <span>
-              <label for="email">Email Address</label>
-              <p>ahmadogo@leadway.com</p>
-            </span>
+          <div class="empty"></div>
+        </div>
 
-            <span>
-              <label for="status">Status</label>
-              <p class="usersProfile-Active">Active</p>
-            </span>
+        <div class="typingDiv">
+          <div class="left-items">
+            <span>🙁</span>
+            <span class="add-icon"><i class="fa-solid fa-plus"></i></span>
+            <input type="text" name="type">
           </div>
 
-          <div class="row3">
-            <span>
-              <button class="usersEdit">Edit</button>
-              <button class="usersStart-chat">Start a Chats</button>
-            </span>
-            <span>
-              <button class="usersDisable">Disable</button>
-            </span>
+          <div class="record">
+            <span><i class="fa-duotone fa-solid fa-microphone"></i></span>
           </div>
         </div>
       </div>
 
-      <div class="usersProfile-activity">
-        <div class="activityButtons">
-          <button class="activityBtn">
-            <p>Activity</p>
-          </button>
-          <button class="chatsBtn">
-            <p>Chats</p>
-          </button>
-        </div>
+    </div>
 
-        <div class="activityTable">
-          <div class="activity-th">
-            <p>Activity Summary Today</p>
-          </div>
+    <div class="modal-bg">
+      <div class="modal">
+        <p>Confirm Disable of A.k Designs ?</p>
 
-          <div class="activity-td">
-            <span class="left-td">
-              <i class="fa-solid fa-circle"></i>
-              <p>Ahmad would like to update his email address</p>
-            </span>
-            <span>
-              <p>9:35 am</p>
-            </span>
-          </div>
-
-          <div class="activity-td">
-            <span class="left-td">
-              <i class="fa-solid fa-circle"></i>
-              <p>Ahmad replied to your chat</p>
-            </span>
-            <span class="activity-view">
-              <p>view</p>
-            </span>
-          </div>
-
-          <div class="activity-td">
-            <span class="left-td">
-              <i class="fa-solid fa-circle"></i>
-              <p>Ahmad would like to update his first name</p>
-            </span>
-            <span>
-              <p>9:35 am</p>
-            </span>
-          </div>
-
-          <div class="activity-td">
-            <span class="left-td">
-              <i class="fa-solid fa-circle"></i>
-              <p>Ahmad would like to update his email address</p>
-            </span>
-            <span>
-              <p>9:35 am</p>
-            </span>
-          </div>
-
-          <div class="activity-td">
-            <span class="left-td">
-              <i class="fa-solid fa-circle"></i>
-              <p>Ahmad would like to update his email address</p>
-            </span>
-            <span>
-              <p>9:35 am</p>
-            </span>
-          </div>
-
-          <div class="activity-td">
-            <span class="left-td">
-              <i class="fa-solid fa-circle"></i>
-              <p>Ahmad would like to update his email address</p>
-            </span>
-            <span>
-              <p>9:35 am</p>
-            </span>
-          </div>
+        <div class="modal-links">
+          <span class="cancel-modal"> <a href="#usersProfile.html" data-url="pages/users/usersProfile.html"
+              class="internal-link">Cancel</a> </span>
+          <span class="disable-modal"> <a href="/pages/users/usersProfile.html">Disable</a> </span>
         </div>
       </div>
-    </main>
-  </body>
+    </div>
+    
+  </main>
+</body>
+
 </html>

@@ -16,27 +16,27 @@
 }
 
 .usersHeaderDiv a {
-    color: #ff7a00;
     font-size: 14px;
     font-weight: 700;
+    color: #ff7a00;
     text-decoration: none;
 }
 
 .userProfileDiv {
-    background: #fff;
     display: flex;
     margin-top: 2%;
+    background: #fff;
 }
 
 .userProfileDiv .profileImage {
-    border-right: 1px solid #f3f5f6;
     padding: 1.25rem 2.5rem;
+    border-right: 1px solid #f3f5f6;
 }
 
 .profileImage p {
+    font-size: 1rem;
     font-weight: 800;
     color: #353535;
-    font-size: 1rem;
     text-align: center;
 }
 
@@ -52,44 +52,49 @@
 }
 
 .detailsChild {
-    display: flex;
     gap: 10rem;
+    display: flex;
 }
 
 .detailsChild .business-name {
     display: none;
 }
 
+.detailsChild .users-status {
+    display: none;
+    color: #128c7e;
+}
+
 .profileDetails .row1 label {
     font-weight: 500;
-    font-size: 0.625rem;
     color: #7a7c87;
+    font-size: 0.625rem;
 }
 
 .profileDetails .row1 p {
-    font-size: 0.875rem;
+    margin-top: 6px;
     font-weight: 600;
     color: #353535;
-    margin-top: 6px;
+    font-size: 0.875rem;
 }
 
 .profileDetails .row2 {
+    gap: 3.875rem;
     display: flex;
     padding: 1.25rem 1.875rem;
-    gap: 3.875rem;
     border-bottom: 1px solid #f3f5f6;
 }
 
 .profileDetails .row2 label {
     font-weight: 500;
-    font-size: 0.625rem;
     color: #7a7c87;
+    font-size: 0.625rem;
 }
 
 .profileDetails .row2 p {
-    font-size: 0.875rem;
     font-weight: 600;
     color: #353535;
+    font-size: 0.875rem;
 }
 
 .profileDetails .row2 .usersProfile-Active {
@@ -99,40 +104,52 @@
 
 .profileDetails .row3 {
     display: flex;
-    justify-content: space-between;
     padding: 1.25rem 1.875rem;
+    justify-content: space-between;
 }
 
 .row3 .usersEdit {
-    border: 1px solid #ff6600;
-    color: #ff6600;
+    cursor: pointer;
     font-weight: 700;
+    color: #ff6600;
     background: #c615311a;
     padding: 0.75rem 3.75rem;
     border-radius: 0.3125rem;
-    cursor: pointer;
+    border: 1px solid #ff6600;
     font-family: "Mulish", sans-serif;
 }
 
 .row3 .usersStart-chat {
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+    background: #ff6600;
     padding: 0.75rem 2.5rem;
     border-radius: 0.3125rem;
-    background: #ff6600;
-    color: #fff;
-    font-weight: 700;
+    font-family: "Mulish", sans-serif;
+}
+
+.row3 .usersRe-activate {
     border: none;
+    display: none;
+    color: #fff;
     cursor: pointer;
+    font-weight: 700;
+    background: #00b388;
+    padding: 0.75rem 3.75rem;
+    border-radius: 0.3125rem;
     font-family: "Mulish", sans-serif;
 }
 
 .row3 .usersDisable {
-    padding: 0.75rem 3.75rem;
-    background: #c61531;
-    color: #fff;
     border: none;
-    border-radius: 0.3125rem;
-    font-weight: 700;
+    color: #fff;
     cursor: pointer;
+    font-weight: 700;
+    background: #c61531;
+    padding: 0.75rem 3.75rem;
+    border-radius: 0.3125rem;
     font-family: "Mulish", sans-serif;
 }
 
@@ -142,33 +159,47 @@
 
 .activityBtn {
     border: none;
+    cursor: pointer;
     font-weight: 700;
     color: #ff6600;
     background: #fff;
-    cursor: pointer;
-    padding: 0.5625rem 3.125rem;
+    padding: 0rem 3.125rem;
     border-radius: 0.3125rem;
     font-family: "Mulish", sans-serif;
+    p{
+        padding: 0.3125rem;
+        border-bottom: 3px solid #ff6600;
+    }
 }
 
-.activityBtn p {
-    padding: 5px;
-    border-bottom: 3px solid #ff6600;
+.activity-inactive{
+    background: #ff6600;
+    color: #fff;
 }
 
 .chatsBtn {
     border: none;
-    font-weight: 700;
-    background: #ff6600;
     color: #fff;
     cursor: pointer;
-    padding: 0.5625rem 3.125rem;
+    font-weight: 700;
+    background: #ff6600;
+    padding: 0rem 3.125rem;
     border-radius: 0.3125rem;
     font-family: "Mulish", sans-serif;
+
+    p {
+        padding: 0.3125rem;
+    }
 }
 
-.chatsBtn p {
-    padding: 0.3125rem;
+.chats-active {
+    visibility: visible;
+    background: #fff;
+    
+    p{
+        color:#ff6600;
+        border-bottom: 3px solid #ff6600;
+    }
 }
 
 .activityTable {
@@ -176,8 +207,8 @@
 }
 
 .activity-th {
-    font-size: 0.9375rem;
     font-weight: 700;
+    font-size: 0.9375rem;
     padding: 1.25rem 3.125rem;
 }
 
@@ -190,8 +221,8 @@
 }
 
 .left-td {
-    display: flex;
     gap: 1.25rem;
+    display: flex;
     align-items: center;
 }
 
@@ -201,9 +232,180 @@
 }
 
 .activity-view {
-    background: #ff7a00;
     color: #fff;
-    padding: 0.3125rem 1.5625rem;
-    border-radius: 0.3125rem;
     cursor: pointer;
+    background: #ff7a00;
+    padding: 0rem 1.5625rem;
+    border-radius: 0.3125rem;
+}
+
+.chatSection {
+    margin-top: 5%;
+    background: #fff;
+    padding-bottom: 20px;
+    padding: 0.625rem 1.875rem;
+}
+
+.chatSection .user {
+    gap: 1.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.userDiv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user {
+    margin-top: 3%;
+    position: relative;
+}
+
+.user .userChat {
+    width: 18.75rem;
+    font-weight: 600;
+    padding: 1rem 1.5rem;
+    background: #f3f5f6;
+    border-radius: 0.9375rem 0.9375rem 0.9375rem 0rem;
+}
+
+.user small {
+    left: 70%;
+    top: -1.25rem;
+    font-size: 0.625rem;
+    position: absolute;
+}
+
+.customerCareDiv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.customerCare-bg {
+    gap: 2.5rem;
+    display: flex;
+}
+
+.customerCare {
+    gap: 1.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+}
+
+.customerCare small {
+    right: 60%;
+    top: 1.875rem;
+    font-size: 0.625rem;
+    position: absolute;
+}
+
+.customerChat {
+    padding: 1rem 1.5rem;
+    background: #d7f8f4;
+    border-radius: 0.9375rem 0.9375rem 0rem 0.9375rem;
+}
+
+.customerCare-bg .scroller {
+    width: 0.4375rem;
+    height: 9.9375rem;
+    background: #d9d9d9;
+    border-radius: 0.625rem;
+}
+
+.typingDiv {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    margin-top: 5%;
+    border: 1px solid;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background: #f0f2fa;
+    border-radius: 1.875rem;
+    justify-content: space-between;
+}
+
+.typingDiv .left-items {
+    gap: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.left-items .add-icon {
+    color: #128c7e;
+    border-radius: 0.3125rem;
+    padding: 0.125rem 0.3125rem;
+    border: 1px solid #130f26;
+}
+
+.typingDiv input {
+    border: none;
+    outline: none;
+    background: none;
+    margin-left: 10%;
+    padding: 0.3125rem;
+}
+
+.record {
+    font-size: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+.modal-bg {
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    /* visibility: hidden; */
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+    transition: visibility 0s, opacity 0, 5s;
+}
+
+.bg-active{
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal {
+    /* margin: auto; */
+    /* margin-top: 20%; */
+    padding: .9375rem;
+    background: #fff;
+    width: 30%;
+    height: 30%;
+}
+
+.modal p {
+    font-weight: 700;
+    font-size: 1.125rem;
+}
+
+.modal-links {
+    gap: 1.25rem;
+    display: flex;
+    padding-top: 1.25rem;
+    justify-content: center;
+}
+
+.cancel-modal a {
+    font-weight: 600;
+    color: #c61531;
+    text-decoration: none;
+}
+
+.disable-modal a {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    background: #c61531;
+    padding: 0.5rem 1.6rem;
 }
