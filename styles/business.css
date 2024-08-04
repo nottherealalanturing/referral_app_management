@@ -212,7 +212,7 @@ body{
 }
 .tpc-table th{
     text-align: left;
-    padding: 10px 10px 5px;
+    padding: 10px 10px;
     font-size: 12px;
     font-weight: 700;
     line-height: 15.18px;
@@ -223,13 +223,13 @@ body{
     font-size: 12px;
     font-weight: 450;
     line-height: 15.18px;
+    border: 1px solid #58585833;
 }
 .tpc-table td a{
     color: #353535;
 }
-.tpc-table tbody tr td{
-    border: 1px solid #58585833;
-}
+/* .tpc-table tbody tr td{
+} */
 .tpc-table .td-border-rightnone{
     border-right: none;
 }
