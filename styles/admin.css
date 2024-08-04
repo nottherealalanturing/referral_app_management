@@ -1,16 +1,14 @@
+/* admins' page */
 div.page-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    h3 {
-        /* font-family: 'Circular Std Medium'; */
-    }
-
-    button {
+    a {
+        text-decoration: none;
         padding: 10px 20px;
         border: none;
-        background: #f56100;
+        background: var(--primary-orange);
         color: #fff;
         cursor: pointer;
         display: flex;
@@ -25,10 +23,9 @@ div.search-card {
     background: #fff;
     border-radius: 5px;
     padding: 10px;
-    /* box-shadow: ; */
 
     div.search-wrapper {
-        border: 1px solid #fbfbfb;
+        border: 1px solid var(--border-color);
         border-radius: 5px;
         padding: 10px;
         display: flex;
@@ -37,7 +34,7 @@ div.search-card {
         gap: 20px;
 
         div.dropdown-search-container {
-            border: 1px solid #fbfbfb;
+            border: 1px solid var(--border-color);
             border-radius: 5px;
             display: flex;
             align-items: center;
@@ -47,8 +44,7 @@ div.search-card {
                 background: #f7f7f7;
                 display: flex;
                 align-items: center;
-                padding: 5px 10px;
-                /* gap: 5px; */
+                padding: 0 10px;
 
                 p {
                     margin: 0;
@@ -68,7 +64,7 @@ div.search-card {
                 }
 
                 i.fa-caret-down {
-                    background: #f56100;
+                    background: var(--primary-orange);
                     padding: 5px;
                     border-radius: 50%;
                     color: #fff;
@@ -81,10 +77,10 @@ div.search-card {
                 display: flex;
                 align-items: center;
                 gap: 10px;
-                padding: 5px;
+                padding: 0 10px;
 
                 i {
-                    color: #eeeeee;
+                    color: var(--border-color);
                 }
 
                 input {
@@ -99,7 +95,7 @@ div.search-card {
         button {
             padding: 10px 40px;
             border: none;
-            background: #f56100;
+            background: var(--primary-orange);
             color: #fff;
             cursor: pointer;
             border-radius: 5px;
@@ -130,12 +126,12 @@ div.tabs-container {
         }
 
         button.active {
-            background: #00b388;
+            background: var(--primary-green);
             color: #fff;
         }
 
         button.inactive {
-            background: #e30000;
+            background: var(--primary-red);
             color: #fff;
             border-top-right-radius: 5px;
         }
@@ -148,7 +144,6 @@ div.tabs-container {
         flex-direction: column;
         gap: 100px;
         justify-content: space-between;
-        /* justify-content: center; */
 
         table {
             width: 100%;
@@ -191,11 +186,11 @@ div.tabs-container {
                         }
 
                         span.active {
-                            background: #00b388;
+                            background: var(--primary-green);
                         }
 
                         span.inactive {
-                            background: #e30000;
+                            background: var(--primary-red);
                         }
                     }
 
@@ -249,6 +244,176 @@ div.tabs-container {
     }
 }
 
+/* create admin */
+div.form-card {
+    margin-top: 1.25rem;
+    background: var(--card-background);
+    border-radius: .3125rem;
+    padding: 2.5rem;
+
+    p.form-title,
+    p.form-subtitle {
+        text-align: center;
+    }
+
+    p.form-subtitle {
+        color: var(--primary-orange);
+        border-bottom: .1875rem solid var(--primary-orange);
+        width: fit-content;
+        margin: .3125rem auto 1.25rem;
+        padding: .3125rem;
+        font-size: .625rem;
+    }
+
+    form {
+        div.top {
+            div.form-row {
+                display: flex;
+                justify-content: space-between;
+                gap: 3.75rem;
+                margin-bottom: 2.5rem;
+
+                div.input-container {
+                    width: 50%;
+
+                    label {
+                        font-size: .75rem;
+                        display: flex;
+                        align-items: center;
+                        gap: .625rem;
+
+                        i {
+                            color: var(--primary-red);
+                            font-size: .375rem;
+                        }
+                    }
+
+                    div.input-box {
+                        margin-top: .625rem;
+                        border: .0625rem solid var(--border-color);
+                        border-radius: .625rem;
+                        padding: .625rem;
+                        display: flex;
+                        align-items: center;
+                        gap: .625rem;
+
+                        i {
+                            color: var(--border-color);
+                        }
+
+                        input {
+                            flex: 1;
+                            border: none;
+                            outline: none;
+                            font-size: .875rem;
+                        }
+                    }
+                }
+
+                div.hidden {
+                    width: 50%;
+                    visibility: hidden;
+                }
+            }
+        }
+
+        div.bottom {
+            margin-top: 5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            a {
+                text-decoration: none;
+                padding: var(--button-padding-y) var(--button-padding-x);
+                border-radius: var(--border-radius);
+                font-size: .75rem;
+            }
+
+            a.back-btn {
+                border: .0625rem solid var(--primary-orange);
+                color: var(--primary-orange);
+
+                &:hover {
+                    background-color: var(--primary-orange);
+                    color: var(--primary-white);
+                }
+            }
+
+            a.create-admin {
+                border: .0625rem solid var(--primary-orange);
+                background: var(--primary-orange);
+                border: .0625rem solid var(--primary-orange);
+                color: var(--primary-white);
+
+                &:hover {
+                    background-color: transparent;
+                    color: var(--primary-orange);
+                }
+            }
+        }
+    }
+}
+
+div.modal-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(100, 100, 100, 0.5);
+    background-blend-mode: multiply;
+    z-index: 50;
+    cursor: pointer;
+    display: none;
+
+    div.success-message-card {
+        height: fit-content;
+        width: max-content;
+        padding: 1.875rem;
+        background: var(--card-background);
+        box-shadow: 0 .125rem .125rem -.0625rem rgba(0, 0, 0, 0.1);
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        /* right: ; - set by javascript */
+        /* left: ; - set by javascript */
+
+        h3 {
+            width: 50%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        img,
+        a {
+            display: block;
+        }
+
+        img {
+            margin: 1.875rem auto;
+            display: flex;
+            width: 20%;
+        }
+
+        a {
+            width: fit-content;
+            background: var(--primary-orange);
+            color: var(--primary-white);
+            text-decoration: none;
+            padding: var(--button-padding-y) var(--button-padding-x);
+            font-size: .875rem;
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
+}
+
 @media (max-width: 992px) {}
 
 @media (max-width: 768px) {
@@ -260,18 +425,11 @@ div.tabs-container {
         }
     }
 
+    /* admins' page */
     div.search-card {
         div.search-wrapper {
             div.dropdown-search-container {
                 justify-content: space-between;
-
-                div.search-box-container {
-                    /* justify-content: flex-end; */
-
-                    input {
-                        /* display: none; */
-                    }
-                }
             }
 
             button {
@@ -300,6 +458,25 @@ div.tabs-container {
                         td:nth-child(4) {
                             display: none;
                         }
+                    }
+                }
+            }
+        }
+    }
+
+    /* create admin page */
+    div.form-card {
+        form {
+            div.top {
+                div.form-row {
+                    flex-direction: column;
+
+                    div.input-container {
+                        width: 100%;
+                    }
+
+                    div.hidden {
+                        display: none;
                     }
                 }
             }
