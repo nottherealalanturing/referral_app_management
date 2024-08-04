@@ -283,7 +283,7 @@ div.form-card {
 
                         i {
                             color: var(--primary-red);
-                            font-size: .5rem;
+                            font-size: .375rem;
                         }
                     }
 
@@ -304,17 +304,14 @@ div.form-card {
                             flex: 1;
                             border: none;
                             outline: none;
-                            padding: ;
                             font-size: .875rem;
                         }
                     }
                 }
-            }
-
-            div.hidden {
-                /* fixme */
-                width: 50%;
-                /* visibility: hidden; */
+                div.hidden {
+                    width: 50%;
+                    /* visibility: hidden; */
+                }
             }
         }
 
@@ -366,6 +363,7 @@ div.form-card {
         }
     }
 
+    /* admins' page */
     div.search-card {
         div.search-wrapper {
             div.dropdown-search-container {
@@ -398,6 +396,24 @@ div.form-card {
                         td:nth-child(4) {
                             display: none;
                         }
+                    }
+                }
+            }
+        }
+    }
+
+    /* create admin page */
+    div.form-card {
+        form {
+            div.top {
+                div.form-row {
+                    flex-direction: column;
+
+                    div.input-container {
+                        width: 100%;
+                    }
+                    div.hidden{
+                        display: none;
                     }
                 }
             }
