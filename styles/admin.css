@@ -4,7 +4,8 @@ div.page-header {
     align-items: center;
     justify-content: space-between;
 
-    a {
+    a,
+    button {
         text-decoration: none;
         padding: 10px 20px;
         border: none;
