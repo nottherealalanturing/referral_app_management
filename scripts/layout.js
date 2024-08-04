@@ -37,8 +37,20 @@ document.addEventListener('DOMContentLoaded', () => {
         handleScripts(contentSection);
       } else {
         contentSection.innerHTML = `<p>Error loading page: ${url}</p>`;
+        console.log(url.substring(9));
+        const content = await response.text();
+        contentSection.innerHTML = content;
+        window.history.pushState(
+          { url: url.substring(9) },
+          '',
+          url.substring(9)
+        );
+        initializeInternalLinks();
+        handleScripts(contentSection);
+        //window.location.replace('/layout/index.html');
       }
     } catch (error) {
+      window.location.replace('/layout/index.html');
       console.error('Error fetching content:', error);
       contentSection.innerHTML = '<p>Error fetching content.</p>';
     }
