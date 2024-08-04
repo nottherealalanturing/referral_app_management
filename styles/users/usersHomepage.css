@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
 
-main {
+.userHomepage {
   background: rgb(240, 242, 250);
   font-family: "Mulish", sans-serif;
   padding: 2.5rem;
@@ -48,6 +48,7 @@ main {
 
 .searchInput {
   display: flex;
+  flex: 1;
   flex-wrap: wrap;
 }
 .search {
@@ -62,14 +63,15 @@ main {
 }
 .inputDiv {
   border: 1px solid #e5e5e5;
-  padding: 0.5rem;
-  width: 37.5rem;
+  display: flex;
+  flex: 1;
   border-left: none;
 }
 .inputDiv input {
   border: none;
   outline: none;
-  width: 500px;
+  width: 100%;
+  flex: 1;
   font-size: 16px;
 }
 .findBtn button {
@@ -88,7 +90,7 @@ main {
   margin-top: 3%;
 }
 
-.all {
+.allBtn {
   padding: 0.625rem 1.5625rem;
   background: #fff;
   color: black;
@@ -101,7 +103,7 @@ main {
     border-bottom: 0.1875rem solid #142e65;
   }
 }
-.activebtn {
+.activeBtn {
   padding: 0.625rem 1.5625rem;
   background: #00b388;
   border: none;
@@ -110,7 +112,7 @@ main {
   border-radius: 0.125rem;
   cursor: pointer;
 }
-.inActive {
+.inActiveBtn {
   padding: 0.625rem 1.5625rem;
   background: #c61531;
   border: none;

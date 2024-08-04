@@ -60,6 +60,12 @@
     display: none;
 }
 
+.detailsChild .users-status{
+    /* display: none; */
+    color: #128C7E;
+}
+
+
 .profileDetails .row1 label {
     font-weight: 500;
     font-size: 0.625rem;
@@ -146,13 +152,13 @@
     color: #ff6600;
     background: #fff;
     cursor: pointer;
-    padding: 0.5625rem 3.125rem;
+    padding: 0rem 3.125rem;
     border-radius: 0.3125rem;
     font-family: "Mulish", sans-serif;
 }
 
-.activityBtn p {
-    padding: 5px;
+.activityBtn p{
+    padding: .3125rem;
     border-bottom: 3px solid #ff6600;
 }
 
@@ -162,13 +168,18 @@
     background: #ff6600;
     color: #fff;
     cursor: pointer;
-    padding: 0.5625rem 3.125rem;
+    padding: 0rem 3.125rem;
     border-radius: 0.3125rem;
     font-family: "Mulish", sans-serif;
+    p{
+        padding: 0.3125rem;
+    }
 }
 
-.chatsBtn p {
-    padding: 0.3125rem;
+.chatsActive {
+    border-bottom: 3px solid #ff6600;
+    display: none;
+    background:#fff;
 }
 
 .activityTable {
@@ -203,7 +214,161 @@
 .activity-view {
     background: #ff7a00;
     color: #fff;
-    padding: 0.3125rem 1.5625rem;
+    padding: 0rem 1.5625rem;
     border-radius: 0.3125rem;
     cursor: pointer;
 }
+
+.chatSection{
+    background: #fff;
+    padding: .625rem 1.875rem;
+    margin-top: 5%;
+    padding-bottom: 20px;
+}
+
+.chatSection .user{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    align-items: center;
+}
+.userDiv{
+    display: flex;
+    justify-content: space-between;
+}
+.user{
+    position: relative;
+    margin-top: 3%;
+}
+
+.user .userChat{
+    background: #F3F5F6;
+    padding: 1rem 1.5rem;
+    font-weight: 600;
+    width: 18.75rem;
+    border-radius:  .9375rem .9375rem .9375rem 0rem;
+}
+
+
+.user small{
+    font-size: .625rem;
+    position: absolute;
+    top: -1.25rem ;
+    left: 75%;
+}
+
+.customerCareDiv{
+    display: flex;
+    justify-content: space-between;
+}
+
+.customerCare-bg{
+    display: flex;
+    gap: 2.5rem;
+}
+.customerCare{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    align-items: center;
+    position: relative;
+}
+
+.customerCare small{
+    font-size: .625rem;
+    position: absolute;
+    right: 60%;
+    top: 1.875rem;
+}
+ .customerChat{
+    background: #D7F8F4;
+    padding: 1rem 1.5rem;
+    border-radius:  .9375rem .9375rem 0rem .9375rem;
+}
+.customerCare-bg .scroller{
+    height: 9.9375rem;
+    width: .4375rem;
+    border-radius: .625rem;
+    background: #D9D9D9;
+}
+
+.typingDiv{
+    border: 1px solid ;
+    width: 50%;
+    margin: auto;
+    background: #F0F2FA;
+    padding: .5rem 1rem;
+    display: flex;
+    border-radius: 1.875rem;
+    align-items: center;
+    margin-top: 5%;
+    justify-content: space-between;
+  }
+  .typingDiv .left-items{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+  }
+  
+  .left-items .add-icon{
+    color: #128C7E;
+    border: 1px solid #130F26;
+    padding:.125rem .3125rem;
+    border-radius: .3125rem;
+  }
+  
+  .typingDiv  input{
+    padding: .3125rem;  
+    border: none;
+    outline: none;
+    background: none;
+    margin-left: 10%;
+  }
+  
+  .record{
+    font-size: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .modal-bg{
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      position: fixed;
+      display: none;
+      background: rgba(0, 0, 0, 0.5);
+  }
+
+  .modal{
+    background: #fff;
+    width: fit-content;
+    margin: auto;
+    margin-top: 20%;
+    padding: 3.75rem;
+  }
+
+  .modal p{
+    font-size: 1.125rem;
+    font-weight: 700;
+  }
+
+  .modal-links{
+      gap: 1.25rem;
+    display: flex;
+    justify-content: center;
+    padding-top: 1.25rem;
+  }
+  .cancel-modal a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #c61531;
+  }
+
+  .disable-modal a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff;
+    background: #c61531;
+    padding: .5rem 1.6rem;
+  }
