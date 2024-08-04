@@ -4,7 +4,8 @@ div.page-header {
     align-items: center;
     justify-content: space-between;
 
-    button {
+    a {
+        text-decoration: none;
         padding: 10px 20px;
         border: none;
         background: var(--primary-orange);
@@ -291,7 +292,7 @@ div.form-card {
                         margin-top: .625rem;
                         border: .0625rem solid var(--border-color);
                         border-radius: .625rem;
-                        padding: .3125rem;
+                        padding: .625rem;
                         display: flex;
                         align-items: center;
                         gap: .625rem;
@@ -317,6 +318,7 @@ div.form-card {
         }
 
         div.bottom {
+            margin-top: 5rem;
             display: flex;
             align-items: center;
             justify-content: space-between;

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="../../styles/admin.css" />
+</head>
+
+<body>
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="success-message-card" id="success-message-card">
+            <h3>Lanre Oseni Created as Admin for FirstBank Successfully</h3>
+            <img src="../../assets/images/success-check.png" alt="Success Image">
+            <a href="view-admin.html">View</a>
+        </div>
+    </div>
+    <div class="page-header">
+        <h3>Create Admin</h3>
+    </div>
+
+    <div class="form-card">
+        <p class="form-title">Complete This In No Time</p>
+        <p class="form-subtitle">Please provide the information below</p>
+        <form action="">
+            <div class="top">
+                <div class="form-row">
+                    <div class="input-container">
+                        <label for="business-name">Business Name <i class="fa-solid fa-star"></i></label>
+                        <div class="input-box">
+                            <i class="fa-solid fa-search"></i>
+                            <input type="text" placeholder="Search business">
+                        </div>
+                    </div>
+                    <div class="input-container hidden"></div>
+                </div>
+                <div class="form-row">
+                    <div class="input-container">
+                        <label for="business-name">Admin First Name <i class="fa-solid fa-star"></i></label>
+                        <div class="input-box">
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <label for="business-name">Admin Last Name <i class="fa-solid fa-star"></i></label>
+                        <div class="input-box">
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input-container">
+                        <label for="business-name">Email Address <i class="fa-solid fa-star"></i></label>
+                        <div class="input-box">
+                            <input type="email">
+                        </div>
+                    </div>
+                    <div class="input-container hidden"></div>
+                </div>
+            </div>
+            <div class="bottom">
+                <a href="" class="back-btn">Back</a>
+                <a href="" class="create-admin" id="show-modal">Create Admin</a>
+            </div>
+        </form>
+    </div>
+
+    <script src="../../scripts/admins.js"></script>
+</body>
+
+</html>
