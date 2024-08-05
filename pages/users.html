@@ -1,175 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="/styles/users/usersHomepage.css" />
-  </head>
-  <body>
-    <main>
-      <div class="headerDiv">
-        <h3>Users</h3>
-        <button type="button">
-          <i class="fa-solid fa-plus"></i> Create new user
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css">
+  <link rel="stylesheet" href="/styles/users/usersHomepage.css" />
+</head>
+
+<body>
+  <main class="userHomepage">
+    <div class="headerDiv">
+      <h3>Users</h3>
+      <button type="button">
+        <i class="fa-solid fa-plus"></i> Create new user
+      </button>
+    </div>
+
+    <div class="searchDiv">
+      <div class="childDiv">
+        <div class="searchInput">
+          <div class="search">
+            Search By:Name
+            <i class="fa-solid fa-circle-caret-down" style="color: #f45c1a"></i>
+          </div>
+          <div class="inputDiv">
+            <i class="fa-duotone fa-solid fa-magnifying-glass"></i>
+            <input type="text" />
+          </div>
+        </div>
+        <div class="findBtn">
+          <button type="button">Find</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="contentDiv">
+      <div class="statusBtn">
+        <button type="button" class="allBtn">
+          <p>All</p>
+        </button>
+        <button type="button" class="activeBtn">
+          <p>Active</p>
+        </button>
+        <button type="button" class="inActiveBtn">
+          <p>Inactive</p>
         </button>
       </div>
 
-      <div class="searchDiv">
-        <div class="childDiv">
-          <div class="searchInput">
-            <div class="search">
-              Search By:Name
-              <i
-                class="fa-solid fa-circle-caret-down"
-                style="color: #f45c1a"
-              ></i>
-            </div>
-            <div class="inputDiv">
-              <i class="fa-duotone fa-solid fa-magnifying-glass"></i>
-              <input type="text" />
-            </div>
-          </div>
-          <div class="findBtn">
-            <button type="button">Find</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="contentDiv">
-        <div class="statusBtn">
-          <button type="button" class="all"><p>All</p></button>
-          <button type="button" class="activebtn"><p>Active</p></button>
-          <button type="button" class="inActive"><p>Inactive</p></button>
+      <div class="contents">
+        <div class="th">
+          <span></span>
+          <span>Name <i class="fa-duotone fa-solid fa-caret-down"></i></span>
+          <span>Email <i class="fa-duotone fa-solid fa-caret-down"></i></span>
+          <span>Date Added <i class="fa-duotone fa-solid fa-caret-down"></i></span>
+          <span>Status <i class="fa-duotone fa-solid fa-caret-down"></i></span>
+          <span>Action <i class="fa-duotone fa-solid fa-caret-down"></i></span>
         </div>
 
-        <div class="contents">
-          <div class="th">
-            <span></span>
-            <span>Name <i class="fa-duotone fa-solid fa-caret-down"></i></span>
-            <span>Email <i class="fa-duotone fa-solid fa-caret-down"></i></span>
-            <span
-              >Date Added <i class="fa-duotone fa-solid fa-caret-down"></i
-            ></span>
-            <span
-              >Status <i class="fa-duotone fa-solid fa-caret-down"></i
-            ></span>
-            <span
-              >Action <i class="fa-duotone fa-solid fa-caret-down"></i
-            ></span>
+        <a href="#usersProfile" data-url="/pages/users/usersProfile.html" class="internal-link">
+          <div class="td">
+            <div class="fullstack">
+              <span class="userSpan"><img src="/assets/images/user-cartoon-pic.png" alt="user image" /></span>
+              <span>Nafi'u Ishaq</span>
+            </div>
+            <span>fullstack@gmail.com</span>
+            <span>01 jan 2023</span>
+            <span class="greenActive">Active</span>
+            <span class="dots"><i class="fa-solid fa-circle"></i>
+              <i class="fa-solid fa-circle"></i>
+              <i class="fa-solid fa-circle"></i></span>
           </div>
 
-          <a
-            href="#usersProfile"
-            data-url="/pages/users/usersProfile.html"
-            class="internal-link"
-          >
-            <div class="td">
-              <div class="fullstack">
-                <span class="userSpan"
-                  ><img
-                    src="/assets/images/user-cartoon-pic.png"
-                    alt="user image"
-                /></span>
-                <span>Nafi'u Ishaq</span>
-              </div>
-              <span>fullstack@gmail.com</span>
-              <span>01 jan 2023</span>
-              <span class="greenActive">Active</span>
-              <span class="dots"
-                ><i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle"></i
-              ></span>
+          <div class="td">
+            <div class="fullstack">
+              <span class="userSpan"><img src="/assets/images/user-cartoon-pic.png" alt="user image" /></span>
+              <span>Nafi'u Ishaq</span>
+            </div>
+            <span>fullstack@gmail.com</span>
+            <span>01 jan 2023</span>
+            <span class="greenActive">Active</span>
+            <span class="dots"><i class="fa-solid fa-circle"></i>
+              <i class="fa-solid fa-circle"></i>
+              <i class="fa-solid fa-circle"></i></span>
+          </div>
+
+          <div class="td">
+            <div class="fullstack">
+              <span><img src="/assets/images/user-cartoon-pic.png" alt="user image" /></span>
+              <span>Nafi'u Ishaq</span>
+            </div>
+            <span>fullstack@gmail.com</span>
+            <span>01 jan 2023</span>
+            <span class="greenActive">Active</span>
+            <span class="dots"><i class="fa-solid fa-circle"></i>
+              <i class="fa-solid fa-circle"></i>
+              <i class="fa-solid fa-circle"></i></span>
+          </div>
+
+          <div class="td">
+            <div class="fullstack">
+              <span class="userSpan"><img src="/assets/images/user-cartoon-pic.png" alt="user image" /></span>
+              <span>Nafi'u Ishaq</span>
+            </div>
+            <span>fullstack@gmail.com</span>
+            <span>01 jan 2023</span>
+            <span class="greenActive">Active</span>
+            <span class="dots"><i class="fa-solid fa-circle"></i>
+              <i class="fa-solid fa-circle"></i>
+              <i class="fa-solid fa-circle"></i></span>
+          </div>
+        </a>
+
+        <div class="footers">
+          <div class="pagesNumber">
+            <i class="fa-duotone fa-solid fa-angle-left"></i>
+            <span class="pageActive">1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>.</span>
+            <span>.</span>
+            <span>6</span>
+            <i class="fa-duotone fa-solid fa-angle-right"></i>
+          </div>
+
+          <div class="viewedPages">
+            <div class="itemsPerPage">
+              <p>Views</p>
+              <span class="numberBox">
+                <p>15</p>
+                <i class="fa-duotone fa-solid fa-angle-down"></i>
+              </span>
+              <p>items per page</p>
             </div>
 
-            <div class="td">
-              <div class="fullstack">
-                <span class="userSpan"
-                  ><img
-                    src="/assets/images/user-cartoon-pic.png"
-                    alt="user image"
-                /></span>
-                <span>Nafi'u Ishaq</span>
-              </div>
-              <span>fullstack@gmail.com</span>
-              <span>01 jan 2023</span>
-              <span class="greenActive">Active</span>
-              <span class="dots"
-                ><i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle"></i
-              ></span>
-            </div>
-
-            <div class="td">
-              <div class="fullstack">
-                <span
-                  ><img
-                    src="/assets/images/user-cartoon-pic.png"
-                    alt="user image"
-                /></span>
-                <span>Nafi'u Ishaq</span>
-              </div>
-              <span>fullstack@gmail.com</span>
-              <span>01 jan 2023</span>
-              <span class="greenActive">Active</span>
-              <span class="dots"
-                ><i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle"></i
-              ></span>
-            </div>
-
-            <div class="td">
-              <div class="fullstack">
-                <span class="userSpan"
-                  ><img
-                    src="/assets/images/user-cartoon-pic.png"
-                    alt="user image"
-                /></span>
-                <span>Nafi'u Ishaq</span>
-              </div>
-              <span>fullstack@gmail.com</span>
-              <span>01 jan 2023</span>
-              <span class="greenActive">Active</span>
-              <span class="dots"
-                ><i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle"></i
-              ></span>
-            </div>
-          </a>
-
-          <div class="footers">
-            <div class="pagesNumber">
-              <i class="fa-duotone fa-solid fa-angle-left"></i>
-              <span class="pageActive">1</span>
-              <span>2</span>
-              <span>3</span>
-              <span>.</span>
-              <span>.</span>
-              <span>6</span>
-              <i class="fa-duotone fa-solid fa-angle-right"></i>
-            </div>
-
-            <div class="viewedPages">
-              <div class="itemsPerPage">
-                <p>Views</p>
-                <span class="numberBox">
-                  <p>15</p>
-                  <i class="fa-duotone fa-solid fa-angle-down"></i>
-                </span>
-                <p>items per page</p>
-              </div>
-
-              <div class="entriesNumber">
-                <p>1 - 5 of 15 Entries</p>
-              </div>
+            <div class="entriesNumber">
+              <p>1 - 5 of 15 Entries</p>
             </div>
           </div>
         </div>
       </div>
-    </main>
-  </body>
+    </div>
+  </main>
+</body>
+
 </html>
