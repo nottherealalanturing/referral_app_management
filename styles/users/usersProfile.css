@@ -29,13 +29,14 @@
 }
 
 .userProfileDiv .profileImage {
-    padding: 1.25rem 2.5rem;
+    padding: 1.25rem 3.125rem;
     border-right: 1px solid #f3f5f6;
 }
 
 .profileImage p {
     font-size: 1rem;
-    font-weight: 800;
+    padding: .625rem;
+    font-weight: 700;
     color: #353535;
     text-align: center;
 }
@@ -62,7 +63,8 @@
 
 .detailsChild .users-status {
     display: none;
-    color: #128c7e;
+    color: #c61531;
+    font-weight: 800;
 }
 
 .profileDetails .row1 label {
@@ -146,7 +148,6 @@
     border: none;
     color: #fff;
     cursor: pointer;
-    font-weight: 700;
     background: #c61531;
     padding: .625rem 3.75rem;
     border-radius: 0.3125rem;
@@ -163,7 +164,7 @@
     font-weight: 700;
     color: #ff6600;
     background: #fff;
-    padding: 0rem 3.125rem;
+    padding: .3125rem 3.125rem;
     border-radius: 0.3125rem;
     font-family: "Mulish", sans-serif;
     p{
@@ -183,7 +184,7 @@
     cursor: pointer;
     font-weight: 700;
     background: #ff6600;
-    padding: 0rem 3.125rem;
+    padding: .3125rem 3.125rem;
     border-radius: 0.3125rem;
     font-family: "Mulish", sans-serif;
 
@@ -198,6 +199,7 @@
     
     p{
         color:#ff6600;
+        font-weight: 800;
         border-bottom: 3px solid #ff6600;
     }
 }
@@ -240,7 +242,7 @@
 }
 
 .chatSection {
-    margin-top: 5%;
+    display: none;
     background: #fff;
     padding-bottom: 20px;
     padding: 0.625rem 1.875rem;
@@ -363,13 +365,12 @@
     height: 100vh;
     display: flex;
     position: fixed;
-    /* visibility: hidden; */
+    visibility: hidden;
     align-items: center;
     justify-content: center;
     background: rgba(0, 0, 0, 0.5);
-    transition: visibility 0s, opacity 0, 5s;
-}
-
+    transition: visibility 0s opacity 0,5s;
+} 
 .bg-active{
     visibility: visible;
     opacity: 1;
@@ -380,17 +381,19 @@
     background: #fff;
     width: 30%;
     height: 30%;
+
 }
 
 .modal p {
-    font-weight: 700;
+    font-weight: 800;
+    text-align: center;
     font-size: 1.125rem;
 }
 
 .modal-links {
     gap: 1.25rem;
     display: flex;
-    padding-top: 1.25rem;
+    margin-top: 5rem;
     justify-content: center;
 }
 
