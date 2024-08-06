@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/admin.css" />
+  </head>
+  <body>
+    <div class="page-header">
+      <h3>Admins</h3>
+      <button type="button">
+        <i class="fa-solid fa-plus"></i>
+        <span>Create new admin</span>
+      </button>
+    </div>
+
+    <div class="search-card">
+      <div class="search-wrapper">
+        <div class="dropdown-search-container">
+          <div class="dropdown-container">
+            <p>Search By:</p>
+            <div class="search-dropdown">
+              <button class="search-dropbtn">
+                <span class="text"> - - - </span>
+              </button>
+              <div class="search-dropdown-content">
+                <a href="#"> Name</a>
+                <a href="#"> Email</a>
+                <a href="#"> Business Name</a>
+                <a href="#"> Date Added</a>
+                <a href="#"> Status</a>
+              </div>
+            </div>
+            <i class="fa-solid fa-caret-down"></i>
+          </div>
+          <div class="search-box-container">
+            <i class="fa-solid fa-search"></i>
+            <input type="text" name="" id="search" />
+          </div>
+        </div>
+        <button type="button">Find</button>
+      </div>
+    </div>
+
+    <div class="tabs-container">
+      <div class="tab-buttons">
+        <button class="all">All</button>
+        <button class="active">Active</button>
+        <button class="inactive">Inactive</button>
+      </div>
+      <div class="tab-content">
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Business Name</th>
+              <th>Date Added</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <img src="https://i.pravatar.cc/400?img=69" alt="User Image" />
+              </td>
+              <td>Nurudeen Ibrahim</td>
+              <td>thenuruddeen@gmail.com</td>
+              <td>First Bank</td>
+              <td>01 Jan 2023</td>
+              <td><span class="tag active">Active</span></td>
+              <td>
+                <a href="#" class="edit-btn">
+                  <i class="fa-solid fa-ellipsis"></i>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="https://i.pravatar.cc/400?img=69" alt="User Image" />
+              </td>
+              <td>Nurudeen Ibrahim</td>
+              <td>thenuruddeen@gmail.com</td>
+              <td>First Bank</td>
+              <td>01 Jan 2023</td>
+              <td><span class="tag inactive">Active</span></td>
+              <td>
+                <a href="#" class="edit-btn">
+                  <i class="fa-solid fa-ellipsis"></i>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="https://i.pravatar.cc/400?img=69" alt="User Image" />
+              </td>
+              <td>Nurudeen Ibrahim</td>
+              <td>thenuruddeen@gmail.com</td>
+              <td>First Bank</td>
+              <td>01 Jan 2023</td>
+              <td><span class="tag active">Active</span></td>
+              <td>
+                <a href="#" class="edit-btn">
+                  <i class="fa-solid fa-ellipsis"></i>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="https://i.pravatar.cc/400?img=69" alt="User Image" />
+              </td>
+              <td>Nurudeen Ibrahim</td>
+              <td>thenuruddeen@gmail.com</td>
+              <td>First Bank</td>
+              <td>01 Jan 2023</td>
+              <td><span class="tag active">Active</span></td>
+              <td>
+                <a href="#" class="edit-btn">
+                  <i class="fa-solid fa-ellipsis"></i>
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="footer">
+          <div class="pagination">
+            <a href="#" class="prev disabled"
+              ><i class="fa-solid fa-angle-left"></i
+            ></a>
+            <a href="#" class="page">1</a>
+            <a href="#" class="active">2</a>
+            <a href="#" class="page">3</a>
+            <a href="#" class="next"><i class="fa-solid fa-angle-right"></i></a>
+          </div>
+          <div class="records">
+            <div class="views">
+              <p>Views</p>
+              <select name="" id="">
+                <option value="10">10</option>
+                <option value="10">20</option>
+                <option value="10">50</option>
+              </select>
+              <p>items per page</p>
+            </div>
+            <div class="entries">
+              <p>
+                <span class="start">1</span> - <span class="end">15</span> of
+                <span class="total">15</span>
+                Entries
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
