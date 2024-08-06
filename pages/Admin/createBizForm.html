@@ -31,7 +31,6 @@
       min-height: 100vh;
       width: 100%;
     }
-
     .main-content {
       flex-grow: 1;
       padding: 20px;
@@ -65,7 +64,11 @@
 
     .form-container {
       background-color: white;
-      padding: 20px;
+      padding: 50px;
+      /* display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; */
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
@@ -119,15 +122,14 @@
       font-family: mysecFont;
     }
 
-    .form-group input[type='text'],
-    .form-group input[type='email'] {
+    .form-group input[type="text"],
+    .form-group input[type="email"] {
       width: 100%;
       height: 49px;
       border-radius: 15px;
       padding: 10px;
       border: 1px solid #ccc;
       color: #7f8b94;
-      border-radius: 4px;
     }
     .check {
       width: 108px;
@@ -181,7 +183,7 @@
       color: #142e65;
     }
 
-    .form-group input[type='color'] {
+    .form-group input[type="color"] {
       padding: 5px;
     }
 
@@ -195,7 +197,6 @@
       padding: 10px 20px;
       border-radius: 5px;
       cursor: pointer;
-      text-decoration: none;
     }
 
     .form-actions .btn-back {
@@ -251,17 +252,23 @@
         flex-direction: column;
         gap: 10px;
       }
+      /* #submit-btn{
+        margin-left: 7px;
+      } */
     }
   </style>
   <body>
     <div class="container">
       <div class="main-content">
         <div class="form-container">
+            <!-- Section for the header section of the form -->
           <div class="head">
             <h1>Create Business</h1>
             <p>Please provide the information below</p>
             <img src="/assets/images/progress-bar.svg" />
           </div>
+
+          <!-- Section for Form -->
           <form>
             <div class="form-row">
               <div class="form-group">
@@ -319,19 +326,31 @@
               </div>
             </div>
             <div class="form-actions">
-              <a
-                href="#dashboard"
-                data-url="/pages/dashboard.html"
-                class="btn-back internal-link"
-              >
-                Back</a
-              >
-
-              <button type="submit" class="btn-submit">Create Business</button>
+              <button type="button" class="btn-back">Back</button>
+              <button type="submit" class="btn-submit" id="submit-btn">Create Business</button>
             </div>
           </form>
+          <!-- Structure for Modal -->
+          <div id="modal" class="modal">
+            <div class="modal-content">
+              <h2>Business Created<br/> Successfully</h2>
+              <div class="checkmark">
+                <img src="/assets/images/check.svg"/>
+              </div>
+              <button id="viewButton" class="view-button">View</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+        <script>
+            const generateModal = document.getElementById("submit-btn");
+
+            generateModal.addEventListener("click", function (e) {
+            e.preventDefault();
+            modal.style.display = "flex";
+        });
+        </script>
+
   </body>
 </html>
