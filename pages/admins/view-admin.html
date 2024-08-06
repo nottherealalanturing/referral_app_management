@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="/styles/admin.css" />
+
+    <!-- fixme - remove after use -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css">
+
+</head>
+
+<body>
+    <div class="page-header">
+        <h3>Admin's Profile</h3>
+        <a data-url="/pages/admins/create-admin.html" href="#create-admin" class="internal-link">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span>Back to Admins</span>
+        </a>
+    </div>
+
+    <div class="bio-card">
+        <div class="left">
+            <img src="/assets/images/user-cartoon-bigPicture.svg" alt="profile Image" />
+            <h3>Nurudeen Ibrahim</h3>
+        </div>
+        <div class="right">
+            <div class="first-part">
+                <div class="data-row">
+                    <div class="data-block">
+                        <label for="name">Name</label>
+                        <p>Lanre Oseni</p>
+                    </div>
+                    <div class="data-block">
+                        <label for="name">Business Name</label>
+                        <p>First Bank</p>
+                    </div>
+                    <div class="data-block">
+                        <label for="name">Date Added</label>
+                        <p>04 Jan 2023</p>
+                    </div>
+                </div>
+                <div class="data-row">
+                    <div class="data-block">
+                        <label for="name">Email Address</label>
+                        <p>thedeen@gmail.com</p>
+                    </div>
+                    <div class="data-block">
+                        <label for="name">Status</label>
+                        <p class="status">Active</p>
+                    </div>
+                </div>
+                <div class="data-row">
+                    <a href="#" class="">Edit</a>
+                    <a href="" class="" id="show-modal">Start a Chat</a>
+                </div>
+            </div>
+            <div class="second-part">
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="tabs-container">
+        <div class="tab-buttons">
+            <button class="all">Activity</button>
+            <button class="active">Chats</button>
+            <button class="inactive">Inactive</button>
+        </div>
+        <div class="tab-content">
+            <div class="activities" id="activities">
+                <p>Activity Summary Today</p>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td> <i class="fa-solid fa-circle"></i>
+                                Nurudeen would like to update his email address
+                            </td>
+                            <td>9:36am</td>
+                        </tr>
+                        <tr>
+                            <td> <i class="fa-solid fa-circle"></i>
+                                Nurudeen replied to your chat
+                            </td>
+                            <td><button type="button" class="view-btn">View</button></td>
+                        </tr>
+                        <tr>
+                            <td> <i class="fa-solid fa-circle"></i>
+                                Nurudeen would like to update his first name
+                            </td>
+                            <td>9:36am</td>
+                        </tr>
+                        <tr>
+                            <td> <i class="fa-solid fa-circle"></i>
+                                Nurudeen would like to update his email address
+                            </td>
+                            <td>9:36am</td>
+                        </tr>
+                        <tr>
+                            <td> <i class="fa-solid fa-circle"></i>
+                                Nurudeen would like to update his email address
+                            </td>
+                            <td>9:36am</td>
+                        </tr>
+                        <tr>
+                            <td> <i class="fa-solid fa-circle"></i>
+                                Nurudeen would like to update his email address
+                            </td>
+                            <td>9:36am</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="chats" class="chats">
+                <div class="messages">
+                    <div class="message left-message">
+                        <p class="message-time">04 Jan 2023 | 12:02pm</p>
+                        <div class="message-block">
+                            <img src="/assets/images/user-cartoon-bigPicture.svg" alt="profile Image" />
+                            <div class="message-text">
+                                <p>Hello, I would like to update my email address please</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message left-message">
+                        <p class="message-time">04 Jan 2023 | 12:02pm</p>
+                        <div class="message-block">
+                            <div class="message-text">
+                                <p>Alright please hold on</p>
+                            </div>
+                            <img src="/assets/images/customer-care-pics.svg" alt="profile Image" />
+                        </div>
+                    </div>
+                    <div class="message left-message">
+                        <p class="message-time">04 Jan 2023 | 12:02pm</p>
+                        <div class="message-block">
+                            <img src="/assets/images/user-cartoon-bigPicture.svg" alt="profile Image" />
+                            <div class="message-text">
+                                <p>Thank you very much.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="send-message">
+                    <span>🙂</span>
+                    <i class="fa-regular fa-square-plus"></i>
+                    <input type="text" placeholder="Say Something">
+                    <i class="fa-light fa-microphone"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
