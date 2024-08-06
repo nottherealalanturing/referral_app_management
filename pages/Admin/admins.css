@@ -106,7 +106,9 @@ body {
     font-family: myFont;
 }
 .stat-all{
-    background-color: #7A7C87;
+    background-image: url(/assets/images/blob-scene-haikei.svg);
+    background-size: cover;
+    /* background-color: #7A7C87; */
     color:#F3F5F6;
 }
 .stat-reg{
