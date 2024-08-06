@@ -1,18 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
 
 .usersProfile {
-    padding: 1.25rem;
     background: rgb(240, 242, 250);
     font-family: "Mulish", sans-serif;
 }
 
 .usersHeaderDiv {
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
 .usersHeaderDiv h3 {
     color: #353535;
+    font-size: 1.25rem;
+    font-weight: 700;
 }
 
 .usersHeaderDiv a {
@@ -47,14 +49,14 @@
 
 .profileDetails .row1 {
     display: flex;
-    padding: 1.25rem 1.875rem;
-    justify-content: space-between;
+    padding: 1.25rem ;
     border-bottom: 1px solid #f3f5f6;
 }
 
 .detailsChild {
     gap: 10rem;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .detailsChild .business-name {
@@ -237,7 +239,7 @@
     color: #fff;
     cursor: pointer;
     background: #ff7a00;
-    padding: 0rem 1.5625rem;
+    padding: 5px 1.5625rem;
     border-radius: 0.3125rem;
 }
 
@@ -409,4 +411,103 @@
     text-decoration: none;
     background: #c61531;
     padding: 0.5rem 1.6rem;
+}
+
+@media screen and (max-width:767px){
+
+    .userProfileDiv{
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+
+    .userProfileDiv .profileImage{
+        margin: auto;
+        border-right: none;
+    }
+
+    .profileImage p {
+        font-size: 14px;
+    }   
+    .profileDetails .row1,
+    .profileDetails .row2{
+        padding: 10px ;
+    }
+
+    .profileDetails .row3{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .row3 .usersEdit,
+    .row3 .usersStart-chat{
+        padding:8px 40px ;
+    }
+
+    .row3 .row3-left{
+        display: flex;
+        gap: 10px;
+    }
+
+    .usersProfile-activity{
+        margin-top: 15%;
+    }
+
+    .activityBtn,
+    .chatsBtn{
+        padding:2px 40px ;
+    }
+
+    .activity-td,
+    .activity-th{
+        padding:5px 20px ;
+    }
+
+.chatSection{
+    padding: 5px;
+}
+
+.chatSection .user {
+    gap:5px ;
+}
+
+.user{
+    margin-top: 10%;
+}
+.user .userChat{
+    width: 150px;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 10px 16px;
+}
+
+.user small{
+    left: 50%;
+    top: -0.9375rem;
+}
+
+.customerCare-bg{
+    gap: 20px;
+}
+.customerCare small{
+   right: 50%;
+   top:40px ;
+}
+
+.customerChat{
+    padding: 10px 1rem;
+    font-size: .8125rem;
+}
+
+    .modal{
+        width: 50%;
+        height: 30%;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    .row3 .row3-left{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
 }

@@ -582,8 +582,8 @@
 }
 
 .contents {
-  background: #fff;
   padding: 1.875rem;
+  background-color: #fff;
 }
 
 .contents a {

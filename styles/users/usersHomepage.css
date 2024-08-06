@@ -6,7 +6,6 @@
   font-family: "Mulish", sans-serif;
 }
 .userHomepage {
-  padding: 2.5rem;
   background: rgb(240, 242, 250);
   font-family: "Mulish", sans-serif;
 }
@@ -17,8 +16,9 @@
 }
 
 .headerDiv h3 {
-  font-size: 1.5625rem;
-  color: rgb(126, 127, 128);
+  color: #353535;
+  font-size: 1.25rem;
+  font-weight: 700;
 }
 
 .headerDiv button {
@@ -37,6 +37,11 @@
     font-weight: 900;
     font-size: 0.9375rem;
     margin-right: 0.625rem;
+  }
+
+  a{
+    text-decoration: none;
+    color: #fff;
   }
 }
 
@@ -134,8 +139,8 @@
 }
 
 .contents {
-  background: #fff;
   padding: 1.875rem;
+  background: #fff;
 }
 
 .contents a {
@@ -228,18 +233,89 @@
     width: 100%;
     padding: 1.25rem;
   }
-  .inputDiv {
-    width: 100px;
+
+  .headerDiv h3,
+  .headerDiv button,
+  .headerDiv button .fa-plus{
+    font-size:16px ;
   }
+  .headerDiv button{
+    padding:7px ;
+    width:185px ;
+  }
+
+  .searchDiv{
+    padding: 15px;
+    margin-top: 7%;
+  }
+  .childDiv{
+    padding:15px ;
+  }
+  .search{
+    padding:5px ;
+    text-align: center;
+  }
+
   .searchInput {
     flex: 1;
-    width: 100px;
-    display: flex;
     flex-wrap: wrap;
+  }
+
+  .findBtn{
+    display: none;
+  }
+  .allBtn,
+  .activeBtn,
+  .inActiveBtn{
+    padding:6px 18px ;
+    font-size: 14px;
+  }
+
+  .contentDiv{
+    margin-top: 12%;
+  }
+  .contents{
+    padding:20px ;
+  }
+  .contents .th,
+  .contents .td{
+    font-size: 15px;
+    padding: 5px;
+  }
+
+  .td .fullstack{
+    gap: 10px;
+  }
+  .td .greenActive{
+    width:70px;
+  }
+
+  .none{
+    display: none;
+  }
+
+  .footers .pagesNumber{
+    gap: 3px;
+  }
+  .viewedPages{
+    gap:10px ;
+  }
+  .entriesNumber{
+    display: none;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
+    main{
+      padding: 20px;
+    }
+    .contents .th{
+      font-size: .875rem;
+      padding: 0rem;
+    }
+    .td .fullstack{
+      gap:20px ;
+    }
 }
 
 @media  screen and (max-width:1200px) {
