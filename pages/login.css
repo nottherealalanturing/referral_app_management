@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f2fa;
+    width: 100%;
+    font-family: ;
+}
+
+.wrapper {
+    width: 60%;
+    margin: 80px auto;
+    background-color: #fff;
+}
+
+.section {
+    width: 100%;
+    height: 2.125rem;
+    background-color: #ff7a00;
+}
+
+form {
+    width: 60%;
+    margin: 50px auto;
+    /* border: 2px solid green; */
+}
+
+header hgroup {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+header hgroup h5 {
+    padding: 7px 0;
+}
+
+.input-group .input-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    margin: 10px 0;
+    border: none;
+    background-color: #f0f2fa;
+}
+
+.input-group .input-box input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 0 30px;
+    background-color: #f0f2fa;
+}
+
+.input-group img {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    margin-right: 20px;
+}
+
+.reset-password {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.reset-password input {
+    margin-right: .625rem;
+}
+
+.reset-password a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #000;
+}
+
+.btn {
+    width: 100%;
+    padding: 20px 6.25rem;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 1.875rem;
+    background-color: #ff7a00;
+}
+
+.btn a {
+    text-decoration: none;
+    color: #fff;
+}
