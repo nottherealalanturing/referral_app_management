@@ -451,6 +451,7 @@ div.bio-card {
     div.right {
         flex: 1;
         display: flex;
+        align-items: flex-start;
         padding-right: 20px;
 
         div.first-part {
@@ -542,19 +543,17 @@ div.bio-card {
 }
 
 div.tabs-container {
+    margin-bottom: 50px;
     div.tab-buttons {
         button {
             padding: 10px 40px;
-        }
-
-        button.activity {
-            background: var(--primary-white);
-            color: var(--primary-orange);
-        }
-
-        button.chats {
             background: var(--primary-orange);
             color: var(--primary-white);
+        }
+
+        button.active {
+            background: var(--primary-white);
+            color: var(--primary-orange);
         }
     }
 
@@ -624,12 +623,12 @@ div.tabs-container {
         }
 
         div.chats {
+            display: none;
             padding: 30px;
 
             div.messages {
                 overflow-y: scroll;
                 height: 300px;
-                /* padding-bottom: 50px; */
                 padding: 30px;
 
                 div.message {
@@ -663,16 +662,11 @@ div.tabs-container {
                     }
                 }
 
-                div.left-message,
-                div.right-message {
-                    div.message-block {
-                        div.message-text {
-                            width: 70%;
-                        }
-                    }
-                }
-
                 div.left-message {
+                    p.message-time {
+                        text-align: right;
+                    }
+
                     div.message-block {
                         div.message-text {
                             background: #F3F5F6;
@@ -726,12 +720,16 @@ div.tabs-container {
                 }
             }
         }
+
+        div.active {
+            display: block;
+        }
     }
 }
 
 @media (max-width: 992px) {}
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     div.page-header {
         button {
             span {
@@ -796,6 +794,12 @@ div.tabs-container {
                 }
             }
         }
+    }
+
+    /* view admin */
+    div.bio-card {
+        flex-direction: column;
+        div.left {border: none;}
     }
 }
 
