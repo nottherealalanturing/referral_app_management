@@ -1,11 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>business</title>
-  </head>
-  <body>
-    business
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business</title>
+  <link rel="stylesheet" href="../styles/business.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css">
+</head>
+<body>
+  <main class="business-main-container">
+    <!-- the header -->
+    <section class="business-header">
+      <p>Business List</p>
+        <a href="#createBizForm" data-url="/pages/dashboard/createBizForm.html" class="internal-link abtn"> <i class="fa-solid fa-plus"></i> &nbsp; New Business</a>
+    </section>
+    <!-- the container containing search and input and button -->
+     <!-- the section carrys the white background -->
+    <section class="seek-search-find-container">
+      <!-- the div carrying the border -->
+      <div class="seek-find-div">
+        <!-- this is the form contanier -->
+        <form action="" class="form-contanier">
+          <!-- this is the container for select and search cont -->
+          <div class="select-search-div">
+            <!-- select div -->
+              <div class="custom-select-wrapper">
+                  <select name="" id="" class="custom-select">
+                    <option value="SearchName">Search By: Name</option>
+                    <option value="SearchDate">Search By: Date</option>
+                  </select>
+              </div>
+              <!-- search select -->
+              <div class="filters-search-container"> 
+                <i class="fa-sharp fa-thin fa-magnifying-glass"></i>
+                <input type="search"/>
+              </div>
+          </div>
+          <!-- button -->
+          <button class=" btn">Find</button>
+          <!-- <div class="formBtn">
+          </div> -->
+        </form>
+      </div>
+    </section>
+    <!--  -->
+    <section class="businesslist">
+      <!-- container consiting of a element on the table -->
+      <div class="buttonDiv">
+        <a href="#" class="all">All</a>
+        <a href="#" class="active">Active</a>
+        <a href="#" class="inactive">Inactive</a>
+      </div>
+      <!-- container consiting of tthe table and the pagination -->
+      <div class="table-pagination-container">
+        <!-- table tpc-table(table-pagination-container-table) -->
+        <table class="tpc-table">
+          <thead>
+            <tr>
+              <th>
+                <div class="th-flex">
+                  <p>Name</p>
+                  <img src="../assets/images/businessimg/arrrowControl.png" alt="arrow">
+                </div>
+              </th>
+              <th class="col-none">
+                <div class="th-flex ">
+                  <p>Date Registered</p>
+                  <img src="../assets/images/businessimg/arrrowControl.png" alt="arrow">
+                </div>
+              </th>
+              <th>
+                <div class="th-flex">
+                  <p>Admin</p>
+                  <img src="../assets/images/businessimg/arrrowControl.png" alt="arrow">
+                </div>
+              </th>
+              <th>
+                <div class="th-flex">
+                  <p>Status</p>
+                  <img src="../assets/images/businessimg/arrrowControl.png" alt="arrow">
+                </div>
+              </th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- table content 1 -->
+            <tr>
+              <td class="td-border-rightnone">
+                <a href="#businessProfile" data-url="./business/businessProfile.html" class="internal-link">
+                  <div class="td-flex">
+                    <img src="../assets/images/businessimg/businessUserProfilePic.png" alt="">
+                    <p>First Bank</p>
+                  </div>
+                </a>
+              </td>
+              <td class="td-border-none-2 col-none">
+                <a href="#businessProfile" data-url="./business/businessProfile.html" class="internal-link">
+                  20 Feb 2023
+                </a>
+              </td>
+              <td class="td-border-none-2">
+                <a href="#businessProfile" data-url="./business/businessProfile.html" class="internal-link">
+                  Adesanya Samuel
+                </a>
+              </td>
+              <td class="td-border-none-2">
+                <a href="#businessProfile" data-url="./business/businessProfile.html" class="internal-link">
+                  <span class="tbactive">Active</span>
+                </a>
+              </td>
+              <td class="td-border-leftnone">
+                <a href="#businessProfile" data-url="./business/businessProfile.html" class="internal-link">
+                  <img src="../assets/images/businessimg/dot.png" alt="">
+                </a>
+              </td>
+            </tr>
+             <!-- table content 2 -->
+            <tr>
+              <td class="td-border-rightnone">
+                <a href="#businessProfile" data-url="./business/businessProfile.html" class="internal-link">
+                  <div class="td-flex">
+                    <img src="../assets/images/businessimg/businessUserProfilePic.png" alt="">
+                    <p>First Bank</p>
+                  </div>
+                </a>
+              </td>
+              <td class="td-border-none-2 col-none">
+                <a href="#businessProfile" data-url="./business/businessProfile.html" class="internal-link">
+                  20 Feb 2023
+                </a>
+              </td>
+              <td class="td-border-none-2">
+                <a href="#businessProfile" data-url="./business/businessProfile.html" class="internal-link">
+                  Adesanya Samuel
+                </a>
+              </td>
+              <td class="td-border-none-2">
+                <a href="#businessProfile" data-url="./business/businessProfile.html" class="internal-link">
+                  <span class="tbinactive">Inactive</span>
+                </a>
+              </td>
+              <td class="td-border-leftnone">
+                <a href="#businessProfile" data-url="./business/businessProfile.html" class="internal-link">
+                  <img src="../assets/images/businessimg/dot.png" alt="">
+                </a>
+              </td>
+            </tr>
+             <!-- table content 3 -->
+            <tr>
+              <td class="td-border-rightnone">
+                <a href="#businessProfile" data-url="./business/businessProfile.html" class="internal-link">
+                  <div class="td-flex">
+                    <img src="../assets/images/businessimg/businessUserProfilePic.png" alt="">
+                    <p>First Bank</p>
+                  </div>
+                </a>
+              </td>
+              <td class="td-border-none-2 col-none">
+                <a href="#businessProfile" data-url="./business/businessProfile.html" class="internal-link">
+                  20 Feb 2023
+                </a>
+              </td>
+              <td class="td-border-none-2">
+                <a href="#businessProfile" data-url="./business/businessProfile.html" class="internal-link">
+                  Adesanya Samuel
+                </a>
+              </td>
+              <td class="td-border-none-2">
+                <a href="#businessProfile" data-url="./business/businessProfile.html" class="internal-link">
+                  <span class="tbactive">Active</span>
+                </a>
+              </td>
+              <td class="td-border-leftnone">
+                <a href="#businessProfile" data-url="./business/businessProfile.html" class="internal-link">
+                  <img src="../assets/images/businessimg/dot.png" alt="">
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- pagination container: consist of everything in the footer  -->
+        <div class="pagination-cont">
+          <!-- pagination -->
+          <div class="pagination">
+            <a href="#" class="disabled pag-border"><i class='bx bx-chevron-left'></i></a>
+            <a href="#" class="pag-active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#"><span>..</span></a>
+            <a href="#">6</a>
+            <a href="#" class="pag-active pag-border"><i class='bx bx-chevron-right'></i></a>
+          </div>
+          <!-- the Entries and view items per page  -->
+          <div class="pagination-select-cont">
+            <!-- the view select items per page -->
+            <div class="pagination-select">
+              <span>Views</span>
+              <select name="" id="">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15" selected>15</option>
+              </select>
+              <span>items per page</span>
+            </div>
+            <!-- Entries per page -->
+            <span>1 - 15 of 15 Entries</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
 </html>

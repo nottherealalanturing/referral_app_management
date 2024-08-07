@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+.userHomepage {
+  background: rgb(240, 242, 250);
+  font-family: "Mulish", sans-serif;
+}
+
+.headerDiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerDiv h3 {
+  color: #353535;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.headerDiv button {
+  border: none;
+  color: #fff;
+  width: 12.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.75rem;
+  background: #ff7a00;
+  border-radius: 0.3125rem;
+
+  .fa-plus {
+    color: #fff;
+    font-weight: 900;
+    font-size: 0.9375rem;
+    margin-right: 0.625rem;
+  }
+
+  a{
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+.searchDiv {
+  margin-top: 3%;
+  background: #fff;
+  padding: 1.5625rem;
+}
+.childDiv {
+  gap: 2rem;
+  display: flex;
+  padding: 1.5625rem;
+  border-radius: 0.3125rem;
+  border: 0.0594rem solid #e5e5e5;
+}
+
+.searchInput {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+}
+.search {
+  padding: 0.5rem;
+  width: 9.375rem;
+  font-size: 0.75rem;
+  border: 1px solid #e5e5e5;
+  background: rgb(243, 245, 246);
+
+  .fa-circle-caret-down {
+    margin-left: 0.625rem;
+  }
+}
+.inputDiv {
+  flex: 1;
+  display: flex;
+  border-left: none;
+  border: 1px solid #e5e5e5;
+}
+.inputDiv input {
+  flex: 1;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+.findBtn button {
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  width: 9.375rem;
+  padding: 0.7rem;
+  font-weight: 600;
+  font-size: 0.75rem;
+  background: #ff7a00;
+  border-radius: 0.3125rem;
+}
+
+.contentDiv {
+  margin-top: 3%;
+}
+
+.allBtn {
+  border: none;
+  color: black;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+  background: #fff;
+  border-radius: 0.125rem;
+  padding: 0.625rem 1.5625rem;
+
+  p {
+    border-bottom: 0.1875rem solid #142e65;
+  }
+}
+.activeBtn {
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+  background: #00b388;
+  border-radius: 0.125rem;
+  padding: 0.625rem 1.5625rem;
+}
+.inActiveBtn {
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 700;
+  background: #c61531;
+  border-radius: 0.125rem;
+  padding: 0.625rem 1.5625rem;
+}
+
+.contents {
+  padding: 1.875rem;
+  background: #fff;
+}
+
+.contents a {
+  color: #353535;
+  text-decoration: none;
+}
+
+.contents .th {
+  display: flex;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 0.625rem;
+  justify-content: space-around;
+}
+
+.contents .td {
+  display: flex;
+  margin-top: 1%;
+  cursor: pointer;
+  padding: 0.625rem;
+  font-size: 0.75rem;
+  align-items: center;
+  border: 1px solid #e5e5e5;
+  justify-content: space-around;
+}
+.td .fullstack {
+  gap: 4.375rem;
+  display: flex;
+  align-items: center;
+}
+
+.td .greenActive {
+  color: #fff;
+  width: 5.625rem;
+  cursor: pointer;
+  font-weight: 700;
+  border: 1px solid;
+  padding: 0.3125rem;
+  text-align: center;
+  height: fit-content;
+  background: #00b388;
+  border-radius: 0.5rem;
+}
+
+.td .dots {
+  color: black;
+  font-size: 0.3125rem;
+}
+
+.footers {
+  display: flex;
+  margin-top: 12%;
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.footers .pagesNumber {
+  display: flex;
+  gap: 0.4375rem;
+  cursor: pointer;
+  align-items: center;
+}
+.footers .pagesNumber .pageActive {
+  font-weight: 800;
+}
+
+.viewedPages {
+  display: flex;
+  gap: 1.875rem;
+  text-align: center;
+}
+
+.viewedPages .itemsPerPage {
+  gap: 0.625rem;
+  display: flex;
+}
+.itemsPerPage .numberBox {
+  gap: 0.75rem;
+  display: flex;
+  cursor: pointer;
+  width: 3.125rem;
+  border: 1px solid #b1b1b1;
+}
+
+@media screen and (max-width: 767px) {
+  main {
+    width: 100%;
+    padding: 1.25rem;
+  }
+
+  .headerDiv h3,
+  .headerDiv button,
+  .headerDiv button .fa-plus{
+    font-size:16px ;
+  }
+  .headerDiv button{
+    padding:7px ;
+    width:185px ;
+  }
+
+  .searchDiv{
+    padding: 15px;
+    margin-top: 7%;
+  }
+  .childDiv{
+    padding:15px ;
+  }
+  .search{
+    padding:5px ;
+    text-align: center;
+  }
+
+  .searchInput {
+    flex: 1;
+    flex-wrap: wrap;
+  }
+
+  .findBtn{
+    display: none;
+  }
+  .allBtn,
+  .activeBtn,
+  .inActiveBtn{
+    padding:6px 18px ;
+    font-size: 14px;
+  }
+
+  .contentDiv{
+    margin-top: 12%;
+  }
+  .contents{
+    padding:20px ;
+  }
+  .contents .th,
+  .contents .td{
+    font-size: 15px;
+    padding: 5px;
+  }
+
+  .td .fullstack{
+    gap: 10px;
+  }
+  .td .greenActive{
+    width:70px;
+  }
+
+  .none{
+    display: none;
+  }
+
+  .footers .pagesNumber{
+    gap: 3px;
+  }
+  .viewedPages{
+    gap:10px ;
+  }
+  .entriesNumber{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    main{
+      padding: 20px;
+    }
+    .contents .th{
+      font-size: .875rem;
+      padding: 0rem;
+    }
+    .td .fullstack{
+      gap:20px ;
+    }
+}
+
+@media  screen and (max-width:1200px) {
+  html{
+    font-size: 20px;
+  }
+}
+
+@media  screen and (min-width:1500px) {
+  html{
+    font-size: 30px;
+  }
+}
+
+@media  screen and (min-width:2000px) {
+  html{
+    font-size: 40px;
+  }
+}
+
+
+
+
+
+.circular-std {
+  font-family: "Circular Std Medium", "Mulish", system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif, sans-serif;
+}

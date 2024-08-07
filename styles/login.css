@@ -14,13 +14,12 @@
 body {
     background-color: #f0f2fa;
     width: 100%;
-    font-family: 'MyCustomFont', sans-serif;
     /* overflow: hidden; */
 }
 
 .wrapper {
     width: 60%;
-    margin: 30px auto;
+    margin: 1.875rem auto;
     background-color: #fff;
     border-radius: 5px;
     position: relative;
@@ -37,7 +36,7 @@ body {
 form {
     width: 60%;
     margin: 0 auto;
-    padding: 50px 0;
+    padding: 3.125rem 0;
 }
 
 header hgroup {
@@ -103,7 +102,7 @@ header hgroup h5 {
 
 .btn {
     width: 100%;
-    padding: 19.2px 6.25rem;
+    padding: 1.2rem 6.25rem;
     border: none;
     outline: none;
     color: #fff;
@@ -124,23 +123,24 @@ header hgroup h5 {
     top: 5rem;
     right: 3.125rem;
     width: 4.375rem;
-    /* height: 3.75rem; */
 }
 
 @media (max-width: 640px) {
-    body {
-        font-size: 12px;
+    html {
+        font-size: 13px;
     }
 
     .logo {
         display: none;
     }
 
-    header hgroup h2 {
-        /* font-size: 3rem; */
-        text-align: center;
-        color: red;
-        padding-right: .5rem;
+    .btn {
+        padding: .625rem 3rem;
+    }
+
+    .reset-password {
+        gap: 2rem;
+        padding: 0;
     }
 
 }
