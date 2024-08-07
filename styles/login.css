@@ -130,6 +130,25 @@ header hgroup h5 {
         font-size: 13px;
     }
 
+    .wrapper {
+        width: 100%;
+        background-color: #fff;
+        border-radius: 5px;
+
+    }
+
+    header hgroup h5 {
+        padding: .4rem 0;
+        font-size: 1rem;
+        text-wrap: nowrap;
+    }
+
+    header hgroup h2 {
+        padding: .4rem 0;
+        font-size: 2.5rem;
+        text-wrap: nowrap;
+    }
+
     .logo {
         display: none;
     }
