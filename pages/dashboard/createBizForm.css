@@ -226,7 +226,7 @@ color: #142E65;
     background-color: #e76a00;
 }
  /* CSS for Modal */
-.modal {
+.model {
     display: none;
     justify-content: center;
     align-items: center;
@@ -240,7 +240,7 @@ color: #142E65;
     opacity: 0px;
 }
 
-.modal-content {
+.model-content {
     background: 
     #FFFFFF;
     color: #000000;

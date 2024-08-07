@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
-    <link rel="stylesheet" href="admins.css" />
   </head>
   <style>
     * {
@@ -31,22 +30,13 @@
       background-color: #f0f2fa;
     }
 
-    .sidebar {
+    /* .sidebar {
       background-color: #333;
       color: white;
       display: flex;
       flex-direction: column;
       width: 200px;
-    }
-
-    .sidebar-item {
-      padding: 20px;
-      cursor: pointer;
-    }
-
-    .sidebar-item.active {
-      background-color: #ff7b54;
-    }
+    } */
 
     .main-content {
       display: flex;
@@ -118,19 +108,24 @@
       font-family: myFont;
     }
     .stat-all {
-      background-color: #7a7c87;
+      /* background-color: #7a7c87; */
       color: #f3f5f6;
+      background-image: url(/assets/images/blob-scene-haikei.svg);
+      background-size: cover;
     }
     .stat-reg {
-      background-color: #0277e6;
+      background-image: url(/assets/images/blob-scene-haikei\ \(1\).svg);
+      background-size: cover;
       color: #f3f5f6;
     }
     .stat-act {
-      background-color: #06c194;
+      background-image: url(/assets/images/blob-scene-haikei\ \(2\).svg);
+      background-size: cover;
       color: #f3f5f6;
     }
     .stat-inac {
-      background-color: #ee5331;
+      background-image: url(/assets/images/blob-scene-haikei\ \(3\).svg);
+      background-size: cover;
       color: #f3f5f6;
     }
     #all {
@@ -292,14 +287,11 @@
     }
     /* CSS for responsiveness */
     @media (max-width: 576px) {
-      .sidebar {
-        width: 100px;
+      .headers{
+        flex-direction: column;
+        font-size: 15px;
+        gap: 10px;
       }
-
-      .sidebar-item {
-        padding: 10px;
-      }
-
       .new-business {
         padding: 5px 10px;
       }
@@ -311,7 +303,7 @@
       <!-- HTML Business Section -->
       <main class="main-content">
         <header class="headers">
-          <h1>Welcome, Deen 👋</h1>
+          <h1>Welcome, Deen <img src="/assets/images/Waving Hand Dark Skin Tone.svg" alt=""></h1>
           <a
             href="#createBizForm"
             data-url="/pages/dashboard/createBizForm.html"
@@ -324,6 +316,7 @@
             &nbsp;&nbsp;&nbsp;All Business<br /><span id="all">200</span>
           </div>
           <div class="stat-reg">
+            <div class="circle"></div>
             Registered Business<br /><span id="reg">150</span>
           </div>
           <div class="stat-act">
@@ -411,7 +404,7 @@
               <div class="activitySubH">
                 <p>Select View</p>
                 <img
-                  src="./images/Polygon copy.svg"
+                  src="/assets/images/Polygon (1).svg"
                   alt="poly"
                   width="7px"
                   height="4px"
