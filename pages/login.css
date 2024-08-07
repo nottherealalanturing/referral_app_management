@@ -5,16 +5,17 @@
 }
 
 @font-face {
-    font-family: 'MyCustomFont';
-    src: url('../assets/fonts/circular-std-medium-500.ttf') format('truetype');
+    font-family: 'Circular Std Medium';
+    src: url('/assets/fonts/circular-std-medium-500') format('tff');
+    font-weight: 500;
+    font-style: normal;
 }
-
 
 body {
     background-color: #f0f2fa;
     width: 100%;
     font-family: 'MyCustomFont', sans-serif;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .wrapper {
@@ -46,10 +47,11 @@ header hgroup {
 
 header hgroup h2 {
     font-size: 3rem;
+    padding: 0;
 }
 
 header hgroup h5 {
-    padding: 7px 0;
+    padding: .4375rem 0;
     font-size: 1.1rem;
 }
 
@@ -123,4 +125,29 @@ header hgroup h5 {
     right: 3.125rem;
     width: 4.375rem;
     /* height: 3.75rem; */
+}
+
+@media (max-width: 640px) {
+    body {
+        font-size: 12px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    header hgroup h2 {
+        /* font-size: 3rem; */
+        text-align: center;
+        color: red;
+        padding-right: .5rem;
+    }
+
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 16px;
+
+    }
 }
