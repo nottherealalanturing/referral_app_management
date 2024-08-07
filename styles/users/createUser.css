@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+
+body {
+  background: rgb(240, 242, 250);
+}
+.createUser-header h3 {
+  color: #353535;
+}
+
+.formDiv {
+  padding: 1.25rem;
+  margin-top: 3%;
+  background: #fff;
+}
+.divChild {
+  text-align: center;
+}
+.divChild .para {
+  margin: auto;
+  font-size: .875rem;
+  padding: .625rem;
+  color: #ff7a00;
+  width: fit-content;
+  border-bottom: .1875rem solid #ff7a00;
+}
+
+form {
+  margin-top: 3%;
+}
+.box1,
+.box2 {
+  display: flex;
+  gap: 50px;
+  padding: 20px;
+}
+
+.field-firstName,
+.field-lastName {
+  width: 100%;
+  font-size: .875rem;
+  font-weight: 600;
+}
+
+.field-email small,
+.field-firstName small,
+.field-lastName small {
+  font-weight: 800;
+  color: #ff7a00;
+  font-size: .9375rem;
+}
+
+.field-email {
+  width: 48.5%;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  padding: 9px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 1px solid #d4d4d4;
+}
+
+.createUser-links {
+  display: flex;
+  margin-top: 10%;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.back-link {
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  background: #fff;
+  border-radius: 5px;
+  padding: 10px 50px;
+  border: 1px solid #ff7a00;
+}
+
+.back-link a {
+  color: #ff7a00;
+  text-decoration: none;
+}
+
+.create-link {
+  font-weight: 700;
+  text-align: center;
+  font-size: 14px;
+  background: #ff7a00;
+  border-radius: 5px;
+  padding: 10px 50px;
+}
+
+.create-link a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.createUser-modal-bg{
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    visibility: hidden;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+    transition: visibility 0s opacity 0,5s; 
+}
+
+.createUser-modal-active{
+    visibility: visible;
+    opacity: 1;
+}
+
+.createUser-modal{
+    background: #fff;
+    width: 35%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.createUser-modal p{
+    font-weight: 700;
+    color: #353535;
+    width: 65%;
+    font-size: 20px;
+    text-align: center;
+}
+
+.createUser-modal img{
+    width: 100%;
+    padding-top: 40px;
+}
+
+.createUser-modal .modalView-Btn{
+    padding: 8px 50px;
+    margin-top: 50px;
+    background: #ff7a00;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width:767px) {
+  .formDiv{
+    margin-top: 10%;
+  }
+
+  form{
+    margin-top: 10%;
+  }
+
+  .box1,
+  .box2{
+    flex-direction: column;
+  }
+    .field-email{
+      width: 100%;
+    }
+
+    .createUser-links{
+      padding: 5px;
+      gap: 40px;
+    }
+
+    .back-link,
+    .create-link{
+      padding: 8px ;
+    }
+}
