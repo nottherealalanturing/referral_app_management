@@ -101,6 +101,7 @@
 
 .contentDiv {
   margin-top: 3%;
+  background: #fff;
 }
 
 .allBtn {
@@ -140,7 +141,7 @@
 
 .contents {
   padding: 1.875rem;
-  background: #fff;
+  background: #fff !important;
 }
 
 .contents a {

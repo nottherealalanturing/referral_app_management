@@ -65,7 +65,7 @@
 
 .detailsChild .users-status {
     display: none;
-    color: #c61531;
+    color: #c61531 !important;
     font-weight: 800;
 }
 
