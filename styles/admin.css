@@ -7,7 +7,7 @@ div.page-header {
     a,
     button {
         text-decoration: none;
-        padding: 10px 20px;
+        padding: 10px var(--header-button-padding-x);
         border: none;
         background: var(--primary-orange);
         color: #fff;
@@ -16,6 +16,7 @@ div.page-header {
         align-items: center;
         gap: 10px;
         border-radius: 5px;
+        font-size: 1rem;
     }
 }
 
@@ -118,6 +119,7 @@ div.tabs-container {
             color: #fff;
             cursor: pointer;
             padding: 10px 20px;
+            font-size: .75rem;
         }
 
         button.all {
