@@ -4,31 +4,37 @@ div.page-header {
     align-items: center;
     justify-content: space-between;
 
+    h3 {
+        color: var(--header-title-color);
+        font-size: var(--header-title-font-size);
+        font-weight: var(--header-title-font-weight);
+    }
+
     a,
     button {
         text-decoration: none;
-        padding: 10px var(--header-button-padding-x);
+        padding: var(--header-button-padding-y) var(--header-button-padding-x);
         border: none;
         background: var(--primary-orange);
-        color: #fff;
+        color: var(--primary-white);
         cursor: pointer;
         display: flex;
         align-items: center;
-        gap: 10px;
-        border-radius: 5px;
-        font-size: 1rem;
+        gap: 15px;
+        border-radius: var(--border-radius);
+        font-size: 16px;
     }
 }
 
 div.search-card {
-    margin-top: 20px;
-    background: #fff;
-    border-radius: 5px;
+    margin-top: var(--section-margin-top);
+    background: var(--card-background);
+    border-radius: var(--border-radius);
     padding: 10px;
 
     div.search-wrapper {
         border: 1px solid var(--border-color);
-        border-radius: 5px;
+        border-radius: var(--border-radius);
         padding: 10px;
         display: flex;
         align-items: center;
@@ -37,13 +43,13 @@ div.search-card {
 
         div.dropdown-search-container {
             border: 1px solid var(--border-color);
-            border-radius: 5px;
+            border-radius: var(--border-radius);
             display: flex;
             align-items: center;
             flex: 1;
 
             div.dropdown-container {
-                background: #f7f7f7;
+                background: var(--dropdown-background);
                 display: flex;
                 align-items: center;
                 padding: 0 10px;
@@ -57,7 +63,7 @@ div.search-card {
                         border: none;
                         background: none;
                         outline: none;
-                        color: #000;
+                        color: var(--primary-black);
                     }
 
                     div.search-dropdown-content {
@@ -69,8 +75,14 @@ div.search-card {
                     background: var(--primary-orange);
                     padding: 5px;
                     border-radius: 50%;
-                    color: #fff;
+                    color: var(--primary-white);
                     font-size: 10px;
+                    width: 15px;
+                    height: 15px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
                 }
             }
 
@@ -82,7 +94,7 @@ div.search-card {
                 padding: 0 10px;
 
                 i {
-                    color: var(--border-color);
+                    color: var(--search-icon-color);
                 }
 
                 input {
@@ -98,55 +110,57 @@ div.search-card {
             padding: 10px 40px;
             border: none;
             background: var(--primary-orange);
-            color: #fff;
+            color: var(--primary-white);
             cursor: pointer;
-            border-radius: 5px;
+            border-radius: var(--border-radius);
         }
     }
 }
 
 div.tabs-container {
-    margin-top: 20px;
+    margin-top: var(--section-margin-top);
 
     div.tab-buttons {
         display: flex;
         align-items: center;
+        gap: 2px;
 
         button {
             border: none;
             background: none;
             outline: none;
-            color: #fff;
+            color: var(--primary-white);
             cursor: pointer;
             padding: 10px 20px;
-            font-size: .75rem;
+            font-size: 12px;
         }
 
-        button.all {
-            background: #fff;
-            color: #000;
-            border-top-left-radius: 5px;
+        button.all-tab {
+            background: var(--primary-white);
+            color: var(--tab-all-color);
+            border-top-left-radius: var(--border-radius);
         }
 
-        button.active {
+        button.active-tab {
             background: var(--primary-green);
-            color: #fff;
+            color: var(--primary-white);
         }
 
-        button.inactive {
+        button.inactive-tab {
             background: var(--primary-red);
-            color: #fff;
-            border-top-right-radius: 5px;
+            color: var(--primary-white);
+            border-top-right-radius: var(--border-radius);
         }
     }
 
     div.tab-content {
-        padding: 20px;
-        background: #fff;
+        background: var(--card-background);
         display: flex;
         flex-direction: column;
         gap: 100px;
         justify-content: space-between;
+        /* fixme-check back */
+        padding: 20px !important;
 
         table {
             width: 100%;
@@ -156,15 +170,19 @@ div.tabs-container {
                 th {
                     text-align: center;
                     padding: 10px;
+                    font-size: 12px;
+                    color: var(--table-thead-color);
+                    font-weight: 700;
                 }
             }
 
             tbody {
                 margin-top: 10px;
+                color: var(--header-title-color);
 
                 tr {
                     border: 1px solid #fbfbfb;
-                    font-size: 14px;
+                    font-size: 12px;
 
                     td {
                         text-align: center;
@@ -182,10 +200,10 @@ div.tabs-container {
 
                     td:nth-child(6) {
                         span.tag {
-                            border-radius: 5px;
+                            border-radius: var(--border-radius);
                             font-size: 10px;
                             padding: 3px 10px;
-                            color: #fff;
+                            color: var(--primary-white);
                         }
 
                         span.active {
@@ -200,7 +218,7 @@ div.tabs-container {
                     td:last-child {
                         a {
                             text-decoration: none;
-                            color: #000;
+                            color: var(--primary-black);
                         }
                     }
                 }
@@ -227,7 +245,22 @@ div.tabs-container {
 
                 a {
                     text-decoration: none;
-                    color: #000;
+                    color: var(--primary-black);
+                    font-size: 12px;
+                    padding: 5px;
+
+                    &:hover{
+                        background-color: var(--prev-next-btn-bg);
+                    }
+                }
+
+                a.prev,
+                a.next {
+                    background: var(--prev-next-btn-bg);
+                }
+
+                a.active {
+                    color: var(--tab-all-color);
                 }
             }
 
@@ -236,11 +269,17 @@ div.tabs-container {
                 align-items: center;
                 justify-content: space-between;
                 gap: 50px;
+                font-size: 12px;
 
                 div.views {
                     display: flex;
                     align-items: center;
                     gap: 10px;
+
+                    select {
+                        border: 1px solid var(--border-color);
+                        border-radius: var(--border-radius);
+                    }
                 }
             }
         }
@@ -249,10 +288,10 @@ div.tabs-container {
 
 /* create admin */
 div.form-card {
-    margin-top: 1.25rem;
+    margin-top: 20px;
     background: var(--card-background);
-    border-radius: .3125rem;
-    padding: 2.5rem;
+    border-radius: 5px;
+    padding: 40px;
 
     p.form-title,
     p.form-subtitle {
@@ -261,11 +300,11 @@ div.form-card {
 
     p.form-subtitle {
         color: var(--primary-orange);
-        border-bottom: .1875rem solid var(--primary-orange);
+        border-bottom: 3px solid var(--primary-orange);
         width: fit-content;
-        margin: .3125rem auto 1.25rem;
-        padding: .3125rem;
-        font-size: .625rem;
+        margin: 5px auto 20px;
+        padding: 5px;
+        font-size: 10px;
     }
 
     form {
@@ -273,32 +312,32 @@ div.form-card {
             div.form-row {
                 display: flex;
                 justify-content: space-between;
-                gap: 3.75rem;
-                margin-bottom: 2.5rem;
+                gap: 60px;
+                margin-bottom: 40px;
 
                 div.input-container {
                     width: 50%;
 
                     label {
-                        font-size: .75rem;
+                        font-size: 12px;
                         display: flex;
                         align-items: center;
-                        gap: .625rem;
+                        gap: 10px;
 
                         i {
                             color: var(--primary-red);
-                            font-size: .375rem;
+                            font-size: 6px;
                         }
                     }
 
                     div.input-box {
-                        margin-top: .625rem;
-                        border: .0625rem solid var(--border-color);
-                        border-radius: .625rem;
-                        padding: .625rem;
+                        margin-top: 10px;
+                        border: 1px solid var(--border-color);
+                        border-radius: 10px;
+                        padding: 10px;
                         display: flex;
                         align-items: center;
-                        gap: .625rem;
+                        gap: 10px;
 
                         i {
                             color: var(--border-color);
@@ -308,7 +347,7 @@ div.form-card {
                             flex: 1;
                             border: none;
                             outline: none;
-                            font-size: .875rem;
+                            font-size: 14px;
                         }
                     }
                 }
@@ -321,20 +360,20 @@ div.form-card {
         }
 
         div.bottom {
-            margin-top: 5rem;
+            margin-top: 80px;
             display: flex;
             align-items: center;
             justify-content: space-between;
 
             a {
                 text-decoration: none;
-                padding: var(--button-padding-y) var(--button-padding-x);
+                padding: var(--header-button-padding-y) var(--header-button-padding-x);
                 border-radius: var(--border-radius);
-                font-size: .75rem;
+                font-size: 12px;
             }
 
             a.back-btn {
-                border: .0625rem solid var(--primary-orange);
+                border: 1px solid var(--primary-orange);
                 color: var(--primary-orange);
 
                 &:hover {
@@ -344,9 +383,9 @@ div.form-card {
             }
 
             a.create-admin {
-                border: .0625rem solid var(--primary-orange);
+                border: 1px solid var(--primary-orange);
                 background: var(--primary-orange);
-                border: .0625rem solid var(--primary-orange);
+                border: 1px solid var(--primary-orange);
                 color: var(--primary-white);
 
                 &:hover {
@@ -378,9 +417,9 @@ div.modal-overlay {
     div.success-message-card {
         height: fit-content;
         width: max-content;
-        padding: 1.875rem;
+        padding: 30px;
         background: var(--card-background);
-        box-shadow: 0 .125rem .125rem -.0625rem rgba(0, 0, 0, 0.1);
+        box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.1);
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -399,7 +438,7 @@ div.modal-overlay {
         }
 
         img {
-            margin: 1.875rem auto;
+            margin: 30px auto;
             display: flex;
             width: 20%;
         }
@@ -409,8 +448,8 @@ div.modal-overlay {
             background: var(--primary-orange);
             color: var(--primary-white);
             text-decoration: none;
-            padding: var(--button-padding-y) var(--button-padding-x);
-            font-size: .875rem;
+            padding: var(--header-button-padding-y) var(--header-button-padding-x);
+            font-size: 14px;
             text-align: center;
             margin: 0 auto;
         }
@@ -426,26 +465,26 @@ div.page-header {
 }
 
 div.bio-card {
-    margin-top: 20px;
+    margin-top: 1.25rem;
     background: #fff;
-    border-radius: 5px;
+    border-radius: .3125rem;
     display: flex;
     align-items: center;
 
     div.left {
-        padding: 20px 40px;
+        padding: 1.25rem 2.5rem;
         display: flex;
         flex-direction: column;
         align-items: center;
-        border-right: 1px solid var(--border-color);
+        border-right: .0625rem solid var(--border-color);
 
         img {
-            height: 170px;
-            width: 170px;
+            height: 10.625rem;
+            width: 10.625rem;
         }
 
         h3 {
-            margin-top: 10px;
+            margin-top: .625rem;
             font-weight: 700;
         }
     }
@@ -454,29 +493,29 @@ div.bio-card {
         flex: 1;
         display: flex;
         align-items: flex-start;
-        padding-right: 20px;
+        padding-right: 1.25rem;
 
         div.first-part {
             flex: 1;
 
             div.data-row:not(:last-of-type) {
-                border-bottom: 1px solid var(--border-color);
+                border-bottom: .0625rem solid var(--border-color);
                 /* fixme - change to table row */
                 display: flex;
-                gap: 50px;
+                gap: 3.125rem;
             }
 
             div.data-row {
-                padding: 10px 20px;
+                padding: .625rem 1.25rem;
 
                 div.data-block {
                     label {
-                        font-size: .75rem;
+                        font-size: 12px;
                         color: #7A7C87;
                     }
 
                     p {
-                        font-size: 14px;
+                        font-size: .875rem;
                     }
                 }
             }
@@ -490,17 +529,17 @@ div.bio-card {
             }
 
             div.data-row:last-of-type {
-                padding: 20px;
+                padding: 1.25rem;
                 display: flex;
                 align-items: center;
-                gap: 20px;
+                gap: 1.25rem;
 
                 a {
                     text-decoration: none;
                     border-radius: var(--border-radius);
-                    font-size: 15px;
-                    border: .0625rem solid var(--primary-orange);
-                    padding: 5px 40px;
+                    font-size: .9375rem;
+                    border: 1px solid var(--primary-orange);
+                    padding: .3125rem 2.5rem;
                 }
 
                 a:first-child {
@@ -514,7 +553,7 @@ div.bio-card {
                 }
 
                 a:last-child {
-                    border: .0625rem solid var(--primary-orange);
+                    border: 1px solid var(--primary-orange);
                     background: var(--primary-orange);
                     color: var(--primary-white);
 
@@ -529,12 +568,12 @@ div.bio-card {
         div.second-part {
             i {
                 background: var(--primary-orange);
-                padding: 5px;
+                padding: .3125rem;
                 border-radius: 50%;
                 color: #fff;
-                font-size: 10px;
-                width: 15px;
-                height: 15px;
+                font-size: .625rem;
+                width: .9375rem;
+                height: .9375rem;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -545,10 +584,11 @@ div.bio-card {
 }
 
 div.tabs-container {
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem;
+
     div.tab-buttons {
         button {
-            padding: 10px 40px;
+            padding: .625rem 2.5rem;
             background: var(--primary-orange);
             color: var(--primary-white);
         }
@@ -572,15 +612,15 @@ div.tabs-container {
                         background: unset;
 
                         td {
-                            padding: 10px 40px;
-                            font-size: 12px;
+                            padding: .625rem 2.5rem;
+                            font-size: .75rem;
                         }
 
                         td:first-child {
                             text-align: left;
                             display: flex;
                             align-items: center;
-                            gap: 20px;
+                            gap: 1.25rem;
 
                             i {
                                 color: var(--primary-orange);
@@ -591,12 +631,12 @@ div.tabs-container {
                             text-align: right;
 
                             button {
-                                border: 1px solid var(--primary-orange);
+                                border: .0625rem solid var(--primary-orange);
                                 background: var(--primary-orange);
                                 color: var(--primary-white);
-                                padding: 2px 10px;
-                                font-size: 10px;
-                                border-radius: 3px;
+                                padding: .125rem .625rem;
+                                font-size: .625rem;
+                                border-radius: .1875rem;
                                 cursor: pointer;
 
                                 &:hover {
@@ -611,7 +651,7 @@ div.tabs-container {
                         border: none;
 
                         td.title {
-                            font-size: 14px;
+                            font-size: .875rem;
                             font-weight: 500;
                             text-align: left;
                         }
@@ -626,39 +666,39 @@ div.tabs-container {
 
         div.chats {
             display: none;
-            padding: 30px;
+            padding: 1.875rem;
 
             div.messages {
                 overflow-y: scroll;
-                height: 300px;
-                padding: 30px;
+                height: 18.75rem;
+                padding: 1.875rem;
 
                 div.message {
                     display: flex;
-                    margin: 20px 0;
+                    margin: 1.25rem 0;
 
                     p.message-time {
-                        font-size: 10px;
+                        font-size: .625rem;
                         color: #585858;
                     }
 
                     div.message-block {
-                        margin-top: 10px;
+                        margin-top: .625rem;
                         display: flex;
                         align-items: center;
-                        gap: 10px;
+                        gap: .625rem;
 
                         img {
-                            width: 57px;
-                            height: 57px;
+                            width: 3.5625rem;
+                            height: 3.5625rem;
                         }
 
                         div.message-text {
-                            padding: 10px;
-                            border-radius: 16px;
+                            padding: .625rem;
+                            border-radius: 1rem;
 
                             p {
-                                font-size: 14px;
+                                font-size: .875rem;
                             }
                         }
                     }
@@ -693,13 +733,13 @@ div.tabs-container {
                 background: #F0F2FA;
                 width: 70%;
                 margin: 0 auto;
-                padding: 10px 20px;
-                margin-top: 20px;
-                border-radius: 30px;
+                padding: .625rem 1.25rem;
+                margin-top: 1.25rem;
+                border-radius: 1.875rem;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                gap: 20px;
+                gap: 1.25rem;
 
                 span.emoji-picker,
                 i.fa-square-plus,
@@ -801,7 +841,10 @@ div.tabs-container {
     /* view admin */
     div.bio-card {
         flex-direction: column;
-        div.left {border: none;}
+
+        div.left {
+            border: none;
+        }
     }
 }
 

@@ -2,21 +2,31 @@
     --primary-white: #fff;
     --primary-orange: #FF7A00;
     --primary-green: #00b388;
-    --primary-red: #c61531;
+    --primary-red: #E30000;
     --border-color: #e5e5e5;
     --card-background: #fff;
     --header-title-color: #353535;
+    --dropdown-background: #f7f7f7;
+    --search-icon-color: #9F9F9F;
+    --tab-all-color: #142E65;
+    --table-thead-color: #7F8B94;
+    --prev-next-btn-bg: #F5F8FA;
 
     /* spacing */
-    --header-button-padding-y: 1.1875rem;
-    --header-button-padding-x: 3.125rem;
+    --header-button-padding-y: .625rem;
+    --header-button-padding-x: 1.25rem;
+    --section-margin-top: 1.875rem;
 
     /* layout */
     --border-radius: .3125rem;
 
     /* typography */
-    --header-title-font-size: 25px;
-    --tabs-button-font-size: 12px;
+    --header-title-font-size: 1.5625rem;
+    --header-title-font-weight: 700;
+    --tabs-button-font-size: .75rem;
+    --table-thead-font-size: .9375rem;
+    --table-title-font-size: .9375rem;
+    --table-title-font-weight: 500;
 }
 
 
