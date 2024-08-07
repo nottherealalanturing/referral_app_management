@@ -19,7 +19,7 @@ body {
 
 .wrapper {
     width: 60%;
-    margin: 1.875rem auto;
+    margin: 1.5rem auto;
     background-color: #fff;
     border-radius: 5px;
     position: relative;
@@ -165,8 +165,38 @@ header hgroup h5 {
 }
 
 @media (min-width: 768px) {
-    body {
+    html {
         font-size: 16px;
-
     }
+
+    .reset-password {
+        gap: 2rem;
+        padding: 0;
+    }
+}
+
+@media (min-width: 1280px) {
+    html {
+        font-size: 1.25rem;
+    }
+
+    .wrapper {
+        width: 80%;
+        background-color: #fff;
+        border-radius: 5px;
+    }
+}
+
+@media (min-width: 1536px) {
+    html {
+        font-size: 1.2rem;
+    }
+
+    .wrapper {
+        width: 90%;
+        background-color: #fff;
+        border-radius: 5px;
+    }
+
+
 }
