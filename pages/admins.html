@@ -1,166 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../styles/global.css" />
     <link rel="stylesheet" href="/styles/admin.css" />
-  </head>
-  <body>
+
+    <!-- fixme - remove after use -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css">
+
+</head>
+
+<body>
     <div class="page-header">
-      <h3>Admins</h3>
-      <a
-        data-url="/pages/admins/create-admin.html"
-        href="#create-admin"
-        class="internal-link"
-      >
-        <i class="fa-solid fa-plus"></i>
-        <span>Create new admin</span>
-      </a>
+        <h3>Admin's Profile</h3>
+        <a data-url="/pages/admins.html" href="#" class="internal-link link-button">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span>Back to Admins</span>
+        </a>
     </div>
 
-    <div class="search-card">
-      <div class="search-wrapper">
-        <div class="dropdown-search-container">
-          <div class="dropdown-container">
-            <p>Search By:</p>
-            <div class="search-dropdown">
-              <button class="search-dropbtn">
-                <span class="text"> - - - </span>
-              </button>
-              <div class="search-dropdown-content">
-                <a href="#"> Name</a>
-                <a href="#"> Email</a>
-                <a href="#"> Business Name</a>
-                <a href="#"> Date Added</a>
-                <a href="#"> Status</a>
-              </div>
-            </div>
-            <i class="fa-solid fa-caret-down"></i>
-          </div>
-          <div class="search-box-container">
-            <i class="fa-solid fa-search"></i>
-            <input type="text" name="" id="search" />
-          </div>
+    <div class="bio-card">
+        <div class="left">
+            <img src="/assets/images/user-cartoon-bigPicture.svg" alt="profile Image" />
+            <h3>Nurudeen Ibrahim</h3>
         </div>
-        <button type="button">Find</button>
-      </div>
+        <div class="right">
+            <div class="first-part">
+                <div class="data-row">
+                    <div class="data-block">
+                        <label for="name">Name</label>
+                        <p>Lanre Oseni</p>
+                    </div>
+                    <div class="data-block">
+                        <label for="name">Business Name</label>
+                        <p>First Bank</p>
+                    </div>
+                    <div class="data-block">
+                        <label for="name">Date Added</label>
+                        <p>04 Jan 2023</p>
+                    </div>
+                </div>
+                <div class="data-row">
+                    <div class="data-block">
+                        <label for="name">Email Address</label>
+                        <p>thedeen@gmail.com</p>
+                    </div>
+                    <div class="data-block">
+                        <label for="name">Status</label>
+                        <p class="status">Active</p>
+                    </div>
+                </div>
+                <div class="data-row">
+                    <a href="#" class="">Edit</a>
+                    <a href="" class="" id="show-modal">Start a Chat</a>
+                </div>
+            </div>
+            <div class="second-part">
+                <i class="fa-solid fa-caret-up"></i>
+            </div>
+        </div>
     </div>
 
     <div class="tabs-container">
-      <div class="tab-buttons">
-        <button class="all">All</button>
-        <button class="active">Active</button>
-        <button class="inactive">Inactive</button>
-      </div>
-      <div class="tab-content">
-        <table>
-          <thead>
-            <tr>
-              <th></th>
-              <th>Name</th>
-              <th>Email</th>
-              <th>Business Name</th>
-              <th>Date Added</th>
-              <th>Status</th>
-              <th>Action</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <img src="https://i.pravatar.cc/400?img=69" alt="User Image" />
-              </td>
-              <td>Nurudeen Ibrahim</td>
-              <td>thenuruddeen@gmail.com</td>
-              <td>First Bank</td>
-              <td>01 Jan 2023</td>
-              <td><span class="tag active">Active</span></td>
-              <td>
-                <a href="#" class="edit-btn">
-                  <i class="fa-solid fa-ellipsis"></i>
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <img src="https://i.pravatar.cc/400?img=69" alt="User Image" />
-              </td>
-              <td>Nurudeen Ibrahim</td>
-              <td>thenuruddeen@gmail.com</td>
-              <td>First Bank</td>
-              <td>01 Jan 2023</td>
-              <td><span class="tag inactive">Active</span></td>
-              <td>
-                <a href="#" class="edit-btn">
-                  <i class="fa-solid fa-ellipsis"></i>
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <img src="https://i.pravatar.cc/400?img=69" alt="User Image" />
-              </td>
-              <td>Nurudeen Ibrahim</td>
-              <td>thenuruddeen@gmail.com</td>
-              <td>First Bank</td>
-              <td>01 Jan 2023</td>
-              <td><span class="tag active">Active</span></td>
-              <td>
-                <a href="#" class="edit-btn">
-                  <i class="fa-solid fa-ellipsis"></i>
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <img src="https://i.pravatar.cc/400?img=69" alt="User Image" />
-              </td>
-              <td>Nurudeen Ibrahim</td>
-              <td>thenuruddeen@gmail.com</td>
-              <td>First Bank</td>
-              <td>01 Jan 2023</td>
-              <td><span class="tag active">Active</span></td>
-              <td>
-                <a href="#" class="edit-btn">
-                  <i class="fa-solid fa-ellipsis"></i>
-                </a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-
-        <div class="footer">
-          <div class="pagination">
-            <a href="#" class="prev disabled"
-              ><i class="fa-solid fa-angle-left"></i
-            ></a>
-            <a href="#" class="page">1</a>
-            <a href="#" class="active">2</a>
-            <a href="#" class="page">3</a>
-            <a href="#" class="next"><i class="fa-solid fa-angle-right"></i></a>
-          </div>
-          <div class="records">
-            <div class="views">
-              <p>Views</p>
-              <select name="" id="">
-                <option value="10">10</option>
-                <option value="10">20</option>
-                <option value="10">50</option>
-              </select>
-              <p>items per page</p>
-            </div>
-            <div class="entries">
-              <p>
-                <span class="start">1</span> - <span class="end">15</span> of
-                <span class="total">15</span>
-                Entries
-              </p>
-            </div>
-          </div>
+        <div class="tab-buttons">
+            <button class="activity">Activity</button>
+            <button class="chats">Chats</button>
         </div>
-      </div>
+        <div class="tab-content">
+            <div class="activities" id="activities">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="title">Activity Summary Today</td>
+                        </tr>
+                        <tr>
+                            <td> <i class="fa-solid fa-circle"></i>
+                                Nurudeen would like to update his email address
+                            </td>
+                            <td>9:36am</td>
+                        </tr>
+                        <tr>
+                            <td> <i class="fa-solid fa-circle"></i>
+                                Nurudeen replied to your chat
+                            </td>
+                            <td><button type="button" class="view-btn">View</button></td>
+                        </tr>
+                        <tr>
+                            <td> <i class="fa-solid fa-circle"></i>
+                                Nurudeen would like to update his first name
+                            </td>
+                            <td>9:36am</td>
+                        </tr>
+                        <tr>
+                            <td> <i class="fa-solid fa-circle"></i>
+                                Nurudeen would like to update his email address
+                            </td>
+                            <td>9:36am</td>
+                        </tr>
+                        <tr>
+                            <td> <i class="fa-solid fa-circle"></i>
+                                Nurudeen would like to update his email address
+                            </td>
+                            <td>9:36am</td>
+                        </tr>
+                        <tr>
+                            <td> <i class="fa-solid fa-circle"></i>
+                                Nurudeen would like to update his email address
+                            </td>
+                            <td>9:36am</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="chats" class="chats">
+                <div class="messages">
+                    <div class="message left-message">
+                        <p class="message-time">04 Jan 2023 | 12:02pm</p>
+                        <div class="message-block">
+                            <img src="/assets/images/user-cartoon-bigPicture.svg" alt="profile Image" />
+                            <div class="message-text">
+                                <p>Hello, I would like to update my email address please</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message left-message">
+                        <p class="message-time">04 Jan 2023 | 12:02pm</p>
+                        <div class="message-block">
+                            <div class="message-text">
+                                <p>Alright please hold on</p>
+                            </div>
+                            <img src="/assets/images/customer-care-pics.svg" alt="profile Image" />
+                        </div>
+                    </div>
+                    <div class="message left-message">
+                        <p class="message-time">04 Jan 2023 | 12:02pm</p>
+                        <div class="message-block">
+                            <img src="/assets/images/user-cartoon-bigPicture.svg" alt="profile Image" />
+                            <div class="message-text">
+                                <p>Thank you very much.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="send-message">
+                    <span>🙂</span>
+                    <i class="fa-regular fa-square-plus"></i>
+                    <input type="text" placeholder="Say Something">
+                    <i class="fa-light fa-microphone"></i>
+                </div>
+            </div>
+        </div>
     </div>
-  </body>
+</body>
+
 </html>
