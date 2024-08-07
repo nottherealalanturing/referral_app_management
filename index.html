@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/login.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/fonts/circular-std-medium-500.ttf" />
+    <title>login</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="section"></div>
+
+      <form action="#">
+        <header>
+          <hgroup>
+            <h2>Referral Portal</h2>
+            <h5>Welcome. Login to your portal account</h5>
+          </hgroup>
+        </header>
+        <div class="input-group">
+          <label for="username">USERNAME</label>
+          <div class="input-box">
+            <input type="text" placeholder="" required />
+            <i class="bx bx-user"></i>
+          </div>
+        </div>
+        <div class="input-group">
+          <label for="password">PASSWORD</label>
+          <div class="input-box">
+            <input type="password" placeholder="" required />
+            <i class="bx bx-lock-alt"></i>
+          </div>
+        </div>
+        <div class="reset-password">
+          <label for="#"><input type="checkbox" />Keep me logged in</label>
+          <a href="#">Reset password</a>
+        </div>
+        <button type="submit" class="btn">
+          <a href="/layout/index.html">Login</a>
+        </button>
+      </form>
+
+      <img class="logo" src="../assets/images/logo.png" alt="logo" />
+    </div>
+  </body>
+</html>
