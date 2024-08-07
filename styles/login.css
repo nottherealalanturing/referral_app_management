@@ -5,21 +5,21 @@
 }
 
 @font-face {
-    font-family: 'MyCustomFont';
-    src: url('../assets/fonts/circular-std-medium-500.ttf') format('truetype');
+    font-family: 'Circular Std Medium';
+    src: url('/assets/fonts/circular-std-medium-500') format('tff');
+    font-weight: 500;
+    font-style: normal;
 }
-
 
 body {
     background-color: #f0f2fa;
     width: 100%;
-    font-family: 'MyCustomFont', sans-serif;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .wrapper {
     width: 60%;
-    margin: 30px auto;
+    margin: 1.5rem auto;
     background-color: #fff;
     border-radius: 5px;
     position: relative;
@@ -36,7 +36,7 @@ body {
 form {
     width: 60%;
     margin: 0 auto;
-    padding: 50px 0;
+    padding: 3.125rem 0;
 }
 
 header hgroup {
@@ -46,10 +46,11 @@ header hgroup {
 
 header hgroup h2 {
     font-size: 3rem;
+    padding: 0;
 }
 
 header hgroup h5 {
-    padding: 7px 0;
+    padding: .4375rem 0;
     font-size: 1.1rem;
 }
 
@@ -101,7 +102,7 @@ header hgroup h5 {
 
 .btn {
     width: 100%;
-    padding: 19.2px 6.25rem;
+    padding: 1.2rem 6.25rem;
     border: none;
     outline: none;
     color: #fff;
@@ -122,5 +123,80 @@ header hgroup h5 {
     top: 5rem;
     right: 3.125rem;
     width: 4.375rem;
-    /* height: 3.75rem; */
+}
+
+@media (max-width: 640px) {
+    html {
+        font-size: 13px;
+    }
+
+    .wrapper {
+        width: 100%;
+        background-color: #fff;
+        border-radius: 5px;
+
+    }
+
+    header hgroup h5 {
+        padding: .4rem 0;
+        font-size: 1rem;
+        text-wrap: nowrap;
+    }
+
+    header hgroup h2 {
+        padding: .4rem 0;
+        font-size: 2.5rem;
+        text-wrap: nowrap;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .btn {
+        padding: .625rem 3rem;
+    }
+
+    .reset-password {
+        gap: 2rem;
+        padding: 0;
+    }
+
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+
+    .reset-password {
+        gap: 2rem;
+        padding: 0;
+    }
+}
+
+@media (min-width: 1280px) {
+    html {
+        font-size: 1.25rem;
+    }
+
+    .wrapper {
+        width: 80%;
+        background-color: #fff;
+        border-radius: 5px;
+    }
+}
+
+@media (min-width: 1536px) {
+    html {
+        font-size: 1.2rem;
+    }
+
+    .wrapper {
+        width: 90%;
+        background-color: #fff;
+        border-radius: 5px;
+    }
+
+
 }
