@@ -1,13 +1,82 @@
-:root{
+:root {
     --primary-white: #fff;
-    --primary-orange: #f56100;
+    --primary-orange: #FF7A00;
     --primary-green: #00b388;
     --primary-red: #c61531;
     --border-color: #e5e5e5;
     --card-background: #fff;
+    --header-title-color: #353535;
 
-    --button-padding-y: .625rem;
-    --button-padding-x: 2.5rem;
+    /* spacing */
+    --header-button-padding-y: 1.1875rem;
+    --header-button-padding-x: 3.125rem;
 
+    /* layout */
     --border-radius: .3125rem;
+
+    /* typography */
+    --header-title-font-size: 25px;
+    --tabs-button-font-size: 12px;
+}
+
+
+/* 8K Screens (6145px and up) */
+@media screen and (max-width: 7680px) {
+    html {
+        font-size: 120px;
+    }
+}
+
+/* 6K Screens (5121px and up) */
+@media screen and (max-width: 6144px) {
+    html {
+        font-size: 80px;
+    }
+}
+
+/* 5K Screens (3841px and up) */
+@media screen and (max-width: 5120px) {
+    html {
+        font-size: 65px;
+    }
+}
+
+/* 4K Screens (2049px and up) */
+@media screen and (max-width: 3840px) {
+    html {
+        font-size: 50px;
+    }
+}
+
+/* 2K Screens (1401px and up) */
+@media screen and (max-width: 2048px) {
+    html {
+        font-size: 30px;
+    }
+}
+
+/* Extra large devices (large desktops, 993px and up) */
+@media screen and (max-width: 1400px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    html {
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    html {
+        font-size: 14px;
+    }
 }
