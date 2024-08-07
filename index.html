@@ -3,9 +3,96 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="icon" href="./leadway-logo.svg" />
+    <title>Underwriter Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./index.css" />
   </head>
-  <body>
-    <a href="/layout/index.html">login</a>
+  <body class="bg-[#FFFBF6]">
+    <main>
+      <div
+        class="flex items-center justify-center w-full h-screen bg-[#f0f2fa]"
+      >
+        <div
+          class="w-2/3 bg-[#FFFFFF] px-20 py-4 border-t-8 border-t-[#EE5331]"
+        >
+          <div class="flex flex-col items-start justify-between">
+            <div class="w-full flex-col items-center justify-center">
+              <h1
+                class="font-bold text-[20px] text-[#585858] sm:text-[24px] md:text-[26px] lg:text-[28px] xl:text-[30px] 2xl:text-[32px]"
+              >
+                Referral Portal
+              </h1>
+              <p class="text-[11px] text-[#AFB0B1]">
+                Welcome. Login to your portal account.
+              </p>
+            </div>
+          </div>
+
+          <form onSubmit="event.preventDefault()" class="space-y-5">
+            <div
+              class="bg-[#fff] pl-[20px] pr-[20px] pb-[8px] pt-[5px] rounded-[5px] box-shadow"
+            >
+              <label for="loginId" class="text-[10px]">Login ID</label>
+              <div class="flex justify-between mt-[8px]">
+                <input
+                  type="text"
+                  name="loginId"
+                  id="loginId"
+                  placeholder="enter your login ID"
+                  class=""
+                  required
+                />
+                <div class="w-[10px] h-[10px]">
+                  <img src="./assets/images/logiin_user.svg" alt="user icon" />
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-[#fff] pl-[20px] pr-[20px] pb-[8px] pt-[15px] rounded-[5px] box-shadow"
+            >
+              <div class="flex justify-between">
+                <label for="password" class="text-[10px]">Password</label>
+                <span
+                  class="text-[7px] text-[#EE5331] font-bold mr-[-6px] cursor-pointer"
+                  >SHOW</span
+                >
+              </div>
+              <div class="flex justify-between mt-[8px]">
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="enter your password"
+                  class="text-[10px] border-none w-[100%]"
+                  required
+                />
+                <div class="w-[10px] h-[10px]">
+                  <img src="./assets/images/login_pass.svg" alt="lock icon" />
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex justify-between text-[#7F8B94]"
+              style="margin-bottom: 15px"
+            >
+              <span class="text-[8px] ml-[15px]">Keep me logged in</span>
+              <span class="text-[8px] cursor-pointer">Reset Password</span>
+            </div>
+            <a
+              href="/layout/index.html"
+              class="bg-[#FF7A00] w-full text-white pt-[10px] pb-[10px] rounded-[3px] text-[13px] login-box-shadow"
+            >
+              <button
+                type="button"
+                class="bg-[#FF7A00] w-full text-white pt-[10px] pb-[10px] rounded-[3px] text-[13px] login-box-shadow"
+              >
+                Login
+              </button>
+            </a>
+          </form>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
