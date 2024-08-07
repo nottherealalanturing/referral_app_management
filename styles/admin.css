@@ -562,6 +562,8 @@ div.tabs-container {
         padding: unset;
 
         div.activities {
+            display: none;
+
             table {
 
                 tbody {
@@ -617,6 +619,110 @@ div.tabs-container {
                     tr:last-of-type {
                         border-bottom: none;
                     }
+                }
+            }
+        }
+
+        div.chats {
+            padding: 30px;
+
+            div.messages {
+                overflow-y: scroll;
+                height: 300px;
+                /* padding-bottom: 50px; */
+                padding: 30px;
+
+                div.message {
+                    display: flex;
+                    margin: 20px 0;
+
+                    p.message-time {
+                        font-size: 10px;
+                        color: #585858;
+                    }
+
+                    div.message-block {
+                        margin-top: 10px;
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+
+                        img {
+                            width: 57px;
+                            height: 57px;
+                        }
+
+                        div.message-text {
+                            padding: 10px;
+                            border-radius: 16px;
+
+                            p {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+
+                div.left-message,
+                div.right-message {
+                    div.message-block {
+                        div.message-text {
+                            width: 70%;
+                        }
+                    }
+                }
+
+                div.left-message {
+                    div.message-block {
+                        div.message-text {
+                            background: #F3F5F6;
+                            border-bottom-left-radius: 0;
+                        }
+                    }
+                }
+
+                div.right-message {
+                    justify-content: flex-end;
+
+                    div.message-block {
+                        div.message-text {
+                            background: #D7F8F4;
+                            border-bottom-right-radius: 0;
+                        }
+                    }
+                }
+            }
+
+            div.send-message {
+                background: #F0F2FA;
+                width: 70%;
+                margin: 0 auto;
+                padding: 10px 20px;
+                margin-top: 20px;
+                border-radius: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 20px;
+
+                span.emoji-picker,
+                i.fa-square-plus,
+                i.fa-microphone {
+                    cursor: pointer;
+                }
+
+                input {
+                    flex: 1;
+                    font-size: 14px;
+                    color: #8F8F8F;
+                    border: none;
+                    outline: none;
+                    background: transparent;
+                }
+
+                input::placeholder {
+                    color: #8F8F8F;
+                    font-style: italic;
                 }
             }
         }
