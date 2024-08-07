@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('../assets/fonts/circular-std-medium-500.ttf') format('truetype');
+}
+
+
+body {
+    background-color: #f0f2fa;
+    width: 100%;
+    font-family: 'MyCustomFont', sans-serif;
+    overflow: hidden;
+}
+
+.wrapper {
+    width: 60%;
+    margin: 30px auto;
+    background-color: #fff;
+    border-radius: 5px;
+    position: relative;
+}
+
+.section {
+    width: 100%;
+    height: 2rem;
+    background-color: #ff7a00;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+form {
+    width: 60%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+header hgroup {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+header hgroup h2 {
+    font-size: 3rem;
+}
+
+header hgroup h5 {
+    padding: 7px 0;
+    font-size: 1.1rem;
+}
+
+.input-group .input-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 32px;
+    margin-top: 12.8px;
+    border: none;
+    background-color: #f0f2fa;
+    border-radius: 5px;
+}
+
+.input-group .input-box input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 30px;
+    font-size: 1.2rem;
+    background-color: #f0f2fa;
+}
+
+.input-group i {
+    font-size: 25px;
+    margin-right: 30px;
+}
+
+.reset-password {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 0 20px;
+}
+
+.reset-password input {
+    margin-right: .625rem;
+}
+
+.reset-password a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #000;
+}
+
+.btn {
+    width: 100%;
+    padding: 19.2px 6.25rem;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 1.875rem;
+    background-color: #ff7a00;
+    border-radius: 5px;
+}
+
+.btn a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo {
+    position: absolute;
+    top: 5rem;
+    right: 3.125rem;
+    width: 4.375rem;
+    /* height: 3.75rem; */
+}
