@@ -138,7 +138,7 @@ header hgroup h5 {
 /* SMALL SCREEN */
 @media (max-width: 640px) {
     html {
-        font-size: 17px;
+        font-size: 16px;
     }
 
     .wrapper {
@@ -146,7 +146,7 @@ header hgroup h5 {
     }
 
     header hgroup h2 {
-        font-size: 2.2rem;
+        font-size: 1.7rem;
     }
 
     header hgroup h5 {
@@ -161,14 +161,15 @@ header hgroup h5 {
 
     .reset-password {
         padding: 0;
+        gap: 1rem;
     }
 
     .reset-password a {
-        font-size: .8rem;
+        font-size: 1.5rem;
     }
 
     .reset-password label {
-        font-size: .8rem;
+        font-size: 1.5rem;
     }
 
     .logo {
@@ -188,7 +189,7 @@ header hgroup h5 {
     }
 
     header hgroup h2 {
-        font-size: 2.2rem;
+        font-size: 1.8rem;
     }
 
     header hgroup h5 {
@@ -197,6 +198,18 @@ header hgroup h5 {
 
     .reset-password {
         padding: 0;
+    }
+
+    .reset-password a {
+        font-size: .8rem;
+    }
+
+    .reset-password label {
+        font-size: .8rem;
+    }
+
+    .logo {
+        display: none;
     }
 }
 
@@ -223,6 +236,14 @@ header hgroup h5 {
         padding: 0;
     }
 
+    .reset-password a {
+        font-size: 1rem;
+    }
+
+    .reset-password label {
+        font-size: 1rem;
+    }
+
 }
 
 /* XL SCREEN */
@@ -231,14 +252,39 @@ header hgroup h5 {
         font-size: 20px;
     }
 
+    .wrapper {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    header hgroup h2 {
+        font-size: 2.2rem;
+    }
+
+    header hgroup h5 {
+        font-size: .8rem;
+    }
+
+    .reset-password {
+        padding: 0;
+    }
+
 }
 
 /* @media (max-width: 1536px) {
     html {
         font-size: 23px;
     }
+}
 
-    header hgroup h2 {
-        color: rgb(0, 255, 170);
+@media (max-width: 2000px) {
+    html {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 3000px) {
+    html {
+        font-size: 30px;
     }
 } */
