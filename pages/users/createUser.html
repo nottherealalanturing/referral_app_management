@@ -28,69 +28,362 @@
       rel="stylesheet"
       href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css"
     />
+    <link rel="stylesheet" href="/styles/layout.css" />
     <link rel="stylesheet" href="/styles/users/createUser.css" />
+
+    <!-- font awesome icon -->
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css"
+    />
+
+    <link
+      rel="icon"
+      href="/assets/images/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="shortcut icon"
+      href="/assets/images/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/css/tw-elements.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css"
+    />
   </head>
   <body>
-    <main class="create-user">
-      <div class="createUser-header">
-        <h3>Create User</h3>
-      </div>
-
-      <div class="formDiv">
-        <div class="divChild">
-          <h3>Create new Leadway user</h3>
-          <p class="para">please provide the information below</p>
-        </div>
-
-        <form>
-          <div class="box1">
-            <div class="field-firstName">
-              <span>
-                <label for="first name">User First Name</label>
-                <small>*</small>
-              </span>
-              <span class="boxChild">
-                <input type="text" name="first-name" required />
-              </span>
-            </div>
-
-            <div class="field-lastName">
-              <span>
-                <label for="last name">User Last Name</label>
-                <small>*</small>
-              </span>
-              <input type="text" name="last-name" required />
-            </div>
-          </div>
-
-          <div class="box2">
-            <div class="field-email">
-                <span>
-                    <label for="email">Email</label>
-                    <small>*</small>
-                </span>
-                <input type="email" name="email" required>
-            </div>
-          </div>
-        </form>
-
-        <div class="createUser-links">
-          <span  class="back-link"><a href="#users" data-url="/pages/users.html" class="internal-link">Back</a></span>
-          <span class="create-link" id="create-link"><a href="#">Create User</a></span>
-        </div>
-      </div>
-
-      <div class="createUser-modal-bg">
-        <div class="createUser-modal">
-            <p>A.k Designs Created as a User on super refferal platform</p>
-            <span><img src="/assets/images/users-success.svg" alt="success-check"></span>
-            <a href="#usersProfile.html" data-url="pages/users/usersProfile.html" class="internal-link">
-                <button class="modalView-Btn">View</button>
+    <div class="container-box">
+      <div class="sidebar">
+        <a class="logo-container" href="/layout/index.html">
+          <img
+            src="/assets/images/app_logo.png"
+            alt="app logo"
+            class="app-logo"
+          />
+        </a>
+        <ul>
+          <li class="nav-item active">
+            <a hreff="#dashboard" href="/pages/dashboard.html" class="nav-link">
+              <img
+                src="/assets/images/dashboard-icon.png"
+                alt="Dashboard"
+                class="nav-item-image"
+              />
+              <span class="nav-text">Dashboard</span>
             </a>
+          </li>
+          <li class="nav-item">
+            <a hreff="#business" href="/pages/business.html" class="nav-link">
+              <img
+                src="/assets/images/business-icon.png"
+                alt="Business"
+                class="nav-item-image"
+              />
+              <span class="nav-text">Business</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a hreff="#admins" href="/pages/admins.html" class="nav-link">
+              <img
+                src="/assets/images/admins-icon.png"
+                alt="Admins"
+                class="nav-item-image"
+              />
+              <span class="nav-text">Admins</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a hreff="#users" href="/pages/users.html" class="nav-link">
+              <img
+                src="/assets/images/users-icon.png"
+                alt="Users"
+                class="nav-item-image"
+              />
+              <span class="nav-text">Users</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a hreff="#report" href="/pages/reports.html" class="nav-link">
+              <img
+                src="/assets/images/report-icon.png"
+                alt="Report"
+                class="nav-item-image"
+              />
+              <span class="nav-text">Report</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-section">
+        <div class="header">
+          <div class="mob-app-logo-container">
+            <img
+              src="/assets/images/app_logo.png"
+              alt="app logo"
+              class="mobile-app-logo"
+            />
+          </div>
+
+          <label for="search-input" class="header-search-container">
+            <img
+              src="/assets/images/search-icon.svg"
+              alt="search"
+              class="search-icon"
+            />
+            <input
+              type="text"
+              id="search"
+              class="search-input"
+              placeholder="What are you looking for?"
+            />
+          </label>
+
+          <div class="header-profile-container">
+            <img
+              src="/assets/images/notification-bell-icon.svg"
+              alt="notification-bell-icon"
+              class="notification-bell-icon"
+            />
+            <span class="user-profile-div">
+              <img
+                src="/assets/images/user-profile-pic.png"
+                alt="user"
+                class="user-profile-pic"
+              />
+              <p class="user-profile-name">Dami Oguns</p>
+            </span>
+
+            <img
+              src="/assets/images/caret-down-icon.svg"
+              alt="caretdown"
+              class="caretdown"
+            />
+
+            <button class="open-mobile-nav">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                width="24"
+                height="24"
+                class="hamburger-icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <div class="mobile-nav-menu">
+            <div class="mobile-nav-menu-button">
+              <button class="close-mobile-nav">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  width="24"
+                  height="24"
+                  class="close-icon"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+            <ul class="mobile-nav-menu-list">
+              <li class="mobile-nav-menu-item">
+                <a
+                  hreff="#dashboard"
+                  class="nav-link"
+                  href="/pages/dashboard.html"
+                >
+                  <img
+                    src="/assets/images/dashboard-icon.png"
+                    alt="Dashboard"
+                    class="nav-item-image"
+                  />
+                  <span class="nav-text">Dashboard</span>
+                </a>
+              </li>
+              <li class="mobile-nav-menu-item">
+                <a
+                  hreff="#business"
+                  href="/pages/business.html"
+                  class="nav-link"
+                >
+                  <img
+                    src="/assets/images/business-icon.png"
+                    alt="Business"
+                    class="nav-item-image"
+                  />
+                  <span class="nav-text">Business</span>
+                </a>
+              </li>
+              <li class="mobile-nav-menu-item">
+                <a hreff="#admins" class="nav-link" href="/pages/admins.html">
+                  <img
+                    src="/assets/images/admins-icon.png"
+                    alt="Admins"
+                    class="nav-item-image"
+                  />
+                  <span class="nav-text">Admins</span>
+                </a>
+              </li>
+              <li class="mobile-nav-menu-item">
+                <a hreff="#users" class="nav-link" href="/pages/users.html">
+                  <img
+                    src="/assets/images/users-icon.png"
+                    alt="Users"
+                    class="nav-item-image"
+                  />
+                  <span class="nav-text">Users</span>
+                </a>
+              </li>
+              <li class="mobile-nav-menu-item">
+                <a hreff="#reports" class="nav-link" href="/pages/reports.html">
+                  <img
+                    src="/assets/images/report-icon.png"
+                    alt="Report"
+                    class="nav-item-image"
+                  />
+                  <span class="nav-text">Report</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="content-section bg-[f0f2fa]">
+          <main class="create-user">
+            <div class="createUser-header">
+              <h3>Create User</h3>
+            </div>
+
+            <div class="formDiv">
+              <div class="divChild">
+                <h3>Create new Leadway user</h3>
+                <p class="para">please provide the information below</p>
+              </div>
+
+              <form>
+                <div class="box1">
+                  <div class="field-firstName">
+                    <span>
+                      <label for="first name">User First Name</label>
+                      <small>*</small>
+                    </span>
+                    <span class="boxChild">
+                      <input type="text" name="first-name" required />
+                    </span>
+                  </div>
+
+                  <div class="field-lastName">
+                    <span>
+                      <label for="last name">User Last Name</label>
+                      <small>*</small>
+                    </span>
+                    <input type="text" name="last-name" required />
+                  </div>
+                </div>
+
+                <div class="box2">
+                  <div class="field-email">
+                    <span>
+                      <label for="email">Email</label>
+                      <small>*</small>
+                    </span>
+                    <input type="email" name="email" required />
+                  </div>
+                </div>
+              </form>
+
+              <div class="createUser-links">
+                <span class="back-link"
+                  ><a
+                    hreff="#users"
+                    href="/pages/users.html"
+                    class="internal-link"
+                    >Back</a
+                  ></span
+                >
+                <span class="create-link" id="create-link"
+                  ><a hreff="#">Create User</a></span
+                >
+              </div>
+            </div>
+
+            <div class="createUser-modal-bg">
+              <div class="createUser-modal">
+                <p>A.k Designs Created as a User on super refferal platform</p>
+                <span
+                  ><img
+                    src="/assets/images/users-success.svg"
+                    alt="success-check"
+                /></span>
+                <a
+                  hreff="#usersProfile.html"
+                  href="/pages/users/usersProfile.html"
+                  class="internal-link"
+                >
+                  <button class="modalView-Btn">View</button>
+                </a>
+              </div>
+            </div>
+          </main>
+
+          <script src="/scripts/createUser.js"></script>
         </div>
       </div>
-    </main>
-
-    <script src="/scripts/createUser.js"></script>
+    </div>
   </body>
 </html>

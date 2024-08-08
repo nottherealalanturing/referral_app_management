@@ -5,402 +5,635 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Create Business</title>
     <link rel="stylesheet" href="createBizForm.css" />
-  </head>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    @font-face {
-      font-family: myFont;
-      src: url(/assets/fonts/circular-std-medium-500.ttf);
-    }
-    @font-face {
-      font-family: mysecFont;
-      src: url(/assets/fonts/Product\ Sans\ Regular.ttf);
-    }
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Business</title>
+    <link rel="stylesheet" href="/styles/layout.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      @font-face {
+        font-family: myFont;
+        src: url(/assets/fonts/circular-std-medium-500.ttf);
+      }
+      @font-face {
+        font-family: mysecFont;
+        src: url(/assets/fonts/Product\ Sans\ Regular.ttf);
+      }
 
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f0f0f0;
-    }
-
-    .container {
-      display: flex;
-      min-height: 100vh;
-      width: 100%;
-    }
-    .main-content {
-      flex-grow: 1;
-      padding: 20px;
-    }
-
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 20px;
-    }
-
-    .search-bar input {
-      width: 300px;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-
-    .user-profile {
-      display: flex;
-      align-items: center;
-    }
-
-    .user-profile img {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      margin-right: 10px;
-    }
-     /* CSS for Form Container and content */
-    .form-container {
-      background-color: white;
-      padding: 50px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    .head {
-      margin: 0 auto;
-      height: 104px;
-      width: 365px;
-    }
-    .head h1 {
-      color: #34475e;
-      font-size: 24px;
-      font-weight: 400;
-      line-height: 55.5px;
-      text-align: center;
-      font-family: mysecFont;
-    }
-    .head p {
-      color: #ff6600;
-      font-size: 15px;
-      font-weight: 400;
-      line-height: 55.5px;
-      text-align: center;
-      font-family: mysecFont;
-      margin-top: -20px;
-    }
-    .head img {
-      text-align: center;
-      margin-bottom: 60px;
-      margin-left: 60px;
-      width: 245px;
-    }
-    .form-row {
-      display: flex;
-      flex-wrap: wrap;
-      margin-bottom: 15px;
-      gap: 20px;
-    }
-
-    .form-group {
-      flex: 1;
-      min-width: 300px;
-    }
-
-    .form-group label {
-      display: block;
-      margin-bottom: 5px;
-      color: #353535;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 19.41px;
-      font-family: mysecFont;
-    }
-
-    .form-group input[type="text"],
-    .form-group input[type="email"] {
-      width: 100%;
-      height: 49px;
-      border-radius: 15px;
-      
-      border: 1px solid #ccc;
-      color: #7f8b94;
-    }
-    .check {
-      width: 108px;
-      height: 40px;
-      background-color: #f4faff;
-      display: flex;
-      border-radius: 5px;
-      gap: 5px;
-      align-items: center;
-      justify-content: center;
-    }
-    .BizContent {
-      display: flex;
-      justify-content: left;
-      gap: 10px;
-      align-items: center;
-    }
-    .checkSquare {
-      width: 24px;
-      height: 24px;
-      border-radius: 5px;
-      border: 1px 0px 0px 0px;
-      opacity: 0px;
-      background: #142e65;
-    }
-    .checkText {
-      font-family: Inter;
-      font-size: 14px;
-      font-weight: 500;
-      line-height: 20px;
-      text-align: left;
-      width: 60px;
-      height: 20px;
-      top: 10px;
-      left: 40px;
-      gap: 0px;
-      opacity: 0px;
-    }
-    .secCheckText {
-      width: 96px;
-      height: 22px;
-      top: 632px;
-      left: 518px;
-      gap: 0px;
-      opacity: 0px;
-      font-family: Roboto;
-      font-size: 12px;
-      font-weight: 500;
-      line-height: 22px;
-      text-align: left;
-      color: #142e65;
-    }
-
-    .form-group input[type="color"] {
-      padding: 5px;
-    }
-
-    .form-actions {
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .form-actions .btn-back,
-    .form-actions .btn-submit {
-      padding: 10px 20px;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    .form-actions .btn-back {
-      color: #ff6600;
-      border: 1px solid #ff6600;
-      width: 196px;
-      height: 56px;
-      font-size: 18px;
-      line-height: 20px;
-      text-align: center;
-      font-family: mysecFont;
-      background-color: white;
-    }
-
-    .form-actions .btn-back:hover {
-      background-color: #ccc;
-    }
-
-    .form-actions .btn-submit {
-      width: 196px;
-      height: 56px;
-      background-color: #ff6600;
-      color: #ffffff;
-      font-size: 18px;
-      font-weight: 400;
-      line-height: 20px;
-      text-align: center;
-      font-family: mysecFont;
-      border: none;
-      outline: none;
-    }
-
-    .form-actions .btn-submit:hover {
-      background-color: #e76a00;
-    }
-     
-/* CSS for Modal */
- #model {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    gap: 0px;
-    opacity: 0px;
-}
-
-.model-content {
-    background: #FFFFFF;
-    color: #000000;
-    padding: 20px;
-    text-align: center;
-    font-family: myFont;
-    font-size: 32px;
-    font-weight: 500;
-    line-height: 40.48px;
-}
-
-.checkmark img {
-    margin: 20px 0;
-    font-size: 48px;
-    width: 85.35px;
-    height: 85.35px;
-
-}
-
-.view-button {
-    background-color: #FF7A00;
-    color:#FFFFFF;
-    border: none;
-    width: 185.94px;
-    height: 53.13px;  
-    text-decoration: none;
-    display: inline-block;
-    font-size: 17.08px;
-    font-weight: 500;
-    line-height: 18.97px;
-    font-family: myFont;
-    cursor: pointer;
-}
-
-.view-button:hover {
-    background-color: #FF7A00;
-}
-    /* Responsive design */
-    @media (max-width: 768px) {
-      .sidebar {
-        width: 100%;
-        padding: 10px;
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
       }
 
       .container {
-        padding: 10px;
+        display: flex;
+        min-height: 100vh;
+        width: 100%;
+      }
+      .main-content {
+        flex-grow: 1;
+        padding: 20px;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
       }
 
       .search-bar input {
-        width: 100%;
+        width: 300px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
       }
 
-      .form-row {
-        flex-direction: column;
-        gap: 10px;
+      .user-profile {
+        display: flex;
+        align-items: center;
       }
-      /* #submit-btn{
-        margin-left: 7px;
-      } */
-    }
-  </style>
+
+      .user-profile img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+      /* CSS for Form Container and content */
+      .form-container {
+        background-color: white;
+        padding: 50px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .head {
+        margin: 0 auto;
+        height: 104px;
+        width: 365px;
+      }
+      .head h1 {
+        color: #34475e;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 55.5px;
+        text-align: center;
+        font-family: mysecFont;
+      }
+      .head p {
+        color: #ff6600;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 55.5px;
+        text-align: center;
+        font-family: mysecFont;
+        margin-top: -20px;
+      }
+      .head img {
+        text-align: center;
+        margin-bottom: 60px;
+        margin-left: 60px;
+        width: 245px;
+      }
+      .form-row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+        gap: 20px;
+      }
+
+      .form-group {
+        flex: 1;
+        min-width: 300px;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        color: #353535;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.41px;
+        font-family: mysecFont;
+      }
+
+      .form-group input[type='text'],
+      .form-group input[type='email'] {
+        width: 100%;
+        height: 49px;
+        border-radius: 15px;
+
+        border: 1px solid #ccc;
+        color: #7f8b94;
+      }
+      .check {
+        width: 108px;
+        height: 40px;
+        background-color: #f4faff;
+        display: flex;
+        border-radius: 5px;
+        gap: 5px;
+        align-items: center;
+        justify-content: center;
+      }
+      .BizContent {
+        display: flex;
+        justify-content: left;
+        gap: 10px;
+        align-items: center;
+      }
+      .checkSquare {
+        width: 24px;
+        height: 24px;
+        border-radius: 5px;
+        border: 1px 0px 0px 0px;
+        opacity: 0px;
+        background: #142e65;
+      }
+      .checkText {
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        text-align: left;
+        width: 60px;
+        height: 20px;
+        top: 10px;
+        left: 40px;
+        gap: 0px;
+        opacity: 0px;
+      }
+      .secCheckText {
+        width: 96px;
+        height: 22px;
+        top: 632px;
+        left: 518px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Roboto;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 22px;
+        text-align: left;
+        color: #142e65;
+      }
+
+      .form-group input[type='color'] {
+        padding: 5px;
+      }
+
+      .form-actions {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .form-actions .btn-back,
+      .form-actions .btn-submit {
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .form-actions .btn-back {
+        color: #ff6600;
+        border: 1px solid #ff6600;
+        width: 196px;
+        height: 56px;
+        font-size: 18px;
+        line-height: 20px;
+        text-align: center;
+        font-family: mysecFont;
+        background-color: white;
+      }
+
+      .form-actions .btn-back:hover {
+        background-color: #ccc;
+      }
+
+      .form-actions .btn-submit {
+        width: 196px;
+        height: 56px;
+        background-color: #ff6600;
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: center;
+        font-family: mysecFont;
+        border: none;
+        outline: none;
+      }
+
+      .form-actions .btn-submit:hover {
+        background-color: #e76a00;
+      }
+
+      /* CSS for Modal */
+      #model {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        gap: 0px;
+        opacity: 0px;
+      }
+
+      .model-content {
+        background: #ffffff;
+        color: #000000;
+        padding: 20px;
+        text-align: center;
+        font-family: myFont;
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 40.48px;
+      }
+
+      .checkmark img {
+        margin: 20px 0;
+        font-size: 48px;
+        width: 85.35px;
+        height: 85.35px;
+      }
+
+      .view-button {
+        background-color: #ff7a00;
+        color: #ffffff;
+        border: none;
+        width: 185.94px;
+        height: 53.13px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 17.08px;
+        font-weight: 500;
+        line-height: 18.97px;
+        font-family: myFont;
+        cursor: pointer;
+      }
+
+      .view-button:hover {
+        background-color: #ff7a00;
+      }
+      /* Responsive design */
+      @media (max-width: 768px) {
+        .sidebar {
+          width: 100%;
+          padding: 10px;
+        }
+
+        .container {
+          padding: 10px;
+        }
+
+        .search-bar input {
+          width: 100%;
+        }
+
+        .form-row {
+          flex-direction: column;
+          gap: 10px;
+        }
+        /* #submit-btn{
+          margin-left: 7px;
+        } */
+      }
+    </style>
+  </head>
+
   <body>
-    <div class="container">
-      <div class="main-content">
-        <div class="form-container">
-            <!-- Section for the header section of the form -->
-          <div class="head">
-            <h1>Create Business</h1>
-            <p>Please provide the information below</p>
-            <img src="/assets/images/progress-bar.svg" />
+    <div class="container-box">
+      <div class="sidebar">
+        <a class="logo-container" href="/layout/index.html">
+          <img
+            src="/assets/images/app_logo.png"
+            alt="app logo"
+            class="app-logo"
+          />
+        </a>
+        <ul>
+          <li class="nav-item active">
+            <a hreff="#dashboard" href="/pages/dashboard.html" class="nav-link">
+              <img
+                src="/assets/images/dashboard-icon.png"
+                alt="Dashboard"
+                class="nav-item-image"
+              />
+              <span class="nav-text">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a hreff="#business" href="/pages/business.html" class="nav-link">
+              <img
+                src="/assets/images/business-icon.png"
+                alt="Business"
+                class="nav-item-image"
+              />
+              <span class="nav-text">Business</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a hfref="#admins" href="/pages/admins.html" class="nav-link">
+              <img
+                src="/assets/images/admins-icon.png"
+                alt="Admins"
+                class="nav-item-image"
+              />
+              <span class="nav-text">Admins</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a hfref="#users" href="/pages/users.html" class="nav-link">
+              <img
+                src="/assets/images/users-icon.png"
+                alt="Users"
+                class="nav-item-image"
+              />
+              <span class="nav-text">Users</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a hfref="#report" href="/pages/reports.html" class="nav-link">
+              <img
+                src="/assets/images/report-icon.png"
+                alt="Report"
+                class="nav-item-image"
+              />
+              <span class="nav-text">Report</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-section">
+        <div class="header">
+          <div class="mob-app-logo-container">
+            <img
+              src="/assets/images/app_logo.png"
+              alt="app logo"
+              class="mobile-app-logo"
+            />
           </div>
 
-          <!-- Section for Form -->
-          <form>
-            <div class="form-row">
-              <div class="form-group">
-                <label for="base-url">Base URL</label>
-                <input type="text" id="base-url" name="base-url" />
-              </div>
-              <div class="form-group">
-                <label for="business-name">Business Name</label>
-                <input type="text" id="business-name" name="business-name" />
-              </div>
+          <label for="search-input" class="header-search-container">
+            <img
+              src="/assets/images/search-icon.svg"
+              alt="search"
+              class="search-icon"
+            />
+            <input
+              type="text"
+              id="search"
+              class="search-input"
+              placeholder="What are you looking for?"
+            />
+          </label>
+
+          <div class="header-profile-container">
+            <img
+              src="/assets/images/notification-bell-icon.svg"
+              alt="notification-bell-icon"
+              class="notification-bell-icon"
+            />
+            <span class="user-profile-div">
+              <img
+                src="/assets/images/user-profile-pic.png"
+                alt="user"
+                class="user-profile-pic"
+              />
+              <p class="user-profile-name">Dami Oguns</p>
+            </span>
+
+            <img
+              src="/assets/images/caret-down-icon.svg"
+              alt="caretdown"
+              class="caretdown"
+            />
+
+            <button class="open-mobile-nav">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                width="24"
+                height="24"
+                class="hamburger-icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <div class="mobile-nav-menu">
+            <div class="mobile-nav-menu-button">
+              <button class="close-mobile-nav">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  width="24"
+                  height="24"
+                  class="close-icon"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
             </div>
-            <div class="form-row">
-              <div class="form-group">
-                <label for="url">URL</label>
-                <input type="text" id="url" name="url" />
-              </div>
-              <div class="form-group">
-                <label for="custom-domain">Custom Domain</label>
-                <input type="text" id="custom-domain" name="custom-domain" />
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="form-group">
-                <label for="business-color">Business Color</label>
-                <div class="BizContent">
-                  <div class="check">
-                    <div class="checkSquare"></div>
-                    <span class="ceckText">#334556</span>
+            <ul class="mobile-nav-menu-list">
+              <li class="mobile-nav-menu-item">
+                <a
+                  hreff="#dashboard"
+                  class="nav-link"
+                  href="/pages/dashboard.html"
+                >
+                  <img
+                    src="/assets/images/dashboard-icon.png"
+                    alt="Dashboard"
+                    class="nav-item-image"
+                  />
+                  <span class="nav-text">Dashboard</span>
+                </a>
+              </li>
+              <li class="mobile-nav-menu-item">
+                <a
+                  hreff="#business"
+                  href="/pages/business.html"
+                  class="nav-link"
+                >
+                  <img
+                    src="/assets/images/business-icon.png"
+                    alt="Business"
+                    class="nav-item-image"
+                  />
+                  <span class="nav-text">Business</span>
+                </a>
+              </li>
+              <li class="mobile-nav-menu-item">
+                <a hreff="#admins" class="nav-link" href="/pages/admins.html">
+                  <img
+                    src="/assets/images/admins-icon.png"
+                    alt="Admins"
+                    class="nav-item-image"
+                  />
+                  <span class="nav-text">Admins</span>
+                </a>
+              </li>
+              <li class="mobile-nav-menu-item">
+                <a hfref="#users" class="nav-link" href="/pages/users.html">
+                  <img
+                    src="/assets/images/users-icon.png"
+                    alt="Users"
+                    class="nav-item-image"
+                  />
+                  <span class="nav-text">Users</span>
+                </a>
+              </li>
+              <li class="mobile-nav-menu-item">
+                <a hreff="#reports" class="nav-link" href="/pages/reports.html">
+                  <img
+                    src="/assets/images/report-icon.png"
+                    alt="Report"
+                    class="nav-item-image"
+                  />
+                  <span class="nav-text">Report</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="content-section bg-[f0f2fa]">
+          <div class="container">
+            <div class="main-content">
+              <div class="form-container">
+                <!-- Section for the header section of the form -->
+                <div class="head">
+                  <h1>Create Business</h1>
+                  <p>Please provide the information below</p>
+                  <img src="/assets/images/progress-bar.svg" />
+                </div>
+
+                <!-- Section for Form -->
+                <form>
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="base-url">Base URL</label>
+                      <input type="text" id="base-url" name="base-url" />
+                    </div>
+                    <div class="form-group">
+                      <label for="business-name">Business Name</label>
+                      <input
+                        type="text"
+                        id="business-name"
+                        name="business-name"
+                      />
+                    </div>
                   </div>
-                  <img src="/assets/images/Vector.svg" />
-                  <span class="secCheckText">add another color</span>
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="url">URL</label>
+                      <input type="text" id="url" name="url" />
+                    </div>
+                    <div class="form-group">
+                      <label for="custom-domain">Custom Domain</label>
+                      <input
+                        type="text"
+                        id="custom-domain"
+                        name="custom-domain"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="business-color">Business Color</label>
+                      <div class="BizContent">
+                        <div class="check">
+                          <div class="checkSquare"></div>
+                          <span class="ceckText">#334556</span>
+                        </div>
+                        <img src="/assets/images/Vector.svg" />
+                        <span class="secCheckText">add another color</span>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="admin-first-name">Admin First Name</label>
+                      <input
+                        type="text"
+                        id="admin-first-name"
+                        name="admin-first-name"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="admin-last-name">Admin Last Name</label>
+                      <input
+                        type="text"
+                        id="admin-last-name"
+                        name="admin-last-name"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="email-address">Email Address</label>
+                      <input
+                        type="email"
+                        id="email-address"
+                        name="email-address"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-actions">
+                    <a href="/pages/dashboard.html" class="btn-back">Back</a>
+                    <button type="submit" class="btn-submit" id="submit-btn">
+                      Create Business
+                    </button>
+                  </div>
+                </form>
+                <!-- Structure for Modal -->
+                <div id="model" class="model">
+                  <div class="model-content">
+                    <h2>
+                      Business Created<br />
+                      Successfully
+                    </h2>
+                    <div class="checkmark">
+                      <img src="/assets/images/check.svg" />
+                    </div>
+                    <button id="viewButton" class="view-button">View</button>
+                  </div>
                 </div>
               </div>
-              <div class="form-group">
-                <label for="admin-first-name">Admin First Name</label>
-                <input
-                  type="text"
-                  id="admin-first-name"
-                  name="admin-first-name"
-                />
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="form-group">
-                <label for="admin-last-name">Admin Last Name</label>
-                <input
-                  type="text"
-                  id="admin-last-name"
-                  name="admin-last-name"
-                />
-              </div>
-              <div class="form-group">
-                <label for="email-address">Email Address</label>
-                <input type="email" id="email-address" name="email-address" />
-              </div>
-            </div>
-            <div class="form-actions">
-              <button type="button" class="btn-back">Back</button>
-              <button type="submit" class="btn-submit" id="submit-btn">Create Business</button>
-            </div>
-          </form>
-          <!-- Structure for Modal -->
-          <div id="model" class="model">
-            <div class="model-content">
-              <h2>Business Created<br/> Successfully</h2>
-              <div class="checkmark">
-                <img src="/assets/images/check.svg"/>
-              </div>
-              <button id="viewButton" class="view-button">View</button>
             </div>
           </div>
+          <script>
+            const generateModal = document.getElementById('submit-btn');
+
+            generateModal.addEventListener('click', function (e) {
+              e.preventDefault();
+              model.style.display = 'flex';
+            });
+          </script>
         </div>
       </div>
     </div>
-        <script>
-            const generateModal = document.getElementById("submit-btn");
-
-            generateModal.addEventListener("click", function (e) {
-            e.preventDefault();
-            model.style.display = "flex";
-        });
-        </script>
-
   </body>
 </html>
-

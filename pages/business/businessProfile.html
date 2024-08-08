@@ -3,7 +3,92 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Admins</title>
+    <link rel="stylesheet" href="/styles/layout.css" />
+    <link rel="stylesheet" href="/styles/business.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css"
+    />
+
+    <link
+      rel="icon"
+      href="../assets/images/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="shortcut icon"
+      href="../assets/images/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/css/tw-elements.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css"
+    />
     <link rel="stylesheet" href="/styles/business.css" />
     <link
       rel="stylesheet"
@@ -28,178 +113,388 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <main class="business-main-container">
-      <!-- the header -->
-      <section class="business-header-2">
-        <p class="pbus">Business List</p>
-        <a
-          href="#business"
-          data-url="/pages/business.html"
-          class="internal-link aback"
-        >
-          <i class="fa-solid fa-arrow-left"></i>&nbsp; Back To Business</a
-        >
-      </section>
-      <section class="details-section">
-        <div class="details-img-card-div">
-          <div class="details-image">
-            <img src="/assets/images/businessimg/tower.svg" alt="tower" />
-            <p>First Bank</p>
+    <div class="container-box">
+      <div class="sidebar">
+        <a class="logo-container" href="/layout/index.html">
+          <img
+            src="/assets/images/app_logo.png"
+            alt="app logo"
+            class="app-logo"
+          />
+        </a>
+        <ul>
+          <li class="nav-item active">
+            <a hreff="#dashboard" href="/pages/dashboard.html" class="nav-link">
+              <img
+                src="/assets/images/dashboard-icon.png"
+                alt="Dashboard"
+                class="nav-item-image"
+              />
+              <span class="nav-text">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a hreff="#business" href="/pages/business.html" class="nav-link">
+              <img
+                src="/assets/images/business-icon.png"
+                alt="Business"
+                class="nav-item-image"
+              />
+              <span class="nav-text">Business</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a hfref="#admins" href="/pages/admins.html" class="nav-link">
+              <img
+                src="/assets/images/admins-icon.png"
+                alt="Admins"
+                class="nav-item-image"
+              />
+              <span class="nav-text">Admins</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a hfref="#users" href="/pages/users.html" class="nav-link">
+              <img
+                src="/assets/images/users-icon.png"
+                alt="Users"
+                class="nav-item-image"
+              />
+              <span class="nav-text">Users</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a hfref="#report" href="/pages/reports.html" class="nav-link">
+              <img
+                src="/assets/images/report-icon.png"
+                alt="Report"
+                class="nav-item-image"
+              />
+              <span class="nav-text">Report</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-section">
+        <div class="header">
+          <div class="mob-app-logo-container">
+            <img
+              src="/assets/images/app_logo.png"
+              alt="app logo"
+              class="mobile-app-logo"
+            />
           </div>
-          <!-- the card details -->
-          <div class="details-card-cont">
-            <!-- card container -->
-            <div class="details-card-div">
-              <!-- first card details -->
-              <div class="card-detail">
-                <div class="cards-info">
-                  <h4>Name</h4>
+
+          <label for="search-input" class="header-search-container">
+            <img
+              src="/assets/images/search-icon.svg"
+              alt="search"
+              class="search-icon"
+            />
+            <input
+              type="text"
+              id="search"
+              class="search-input"
+              placeholder="What are you looking for?"
+            />
+          </label>
+
+          <div class="header-profile-container">
+            <img
+              src="/assets/images/notification-bell-icon.svg"
+              alt="notification-bell-icon"
+              class="notification-bell-icon"
+            />
+            <span class="user-profile-div">
+              <img
+                src="/assets/images/user-profile-pic.png"
+                alt="user"
+                class="user-profile-pic"
+              />
+              <p class="user-profile-name">Dami Oguns</p>
+            </span>
+
+            <img
+              src="/assets/images/caret-down-icon.svg"
+              alt="caretdown"
+              class="caretdown"
+            />
+
+            <button class="open-mobile-nav">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                width="24"
+                height="24"
+                class="hamburger-icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <div class="mobile-nav-menu">
+            <div class="mobile-nav-menu-button">
+              <button class="close-mobile-nav">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  width="24"
+                  height="24"
+                  class="close-icon"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+            <ul class="mobile-nav-menu-list">
+              <li class="mobile-nav-menu-item">
+                <a
+                  hreff="#dashboard"
+                  class="nav-link"
+                  href="/pages/dashboard.html"
+                >
+                  <img
+                    src="/assets/images/dashboard-icon.png"
+                    alt="Dashboard"
+                    class="nav-item-image"
+                  />
+                  <span class="nav-text">Dashboard</span>
+                </a>
+              </li>
+              <li class="mobile-nav-menu-item">
+                <a
+                  hreff="#business"
+                  href="/pages/business.html"
+                  class="nav-link"
+                >
+                  <img
+                    src="/assets/images/business-icon.png"
+                    alt="Business"
+                    class="nav-item-image"
+                  />
+                  <span class="nav-text">Business</span>
+                </a>
+              </li>
+              <li class="mobile-nav-menu-item">
+                <a hreff="#admins" class="nav-link" href="/pages/admins.html">
+                  <img
+                    src="/assets/images/admins-icon.png"
+                    alt="Admins"
+                    class="nav-item-image"
+                  />
+                  <span class="nav-text">Admins</span>
+                </a>
+              </li>
+              <li class="mobile-nav-menu-item">
+                <a hfref="#users" class="nav-link" href="/pages/users.html">
+                  <img
+                    src="/assets/images/users-icon.png"
+                    alt="Users"
+                    class="nav-item-image"
+                  />
+                  <span class="nav-text">Users</span>
+                </a>
+              </li>
+              <li class="mobile-nav-menu-item">
+                <a hreff="#reports" class="nav-link" href="/pages/reports.html">
+                  <img
+                    src="/assets/images/report-icon.png"
+                    alt="Report"
+                    class="nav-item-image"
+                  />
+                  <span class="nav-text">Report</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="content-section bg-[f0f2fa]">
+          <main class="business-main-container">
+            <!-- the header -->
+            <section class="business-header-2">
+              <p class="pbus">Business List</p>
+              <a href="/pages/business.html" class="internal-link aback">
+                <i class="fa-solid fa-arrow-left"></i>&nbsp; Back To Business</a
+              >
+            </section>
+            <section class="details-section">
+              <div class="details-img-card-div">
+                <div class="details-image">
+                  <img src="/assets/images/businessimg/tower.svg" alt="tower" />
                   <p>First Bank</p>
                 </div>
-                <div class="cards-info">
-                  <h4>Admin</h4>
-                  <p>Adesanya Samuel</p>
+                <!-- the card details -->
+                <div class="details-card-cont">
+                  <!-- card container -->
+                  <div class="details-card-div">
+                    <!-- first card details -->
+                    <div class="card-detail">
+                      <div class="cards-info">
+                        <h4>Name</h4>
+                        <p>First Bank</p>
+                      </div>
+                      <div class="cards-info">
+                        <h4>Admin</h4>
+                        <p>Adesanya Samuel</p>
+                      </div>
+                      <div class="cards-info">
+                        <h4>URL</h4>
+                        <p>www.firstbanknigeria.com/</p>
+                      </div>
+                      <div class="cards-info">
+                        <h4>Status</h4>
+                        <p>Active</p>
+                      </div>
+                    </div>
+                    <!-- the first border bottom div -->
+                    <div class="card-border-bottom"></div>
+                    <!-- second card details -->
+                    <div class="card-detail">
+                      <div class="cards-info">
+                        <h4>Base URL</h4>
+                        <p>Leadway.fbn.com</p>
+                      </div>
+                      <div class="cards-info">
+                        <h4>Email address</h4>
+                        <p>Info@firstbank.com</p>
+                      </div>
+                      <div class="cards-info">
+                        <h4>Custom Domain</h4>
+                        <p>None</p>
+                      </div>
+                      <div class="cards-info">
+                        <h4>Business Color(s)</h4>
+                        <p class="business-color">
+                          <img
+                            src="/assets/images/businessimg/businessblue.svg"
+                            alt="blue"
+                          />
+                          <img
+                            src="/assets//images/businessimg/businessyellow.svg"
+                            alt="yellow"
+                          />
+                          <img
+                            src="/assets/images/businessimg/businessgreen.svg"
+                            alt="green"
+                          />
+                        </p>
+                      </div>
+                    </div>
+                    <!-- second border botttom -->
+                    <div class="card-border-bottom"></div>
+                    <!-- the card button -->
+                    <div class="card-details-button">
+                      <button>Edit</button>
+                    </div>
+                  </div>
                 </div>
-                <div class="cards-info">
-                  <h4>URL</h4>
-                  <p>www.firstbanknigeria.com/</p>
-                </div>
-                <div class="cards-info">
-                  <h4>Status</h4>
-                  <p>Active</p>
+                <div class="arrow-down-div">
+                  <img
+                    src="/assets/images/businessimg/Group 2318.png"
+                    alt="arrow"
+                  />
                 </div>
               </div>
-              <!-- the first border bottom div -->
-              <div class="card-border-bottom"></div>
-              <!-- second card details -->
-              <div class="card-detail">
-                <div class="cards-info">
-                  <h4>Base URL</h4>
-                  <p>Leadway.fbn.com</p>
+            </section>
+            <section class="more-info-details">
+              <!-- the logo and link and color contater -->
+              <div class="logo-color-link-container">
+                <!-- color main container -->
+                <div class="color-main-cont">
+                  <p>Color</p>
+                  <!-- containing each color and there hex color -->
+                  <div class="color-cont">
+                    <div class="color">
+                      <img
+                        src="/assets/images/businessimg/businessblue.svg"
+                        alt="blue"
+                      />
+                      <span>#142E65</span>
+                    </div>
+                    <div class="color">
+                      <img
+                        src="/assets/images/businessimg/businessyellow.svg"
+                        alt="yellow"
+                      />
+                      <span>#E6B014</span>
+                    </div>
+                    <div class="color">
+                      <img
+                        src="/assets/images/businessimg/businessgreen.svg"
+                        alt="green"
+                      />
+                      <span>#00B388</span>
+                    </div>
+                  </div>
                 </div>
-                <div class="cards-info">
-                  <h4>Email address</h4>
-                  <p>Info@firstbank.com</p>
-                </div>
-                <div class="cards-info">
-                  <h4>Custom Domain</h4>
-                  <p>None</p>
-                </div>
-                <div class="cards-info">
-                  <h4>Business Color(s)</h4>
-                  <p class="business-color">
+                <!-- logo cont -->
+                <div class="logo-cont">
+                  <p>Logo</p>
+                  <div class="logoImg">
                     <img
-                      src="/assets/images/businessimg/businessblue.svg"
-                      alt="blue"
+                      src="/assets/images/businessimg/firstbankLogo.svg"
+                      alt="firstbankLogo"
                     />
-                    <img
-                      src="/assets//images/businessimg/businessyellow.svg"
-                      alt="yellow"
-                    />
-                    <img
-                      src="/assets/images/businessimg/businessgreen.svg"
-                      alt="green"
-                    />
-                  </p>
+                  </div>
+                </div>
+                <!-- links cont -->
+                <div class="link-main-cont">
+                  <p>Link</p>
+                  <div class="link-cont">
+                    <i class="fa-solid fa-link-simple"></i>
+                    <span>firstbanknigeria.leadway.com</span>
+                    <img src="/assets/images/businessimg/copy.svg" alt="copy" />
+                  </div>
                 </div>
               </div>
-              <!-- second border botttom -->
-              <div class="card-border-bottom"></div>
-              <!-- the card button -->
-              <div class="card-details-button">
-                <button>Edit</button>
+              <!-- preview container -->
+              <div class="preview-main-container">
+                <div class="preview-header">
+                  <p>Preview</p>
+                  <!-- MODAL COMMENT line 177 to 190 -->
+                  <button
+                    type="button"
+                    data-twe-toggle="modal"
+                    data-twe-target="#exampleModalCenteredScrollable"
+                    data-twe-ripple-init
+                    data-twe-ripple-color="light"
+                  >
+                    View Preview
+                  </button>
+                </div>
+                <div class="preview-image-div">
+                  <button
+                    type="button"
+                    data-twe-toggle="modal"
+                    data-twe-target="#exampleModalCenteredScrollable"
+                    data-twe-ripple-init
+                    data-twe-ripple-color="light"
+                  >
+                    <img
+                      src="/assets/images/businessimg/previewImage.svg"
+                      alt="firstbank dashborad image"
+                      class="preview-img"
+                    />
+                  </button>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="arrow-down-div">
-            <img src="/assets/images/businessimg/Group 2318.png" alt="arrow" />
-          </div>
-        </div>
-      </section>
-      <section class="more-info-details">
-        <!-- the logo and link and color contater -->
-        <div class="logo-color-link-container">
-          <!-- color main container -->
-          <div class="color-main-cont">
-            <p>Color</p>
-            <!-- containing each color and there hex color -->
-            <div class="color-cont">
-              <div class="color">
-                <img
-                  src="/assets/images/businessimg/businessblue.svg"
-                  alt="blue"
-                />
-                <span>#142E65</span>
-              </div>
-              <div class="color">
-                <img
-                  src="/assets/images/businessimg/businessyellow.svg"
-                  alt="yellow"
-                />
-                <span>#E6B014</span>
-              </div>
-              <div class="color">
-                <img
-                  src="/assets/images/businessimg/businessgreen.svg"
-                  alt="green"
-                />
-                <span>#00B388</span>
-              </div>
-            </div>
-          </div>
-          <!-- logo cont -->
-          <div class="logo-cont">
-            <p>Logo</p>
-            <div class="logoImg">
-              <img
-                src="/assets/images/businessimg/firstbankLogo.svg"
-                alt="firstbankLogo"
-              />
-            </div>
-          </div>
-          <!-- links cont -->
-          <div class="link-main-cont">
-            <p>Link</p>
-            <div class="link-cont">
-              <i class="fa-solid fa-link-simple"></i>
-              <span>firstbanknigeria.leadway.com</span>
-              <img src="/assets/images/businessimg/copy.svg" alt="copy" />
-            </div>
-          </div>
-        </div>
-        <!-- preview container -->
-        <div class="preview-main-container">
-          <div class="preview-header">
-            <p>Preview</p>
-            <!-- MODAL COMMENT line 177 to 190 -->
-            <button
-              type="button"
-              data-twe-toggle="modal"
-              data-twe-target="#exampleModalCenteredScrollable"
-              data-twe-ripple-init
-              data-twe-ripple-color="light"
-            >
-                View Preview
-            </button>
-          </div>
-          <div class="preview-image-div">
-            <button
-              type="button"
-              data-twe-toggle="modal"
-              data-twe-target="#exampleModalCenteredScrollable"
-              data-twe-ripple-init
-              data-twe-ripple-color="light"
-            >
-              <img
-                src="/assets/images/businessimg/previewImage.svg"
-                alt="firstbank dashborad image"
-                class="preview-img"
-              />
-            </button>
-          </div>
-        </div>
-      </section>
-      <!-- <section id="modal">
+            </section>
+            <!-- <section id="modal">
         <div class="modal hidden">
           <img
             src="/assets/images/businessimg/previewImage.svg"
@@ -208,31 +503,34 @@
         </div>
         <div class="overlay hidden"></div>
       </section> -->
-    </main>
-  </body>
+          </main>
 
-  <!-- MODAL COMMENT - Line 214 - 233 -->
-  <div
-    data-twe-modal-init
-    class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
-    id="exampleModalCenteredScrollable"
-    tabindex="-1"
-    aria-labelledby="exampleModalCenteredScrollableLabel"
-    aria-modal="true"
-    role="dialog"
-  >
-    <div
-      data-twe-modal-dialog-ref
-      class="pointer-events-none relative flex min-h-[calc(100%-1rem)] w-[100vw] translate-y-[-50px] items-center opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:min-h-[calc(100%-3.5rem)] min-[576px]:max-w-[70vw]"
-    >
-      <img
-        src="/assets/images/businessimg/previewImage.svg"
-        alt="preview-image"
-        class="w-full"
-      />
+          <!-- MODAL COMMENT - Line 214 - 233 -->
+          <div
+            data-twe-modal-init
+            class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
+            id="exampleModalCenteredScrollable"
+            tabindex="-1"
+            aria-labelledby="exampleModalCenteredScrollableLabel"
+            aria-modal="true"
+            role="dialog"
+          >
+            <div
+              data-twe-modal-dialog-ref
+              class="pointer-events-none relative flex min-h-[calc(100%-1rem)] w-[100vw] translate-y-[-50px] items-center opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:min-h-[calc(100%-3.5rem)] min-[576px]:max-w-[70vw]"
+            >
+              <img
+                src="/assets/images/businessimg/previewImage.svg"
+                alt="preview-image"
+                class="w-full"
+              />
+            </div>
+          </div>
+          <script src="https://cdn.jsdelivr.net/npm/tw-elements/js/tw-elements.umd.min.js"></script>
+
+          <!-- <script src="/scripts/businesmodal.js"></script> -->
+        </div>
+      </div>
     </div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/tw-elements/js/tw-elements.umd.min.js"></script>
-
-  <!-- <script src="/scripts/businesmodal.js"></script> -->
+  </body>
 </html>
