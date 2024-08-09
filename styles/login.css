@@ -1,25 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-@font-face {
-    font-family: 'Circular Std Medium';
-    src: url('/assets/fonts/circular-std-medium-500') format('tff');
-    font-weight: 500;
-    font-style: normal;
+    font-family: 'Circular Std Medium', sans-serif;
 }
 
 body {
     background-color: #f0f2fa;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     /* overflow: hidden; */
 }
 
 .wrapper {
-    width: 60%;
-    margin: 1.5rem auto;
+    width: 70%;
+    max-width: 1200px;
+    margin: auto;
     background-color: #fff;
     border-radius: 5px;
     position: relative;
@@ -59,9 +63,9 @@ header hgroup h5 {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 60px;
-    margin-bottom: 32px;
-    margin-top: 12.8px;
+    height: 3.4rem;
+    margin-bottom: 2rem;
+    margin-top: .8rem;
     border: none;
     background-color: #f0f2fa;
     border-radius: 5px;
@@ -72,43 +76,49 @@ header hgroup h5 {
     height: 100%;
     border: none;
     outline: none;
-    padding: 30px;
-    font-size: 1.2rem;
+    padding: 0;
+    font-size: 1rem;
     background-color: #f0f2fa;
 }
 
 .input-group i {
-    font-size: 25px;
-    margin-right: 30px;
+    font-size: 1.5rem;
+    margin-right: 1.8rem;
 }
 
 .reset-password {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: 1.6rem;
     padding: 0 20px;
 }
 
 .reset-password input {
     margin-right: .625rem;
+    padding: 2rem;
 }
 
 .reset-password a {
     text-decoration: none;
     cursor: pointer;
     color: #000;
+    font-size: 1.1rem;
+}
+
+.reset-password label {
+    font-size: 1.1rem;
 }
 
 .btn {
     width: 100%;
-    padding: 1.2rem 6.25rem;
+    padding: 1.2rem 0;
     border: none;
     outline: none;
     color: #fff;
     font-size: 1rem;
     font-weight: bold;
-    margin-top: 1.875rem;
+    margin-top: 2rem;
     background-color: #ff7a00;
     border-radius: 5px;
 }
@@ -125,78 +135,156 @@ header hgroup h5 {
     width: 4.375rem;
 }
 
+/* SMALL SCREEN */
 @media (max-width: 640px) {
     html {
-        font-size: 13px;
+        font-size: 16px;
     }
 
     .wrapper {
         width: 100%;
-        background-color: #fff;
-        border-radius: 5px;
-
-    }
-
-    header hgroup h5 {
-        padding: .4rem 0;
-        font-size: 1rem;
-        text-wrap: nowrap;
     }
 
     header hgroup h2 {
-        padding: .4rem 0;
-        font-size: 2.5rem;
-        text-wrap: nowrap;
+        font-size: 1.7rem;
+    }
+
+    header hgroup h5 {
+        font-size: .8rem;
+    }
+
+    form {
+        width: 90%;
+        margin: 0 auto;
+        padding: 1rem 0;
+    }
+
+    .reset-password {
+        padding: 0;
+        gap: 1rem;
+    }
+
+    .reset-password a {
+        font-size: 1.5rem;
+    }
+
+    .reset-password label {
+        font-size: 1.5rem;
     }
 
     .logo {
         display: none;
     }
-
-    .btn {
-        padding: .625rem 3rem;
-    }
-
-    .reset-password {
-        gap: 2rem;
-        padding: 0;
-    }
-
 }
 
-@media (min-width: 768px) {
+/* MEDIUM SCREEN */
+@media (max-width: 768px) {
     html {
-        font-size: 16px;
-    }
-
-    .reset-password {
-        gap: 2rem;
-        padding: 0;
-    }
-}
-
-@media (min-width: 1280px) {
-    html {
-        font-size: 1.25rem;
-    }
-
-    .wrapper {
-        width: 80%;
-        background-color: #fff;
-        border-radius: 5px;
-    }
-}
-
-@media (min-width: 1536px) {
-    html {
-        font-size: 1.2rem;
+        font-size: 17px;
     }
 
     .wrapper {
         width: 90%;
-        background-color: #fff;
-        border-radius: 5px;
+        margin: 0 auto;
     }
 
+    header hgroup h2 {
+        font-size: 1.8rem;
+    }
+
+    header hgroup h5 {
+        font-size: .8rem;
+    }
+
+    .reset-password {
+        padding: 0;
+    }
+
+    .reset-password a {
+        font-size: .8rem;
+    }
+
+    .reset-password label {
+        font-size: .8rem;
+    }
+
+    .logo {
+        display: none;
+    }
+}
+
+/* LARGE SCREEN */
+@media (max-width: 1024px) {
+    html {
+        font-size: 17px;
+    }
+
+    .wrapper {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    header hgroup h2 {
+        font-size: 2.2rem;
+    }
+
+    header hgroup h5 {
+        font-size: .8rem;
+    }
+
+    .reset-password {
+        padding: 0;
+    }
+
+    .reset-password a {
+        font-size: 1rem;
+    }
+
+    .reset-password label {
+        font-size: 1rem;
+    }
 
 }
+
+/* XL SCREEN */
+@media (max-width: 1280px) {
+    html {
+        font-size: 20px;
+    }
+
+    .wrapper {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    header hgroup h2 {
+        font-size: 2.2rem;
+    }
+
+    header hgroup h5 {
+        font-size: .8rem;
+    }
+
+    .reset-password {
+        padding: 0;
+    }
+
+}
+
+/* @media (max-width: 1536px) {
+    html {
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 2000px) {
+    html {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 3000px) {
+    html {
+        font-size: 30px;
+    }
+} */
