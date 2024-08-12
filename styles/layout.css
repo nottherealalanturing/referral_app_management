@@ -24,58 +24,58 @@
   width: 100vw;
   height: 100vh;
   display: flex;
+  background: #f0f2fa;
   align-items: flex-start;
   justify-content: flex-start;
-  background: #f0f2fa;
 }
 
 .sidebar {
-  height: 100%;
+  gap: 1.875rem;
   width: 15%;
+  height: 100%;
   display: flex;
-  flex-direction: column;
   background: #262626;
-  gap: 30px;
+  flex-direction: column;
 }
 
 .main-section {
-  height: 100%;
   width: 85%;
+  height: 100%;
 }
 
 .header {
-  height: 50px;
-  background: #ffffff;
   display: flex;
-  justify-content: space-between;
+  height: 3.125rem;
   align-items: center;
-  padding: 0px 10px;
+  padding: 0rem .625rem;
+  background: #ffffff;
+  justify-content: space-between;
 }
 
 .content-section {
-  height: calc(100% - 50px);
   width: 100%;
-  padding: 10px;
-  background-color: #f0f2fa;
   overflow: auto;
+  padding: .625rem;
+  background-color: #f0f2fa;
+  height: calc(100% - 3.125rem);
 }
 
 .logo-container {
   display: flex;
-  justify-content: flex-start;
+  padding: 1.25rem;
   align-items: center;
-  padding: 20px;
+  justify-content: flex-start;
 }
 
 .app-logo {
-  width: 90px;
-  height: 30px;
+  width: 5.625rem;
+  height: 1.875rem;
 }
 
 .mobile-app-logo {
   display: none;
-  width: 90px;
-  height: 30px;
+  width: 5.625rem;
+  height: 1.875rem;
 }
 
 .sidebar ul {
@@ -83,7 +83,7 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 1px;
+  gap: .0625rem;
   align-items: flex-start;
   justify-content: flex-start;
 }
@@ -93,17 +93,17 @@
 }
 
 .nav-item-image {
-  width: 12px;
-  height: 12px;
+  width: .75rem;
+  height: .75rem;
 }
 
 .nav-link {
   display: flex;
   align-items: center;
-  padding: 10px 40px 10px 20px;
+  padding: .625rem 2.5rem .625rem 1.25rem;
   text-decoration: none;
   color: white;
-  gap: 10px;
+  gap: .625rem;
   transition: background-color 0.3s ease;
 }
 
@@ -112,8 +112,8 @@
     BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
     'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: .875rem;
+  line-height: 1.25rem;
   color: #ffffff;
 }
 
@@ -136,7 +136,7 @@
 }
 
 .nav-item.active .nav-link {
-  border-left: 5px solid white;
+  border-left: .3125rem solid white;
 }
 
 .nav-link:hover {
@@ -145,12 +145,12 @@
 
 .header-search-container {
   background: #f0f2fa;
-  padding: 5px;
+  padding: .3125rem;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 10px;
-  border-radius: 2px;
+  gap: .625rem;
+  border-radius: .125rem;
 }
 
 .search-input {
@@ -161,7 +161,7 @@
     BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
     'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 400;
-  width: 160px;
+  width: 10rem;
 }
 
 .search-input:focus {
@@ -171,38 +171,38 @@
 }
 
 .search-icon {
-  width: 10px;
-  height: 10px;
+  width: .625rem;
+  height: .625rem;
 }
 
 .header-profile-container {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 10px;
-  padding-right: 1rem;
+  gap: .625rem;
+  padding-right: 16px;
 }
 
 .notification-bell-icon {
-  width: 15px;
-  height: 15px;
+  width: .9375rem;
+  height: .9375rem;
 }
 
 .user-profile-pic {
-  width: 30px;
-  height: 30px;
+  width: 1.875rem;
+  height: 1.875rem;
 }
 
 .caretdown {
-  width: 10px;
-  height: 10px;
+  width: .625rem;
+  height: .625rem;
 }
 
 .user-profile-div {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 5px;
+  gap: .3125rem;
 }
 
 .user-profile-name {
@@ -210,12 +210,12 @@
     BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
     'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: .875rem;
+  line-height: 1.25rem;
 }
 
 .mob-app-logo-container {
-  margin-left: 10px;
+  margin-left: .625rem;
   display: none;
 }
 
@@ -223,7 +223,7 @@
   display: none;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 62rem) {
   .sidebar {
     display: none;
   }
@@ -251,18 +251,18 @@
     width: 100;
     display: flex;
     justify-content: flex-end;
-    padding: 10px;
+    padding: .625rem;
   }
 
   .mobile-nav-menu-list {
     display: flex;
     flex-direction: column;
-    padding-left: 20px;
+    padding-left: 1.25rem;
     list-style: none;
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
-    gap: 20px;
+    gap: 1.25rem;
   }
 
   .mobile-nav-menu-item {
@@ -270,12 +270,12 @@
       BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
       'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 500;
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 1.25rem;
+    line-height: 1.25rem;
     display: flex;
     align-items: flex-start;
-    border-bottom: 1px solid #ff7a00;
-    padding-bottom: 8px;
+    border-bottom: .0625rem solid #ff7a00;
+    padding-bottom: .5rem;
     width: 80%;
   }
   .main-section {
@@ -285,12 +285,12 @@
 
   .mobile-app-logo {
     display: flex;
-    width: 90px;
-    height: 30px;
+    width: 5.625rem;
+    height: 1.875rem;
   }
 
   .mob-app-logo-container {
-    margin-left: 10px;
+    margin-left: .625rem;
     display: block;
   }
 
@@ -299,11 +299,11 @@
   }
 
   .header {
-    padding: 0px 0px;
+    padding: 0rem 0rem;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .sidebar {
     .open-mobile-nav {
       display: block;
@@ -325,18 +325,18 @@
     width: 100;
     display: flex;
     justify-content: flex-end;
-    padding: 10px;
+    padding: .625rem;
   }
 
   .mobile-nav-menu-list {
     display: flex;
     flex-direction: column;
-    padding-left: 20px;
+    padding-left: 1.25rem;
     list-style: none;
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
-    gap: 20px;
+    gap: 1.25rem;
   }
 
   .mobile-nav-menu-item {
@@ -344,12 +344,12 @@
       BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
       'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 500;
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 1.25rem;
+    line-height: 1.25rem;
     display: flex;
     align-items: flex-start;
-    border-bottom: 1px solid #ff7a00;
-    padding-bottom: 8px;
+    border-bottom: .0625rem solid #ff7a00;
+    padding-bottom: .5rem;
     width: 80%;
   }
   .main-section {
@@ -359,12 +359,12 @@
 
   .mobile-app-logo {
     display: flex;
-    width: 90px;
-    height: 30px;
+    width: 5.625rem;
+    height: 1.875rem;
   }
 
   .mob-app-logo-container {
-    margin-left: 10px;
+    margin-left: .625rem;
     display: block;
   }
 
@@ -373,11 +373,11 @@
   }
 
   .header {
-    padding: 0px 0px;
+    padding: 0rem 0rem;
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 36rem) {
   .sidebar {
     display: none;
   }
@@ -404,7 +404,7 @@
     width: 100;
     display: flex;
     justify-content: flex-end;
-    padding: 10px;
+    padding: .625rem;
   }
 
   .mobile-nav-menu-list {
@@ -412,9 +412,9 @@
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
-    gap: 20px;
+    gap: 1.25rem;
     flex-direction: column;
-    padding-left: 20px;
+    padding-left: 1.25rem;
     list-style: none;
   }
 
@@ -423,12 +423,12 @@
       BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
       'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 500;
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 1.25rem;
+    line-height: 1.25rem;
     display: flex;
     align-items: flex-start;
-    border-bottom: 1px solid #ff7a00;
-    padding-bottom: 8px;
+    border-bottom: .0625rem solid #ff7a00;
+    padding-bottom: .5rem;
     width: 80%;
   }
 
@@ -439,12 +439,12 @@
 
   .mobile-app-logo {
     display: flex;
-    width: 90px;
-    height: 30px;
+    width: 5.625rem;
+    height: 1.875rem;
   }
 
   .mob-app-logo-container {
-    margin-left: 10px;
+    margin-left: .625rem;
     display: block;
   }
 
@@ -453,7 +453,7 @@
   }
 
   .header {
-    padding: 0px 0px;
+    padding: 0rem 0rem;
   }
 }
 
@@ -462,7 +462,7 @@
 .usersHomepage {
   background: rgb(240, 242, 250);
   font-family: 'Mulish', sans-serif;
-  padding: 2.5rem;
+  padding: 40px;
 }
 
 .headerDiv {
@@ -475,32 +475,32 @@
 }
 
 .headerDiv button {
-  padding: 0.75rem;
-  width: 12.5rem;
+  padding: 12px;
+  width: 200px;
   background: #ff7a00;
   color: #fff;
   font-weight: 600;
   border: none;
-  border-radius: 0.3125rem;
+  border-radius: 5px;
   cursor: pointer;
 
   .fa-plus {
     color: #fff;
     font-weight: 900;
-    font-size: 0.9375rem;
-    margin-right: 0.625rem;
+    font-size: 15px;
+    margin-right: 10px;
   }
 }
 
 .searchDiv {
   background: #fff;
-  padding: 1.25rem;
+  padding: 20px;
   margin-top: 3%;
 }
 .childDiv {
-  border: 0.0594rem solid #e5e5e5;
-  border-radius: 0.3125rem;
-  padding: 1.25rem;
+  border: .9504px solid #e5e5e5;
+  border-radius: 5px;
+  padding: 20px;
   display: flex;
   justify-content: space-between;
 }
@@ -510,22 +510,22 @@
   flex-wrap: wrap;
 }
 .search {
-  border: 1px solid #e5e5e5;
-  padding: 0.5rem;
-  width: 9.375rem;
-  font-size: 0.75rem;
+  border: .0625rem solid #e5e5e5;
+  padding: 8px;
+  width: 150px;
+  font-size: 12px;
   background: rgb(243, 245, 246);
   .fa-circle-caret-down {
-    margin-left: 0.625rem;
+    margin-left: 10px;
   }
 }
 .inputDiv {
-  border: 1px solid #e5e5e5;
+  border: .0625rem solid #e5e5e5;
   display: flex;
   flex: 1;
-  padding: 0.5rem;
+  padding: 8px;
   align-items: center;
-  width: 37.5rem;
+  width: 600px;
   border-left: none;
 }
 .inputDiv input {
@@ -533,14 +533,14 @@
   outline: none;
   width: 100%;
   flex: 1;
-  padding: 0rem 0.3125rem;
-  font-size: 1rem;
+  padding: 0px 5px;
+  font-size: 16px;
 }
 .findBtn button {
-  padding: 0.7rem;
-  width: 9.375rem;
-  font-size: 0.75rem;
-  border-radius: 0.3125rem;
+  padding: 11.2px;
+  width: 150px;
+  font-size: 12px;
+  border-radius: 5px;
   border: none;
   background: #ff7a00;
   color: #fff;
@@ -553,39 +553,39 @@
 }
 
 .allBtn {
-  padding: 0.625rem 1.5625rem;
+  padding: 10px 25px;
   background: #fff;
   color: black;
   font-weight: 700;
   border: none;
-  border-radius: 0.125rem;
+  border-radius: 2px;
   cursor: pointer;
 
   p {
-    border-bottom: 0.1875rem solid #142e65;
+    border-bottom: 3px solid #142e65;
   }
 }
 .activeBtn {
-  padding: 0.625rem 1.5625rem;
+  padding: 10px 25px;
   background: #00b388;
   border: none;
   color: #fff;
   font-weight: 700;
-  border-radius: 0.125rem;
+  border-radius: 2px;
   cursor: pointer;
 }
 .inActiveBtn {
-  padding: 0.625rem 1.5625rem;
+  padding: 10px 25px;
   background: #c61531;
   border: none;
   color: #fff;
   font-weight: 700;
-  border-radius: 0.125rem;
+  border-radius: 2px;
   cursor: pointer;
 }
 
 .contents {
-  padding: 1.875rem;
+  padding: 30px;
   background-color: #fff;
 }
 
@@ -596,49 +596,49 @@
 
 .contents .th {
   display: flex;
-  padding: 0.625rem;
-  margin-left: 0.625rem;
+  padding: 10px;
+  margin-left: 10px;
   justify-content: space-around;
   cursor: pointer;
-  font-size: 0.8125rem;
+  font-size: 13px;
 }
 
 .contents .td {
   display: flex;
   justify-content: space-around;
-  font-size: 0.75rem;
-  padding: 0.625rem;
+  font-size: 12px;
+  padding: 10px;
   align-items: center;
-  border: 1px solid #e5e5e5;
+  border: .0625rem solid #e5e5e5;
   margin-top: 1%;
   cursor: pointer;
 }
 .td .fullstack {
   display: flex;
   align-items: center;
-  gap: 4.375rem;
+  gap: 70px;
 }
 
 .td .greenActive {
-  border: 1px solid;
+  border: .0625rem solid;
   background: #00b388;
   text-align: center;
-  width: 5.625rem;
+  width: 90px;
   height: fit-content;
   color: #fff;
   font-weight: 700;
-  padding: 0.3125rem;
-  border-radius: 0.5rem;
+  padding: 5px;
+  border-radius: 8px;
   cursor: pointer;
 }
 
 .td .dots {
-  font-size: 0.3125rem;
+  font-size: 5px;
   color: black;
 }
 
 .footers {
-  font-size: 0.75rem;
+  font-size: 12px;
   font-weight: 600;
   margin-top: 12%;
   display: flex;
@@ -648,7 +648,7 @@
 
 .footers .pagesNumber {
   display: flex;
-  gap: 0.4375rem;
+  gap: 7px;
   align-items: center;
   cursor: pointer;
 }
@@ -658,33 +658,33 @@
 
 .viewedPages {
   display: flex;
-  gap: 1.875rem;
+  gap: 30px;
   text-align: center;
 }
 
 .viewedPages .itemsPerPage {
   display: flex;
-  gap: 0.625rem;
+  gap: 10px;
 }
 .itemsPerPage .numberBox {
   display: flex;
-  gap: 0.75rem;
-  border: 1px solid #b1b1b1;
-  width: 3.125rem;
+  gap: 12px;
+  border: .0625rem solid #b1b1b1;
+  width: 50px;
   cursor: pointer;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 47.9375rem) {
   main {
     width: 100%;
-    padding: 1.25rem;
+    padding: 20px;
   }
   .inputDiv {
-    width: 6.25rem;
+    width: 100px;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 48rem) and (max-width: 62rem) {
 }
 
 .circular-std {
