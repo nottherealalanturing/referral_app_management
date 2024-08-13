@@ -20,8 +20,9 @@ body {
 }
 
 .wrapper {
-  width: 70%;
-  max-width: 1200px;
+  width: 40%;
+  /* height: 100%; */
+  max-width: 1000px;
   margin: auto;
   background-color: #fff;
   border-radius: 5px;
@@ -30,31 +31,34 @@ body {
 
 .section {
   width: 100%;
-  height: 2rem;
+  height: 1rem;
   background-color: #ff7a00;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
 
 form {
-  width: 60%;
+  width: 65%;
   margin: 0 auto;
-  padding: 3.125rem 0;
+  padding: 3rem 0;
 }
 
 header hgroup {
   text-align: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.7rem;
 }
 
 header hgroup h2 {
-  font-size: 3rem;
-  padding: 0;
+  font-size: 2.2rem;
 }
 
 header hgroup h5 {
   padding: 0.4375rem 0;
-  font-size: 1.1rem;
+  font-size: 0.8rem;
+}
+
+.input-group label {
+  font-size: 0.8rem;
 }
 
 .input-group .input-box {
@@ -62,9 +66,9 @@ header hgroup h5 {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 3.4rem;
+  height: 3rem;
   margin-bottom: 2rem;
-  margin-top: 0.8rem;
+  margin-top: 0.3rem;
   border: none;
   background-color: #f0f2fa;
   border-radius: 5px;
@@ -75,14 +79,14 @@ header hgroup h5 {
   height: 100%;
   border: none;
   outline: none;
-  padding: 0;
-  font-size: 1rem;
+  padding-left: 1rem;
+  font-size: 0.9rem;
   background-color: #f0f2fa;
 }
 
 .input-group i {
-  font-size: 1.5rem;
-  margin-right: 1.8rem;
+  font-size: 1.2rem;
+  margin-right: 1rem;
 }
 
 .reset-password {
@@ -90,11 +94,11 @@ header hgroup h5 {
   justify-content: space-between;
   align-items: center;
   margin-top: 1.6rem;
-  padding: 0 20px;
+  padding: 0 0.625rem;
 }
 
 .reset-password input {
-  margin-right: 0.625rem;
+  margin-right: 0.5rem;
   padding: 2rem;
 }
 
@@ -102,16 +106,16 @@ header hgroup h5 {
   text-decoration: none;
   cursor: pointer;
   color: #000;
-  font-size: 1.1rem;
+  font-size: 0.8rem;
 }
 
 .reset-password label {
-  font-size: 1.1rem;
+  font-size: 0.8rem;
 }
 
 .btn {
   width: 100%;
-  padding: 1.2rem 0;
+  padding: 0.7rem 0;
   border: none;
   outline: none;
   color: #fff;
@@ -125,50 +129,38 @@ header hgroup h5 {
 .btn a {
   text-decoration: none;
   color: #fff;
+  font-size: 1rem;
 }
 
 .logo {
   position: absolute;
-  top: 5rem;
-  right: 3.125rem;
-  width: 4.375rem;
+  top: 4rem;
+  right: 2rem;
+  width: 3.5rem;
 }
 
-/* SMALL SCREEN */
-@media (max-width: 640px) {
-  html {
-    font-size: 16px;
-  }
-
+@media (max-width: 370px) {
   .wrapper {
     width: 100%;
   }
 
+  form {
+    width: 100%;
+    margin: 0 auto;
+    padding: 3rem 0;
+  }
+
+  header hgroup h5,
+  h2 {
+    text-align: center;
+  }
+
   header hgroup h2 {
-    font-size: 1.7rem;
+    font-size: 0.5rem;
   }
 
   header hgroup h5 {
-    font-size: 0.8rem;
-  }
-
-  form {
-    width: 90%;
-    margin: 0 auto;
-    padding: 1rem 0;
-  }
-
-  .reset-password {
-    padding: 0;
-    gap: 1rem;
-  }
-
-  .reset-password a {
-    font-size: 1.5rem;
-  }
-
-  .reset-password label {
-    font-size: 1.5rem;
+    font-size: 0.3rem;
   }
 
   .logo {
@@ -176,15 +168,53 @@ header hgroup h5 {
   }
 }
 
-/* MEDIUM SCREEN */
-@media (max-width: 768px) {
+@media (max-width: 540px) {
+  .wrapper {
+    width: 90%;
+  }
+
+  header hgroup h5,
+  h2 {
+    text-align: center;
+  }
+
+  header hgroup h2 {
+    font-size: 0.7rem;
+  }
+
+  header hgroup h5 {
+    font-size: 0.5rem;
+  }
+
+  .reset-password {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .logo {
+    display: none;
+  }
+}
+
+/* SMALL SCREEN */
+@media (max-width: 640px) {
   html {
-    font-size: 17px;
+    font-size: 14px;
   }
 
   .wrapper {
     width: 90%;
+  }
+
+  form {
+    width: 90%;
     margin: 0 auto;
+    padding: 3rem 0;
+  }
+
+  header hgroup {
+    text-align: left;
+    /* margin-bottom: 3rem; */
   }
 
   header hgroup h2 {
@@ -192,7 +222,49 @@ header hgroup h5 {
   }
 
   header hgroup h5 {
+    font-size: 0.7rem;
+  }
+
+  .input-group label {
     font-size: 0.8rem;
+  }
+
+  .btn a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+  }
+
+  .logo {
+    top: 4rem;
+    right: 1.6rem;
+    width: 3.5rem;
+  }
+}
+
+/* MEDIUM SCREEN */
+@media (max-width: 768px) {
+  html {
+    /* font-size: 20px; */
+  }
+
+  .wrapper {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  form {
+    width: 0%;
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
+
+  header hgroup h2 {
+    font-size: 1.6rem;
+  }
+
+  header hgroup h5 {
+    font-size: 0.7rem;
   }
 
   .reset-password {
@@ -208,69 +280,94 @@ header hgroup h5 {
   }
 
   .logo {
-    display: none;
+    top: 2.6rem;
+    right: 1.6rem;
+    width: 3.5rem;
+  }
+}
+
+@media (max-width: 950px) {
+  html {
+  }
+
+  .wrapper {
+    width: 70%;
+    margin: 0 auto;
   }
 }
 
 /* LARGE SCREEN */
 @media (max-width: 1024px) {
   html {
-    font-size: 17px;
+    /* font-size: 18px; */
   }
 
   .wrapper {
-    width: 90%;
+    width: 60%;
     margin: 0 auto;
   }
 
+  form {
+    width: 60%;
+    margin: 0 auto;
+    padding: 3rem 0;
+  }
+
   header hgroup h2 {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
   header hgroup h5 {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 
   .reset-password {
     padding: 0;
   }
 
-  .reset-password a {
-    font-size: 1rem;
+  .reset-password a,
+  label {
+    font-size: 0.8rem;
   }
 
   .reset-password label {
-    font-size: 1rem;
+    /* font-size: 1rem; */
+  }
+
+  .logo {
+    top: 4rem;
+    right: 1.6rem;
+    width: 3.5rem;
   }
 }
 
 /* XL SCREEN */
-@media (max-width: 1280px) {
-  html {
-    font-size: 20px;
-  }
+/* @media (max-width: 1280px) {
+    html {
+        font-size: 20px;
+    }
 
-  .wrapper {
-    width: 80%;
-    margin: 0 auto;
-  }
+    .wrapper {
+        width: 60%;
+        margin: 0 auto;
+    }
 
-  header hgroup h2 {
-    font-size: 2.2rem;
-  }
+    form {
+        width: 60%;
+        margin: 0 auto;
+        padding: 3rem 0;
+    }
 
-  header hgroup h5 {
-    font-size: 0.8rem;
-  }
-
-  .reset-password {
-    padding: 0;
-  }
 }
 
-/* @media (max-width: 1536px) {
+ @media (max-width: 1536px) {
     html {
         font-size: 23px;
+    }
+
+    .wrapper {
+        width: 70%;
+        margin: 0 auto;
     }
 }
 
@@ -278,8 +375,14 @@ header hgroup h5 {
     html {
         font-size: 28px;
     }
-}
 
+    .wrapper {
+        width: 70%;
+        margin: 0 auto;
+    }
+} */
+
+/* 
 @media (max-width: 3000px) {
     html {
         font-size: 30px;
