@@ -75,37 +75,39 @@ input {
   margin-top: 10%;
   padding: 20px;
   justify-content: space-between;
+
+  /* a{
+    text-decoration: none;
+    color: #353535;
+  } */
 }
 
 .back-link {
   font-weight: 700;
   font-size: 14px;
+  /* text-decoration: none; */
+  color: #ff7a00;
+  text-decoration: none;
   text-align: center;
   background: #fff;
   border-radius: 5px;
   padding: 10px 50px;
   border: 1px solid #ff7a00;
+  
 }
 
-.back-link a {
-  color: #ff7a00;
-  text-decoration: none;
-}
+
 
 .create-link {
   font-weight: 700;
   text-align: center;
   font-size: 14px;
+  color: #fff;
+  text-decoration: none;
   background: #ff7a00;
   border-radius: 5px;
   padding: 10px 50px;
 }
-
-.create-link a {
-  color: #fff;
-  text-decoration: none;
-}
-
 .createUser-modal-bg{
     top: 0;
     left: 0;

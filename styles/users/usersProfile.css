@@ -50,11 +50,12 @@
 .profileDetails .row1 {
     display: flex;
     padding: 1.25rem ;
+    justify-content: space-between;
     border-bottom: 1px solid #f3f5f6;
 }
 
 .detailsChild {
-    gap: 10rem;
+    gap: 10rem; 
     display: flex;
     flex-wrap: wrap;
 }
@@ -245,6 +246,7 @@
 
 .chatSection {
     display: none;
+    overflow-y:scroll;
     background: #fff;
     padding-bottom: 20px;
     padding: 0.625rem 1.875rem;

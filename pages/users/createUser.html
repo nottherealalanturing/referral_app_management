@@ -1,96 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Create User</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css"
-    />
-    <link rel="stylesheet" href="/styles/users/createUser.css" />
-  </head>
-  <body>
-    <main class="create-user">
-      <div class="createUser-header">
-        <h3>Create User</h3>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create User</title>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css" />
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css" />
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css" />
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css" />
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css" />
+  <link rel="stylesheet" href="/styles/users/createUser.css" />
+</head>
+
+<body>
+  <main class="create-user">
+    <div class="createUser-header">
+      <h3>Create User</h3>
+    </div>
+
+    <div class="formDiv">
+      <div class="divChild">
+        <h3>Create new Leadway user</h3>
+        <p class="para">please provide the information below</p>
       </div>
 
-      <div class="formDiv">
-        <div class="divChild">
-          <h3>Create new Leadway user</h3>
-          <p class="para">please provide the information below</p>
-        </div>
-
-        <form>
-          <div class="box1">
-            <div class="field-firstName">
-              <span>
-                <label for="first name">User First Name</label>
-                <small>*</small>
-              </span>
-              <span class="boxChild">
-                <input type="text" name="first-name" required />
-              </span>
-            </div>
-
-            <div class="field-lastName">
-              <span>
-                <label for="last name">User Last Name</label>
-                <small>*</small>
-              </span>
-              <input type="text" name="last-name" required />
-            </div>
+      <form>
+        <div class="box1">
+          <div class="field-firstName">
+            <span>
+              <label for="first name">User First Name</label>
+              <small>*</small>
+            </span>
+            <span class="boxChild">
+              <input type="text" name="first-name" required />
+            </span>
           </div>
 
-          <div class="box2">
-            <div class="field-email">
-                <span>
-                    <label for="email">Email</label>
-                    <small>*</small>
-                </span>
-                <input type="email" name="email" required>
-            </div>
+          <div class="field-lastName">
+            <span>
+              <label for="last name">User Last Name</label>
+              <small>*</small>
+            </span>
+            <input type="text" name="last-name" required />
           </div>
-        </form>
-
-        <div class="createUser-links">
-          <span  class="back-link"><a href="#users" data-url="/pages/users.html" class="internal-link">Back</a></span>
-          <span class="create-link" id="create-link"><a href="#">Create User</a></span>
         </div>
-      </div>
 
-      <div class="createUser-modal-bg">
-        <div class="createUser-modal">
-            <p>A.k Designs Created as a User on super refferal platform</p>
-            <span><img src="/assets/images/users-success.svg" alt="success-check"></span>
-            <a href="#usersProfile.html" data-url="pages/users/usersProfile.html" class="internal-link">
-                <button class="modalView-Btn">View</button>
-            </a>
+        <div class="box2">
+          <div class="field-email">
+            <span>
+              <label for="email">Email</label>
+              <small>*</small>
+            </span>
+            <input type="email" name="email" required>
+          </div>
         </div>
-      </div>
-    </main>
+      </form>
 
-    <script src="/scripts/createUser.js"></script>
-  </body>
+      <div class="createUser-links">
+        <a href="#users" data-url="/pages/users.html" class="internal-link back-link"> <span> Back </span></a>
+        <a href="#" class="create-link"> <span id="create-link"> Create User </span></a>
+      </div>
+    </div>
+
+    <div class="createUser-modal-bg">
+      <div class="createUser-modal">
+        <p>A.k Designs Created as a User on super refferal platform</p>
+        <span><img src="/assets/images/users-success.svg" alt="success-check"></span>
+        <a href="#usersProfile.html" data-url="pages/users/usersProfile.html" class="internal-link">
+          <button class="modalView-Btn">View</button>
+        </a>
+      </div>
+    </div>
+  </main>
+
+</body>
+<script src="/scripts/createUser.js"></script>
+
 </html>
