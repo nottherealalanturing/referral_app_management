@@ -793,7 +793,20 @@ div.tabs-container {
     }
 }
 
-@media (max-width: 992px) {}
+@media (max-width: 992px) {
+    div.search-card {
+        div.search-wrapper {
+            flex-direction: row;
+            div.dropdown-search-container {
+                justify-content: space-between;
+            }
+
+            button {
+                /* width: 100%; */
+            }
+        }
+    }
+}
 
 @media (max-width: 767px) {
     div.page-header {
