@@ -53,22 +53,17 @@ div.search-card {
                 display: flex;
                 align-items: center;
                 padding: 0 .625rem;
+                gap: .3125rem;
 
                 p {
                     margin: 0;
                 }
 
-                div.search-dropdown {
-                    button {
-                        border: none;
-                        background: none;
-                        outline: none;
-                        color: var(--primary-black);
-                    }
-
-                    div.search-dropdown-content {
-                        display: none;
-                    }
+                select.search-dropdown {
+                    border: none;
+                    background: none;
+                    outline: none;
+                    color: var(--primary-black);
                 }
 
                 i.fa-caret-down {
@@ -211,6 +206,7 @@ div.tabs-container {
                     td:nth-child(6) {
                         border-right: none;
                     }
+
                     td:nth-child(2),
                     td:nth-child(3),
                     td:nth-child(4),
@@ -222,6 +218,7 @@ div.tabs-container {
 
                     td:first-child {
                         width: 5%;
+
                         img {
                             width: 1.875rem;
                             height: 1.875rem;
@@ -810,12 +807,13 @@ div.tabs-container {
     /* admins' page */
     div.search-card {
         div.search-wrapper {
+            flex-direction: column;
             div.dropdown-search-container {
                 justify-content: space-between;
             }
 
             button {
-                display: none;
+                width: 100%;
             }
         }
     }
@@ -844,11 +842,11 @@ div.tabs-container {
                 }
             }
 
-            div.footer{
+            div.footer {
                 flex-direction: column-reverse;
                 gap: 1.25rem;
 
-                div.records{
+                div.records {
                     flex-direction: column-reverse;
                     gap: .3125rem;
                 }
