@@ -843,6 +843,16 @@ div.tabs-container {
                     }
                 }
             }
+
+            div.footer{
+                flex-direction: column-reverse;
+                gap: 1.25rem;
+
+                div.records{
+                    flex-direction: column-reverse;
+                    gap: .3125rem;
+                }
+            }
         }
     }
 
