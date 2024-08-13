@@ -52,7 +52,7 @@ div.search-card {
         background: var(--dropdown-background);
         display: flex;
         align-items: center;
-        padding: 0 0.625rem;
+        padding: 0.625rem;
         gap: 0.3125rem;
 
         p {
@@ -64,6 +64,7 @@ div.search-card {
           background: none;
           outline: none;
           color: var(--primary-black);
+          appearance: none;
         }
 
         i.fa-caret-down {
@@ -134,18 +135,19 @@ div.tabs-container {
       background: var(--primary-white);
       color: var(--tab-all-color);
       border-top-left-radius: var(--border-radius);
+      position: relative;
     }
 
-    /* button.all-tab:before{
-            content: '';
-            position: absolute;
-            left: 50%;
-            bottom: .3125rem;
-            transform: translateX(-50%);
-            width: 2.375rem;
-            height: .1875rem;
-            background-color: #ff6600;
-        } */
+    button.all-tab:before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: 0.3125rem;
+      transform: translateX(-50%);
+      width: 2.375rem;
+      height: 0.1875rem;
+      background-color: var(--tab-all-color);
+    }
 
     button.active-tab {
       background: var(--primary-green);
@@ -170,7 +172,6 @@ div.tabs-container {
 
     table {
       width: 100%;
-      /* border-collapse: collapse; */
       border-spacing: 0 1.3125rem;
       border-collapse: separate;
 
@@ -189,7 +190,6 @@ div.tabs-container {
         color: var(--header-title-color);
 
         tr {
-          /* border: .0625rem solid #fbfbfb; */
           font-size: 0.75rem;
 
           td {
@@ -217,7 +217,7 @@ div.tabs-container {
           }
 
           td:first-child {
-            width: 5%;
+            /* width: 5%; */
 
             img {
               width: 1.875rem;

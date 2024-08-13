@@ -26,10 +26,10 @@ body {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  padding: 20px;
+  padding: 10px;
 }
 /* CSS Properties For heaader Section */
-.headers {
+.headings {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -38,7 +38,7 @@ body {
   font-size: 25px;
 }
 
-.header h1 {
+.headings h1 {
   font-size: 24px;
   font-family: myFont;
 }
