@@ -5,93 +5,8 @@
     <link rel="icon" href="/assets/images/app_logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Create User</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css"
-    />
     <link rel="stylesheet" href="/styles/layout.css" />
     <link rel="stylesheet" href="/styles/users/createUser.css" />
-
-    <!-- font awesome icon -->
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css"
-    />
-
-    <link
-      rel="icon"
-      href="/assets/images/favicon/favicon.ico"
-      type="image/x-icon"
-    />
-    <link
-      rel="shortcut icon"
-      href="/assets/images/favicon/favicon.ico"
-      type="image/x-icon"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/tw-elements/css/tw-elements.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css"
-    />
   </head>
   <body>
     <div class="container-box">
@@ -307,7 +222,7 @@
         <div class="content-section bg-[f0f2fa]">
           <main class="create-user">
             <div class="createUser-header">
-              <span class="createUser-header">Create User</span>
+              <h3>Create User</h3>
             </div>
 
             <div class="formDiv">
@@ -349,16 +264,15 @@
               </form>
 
               <div class="createUser-links">
-                <span class="back-link"
-                  ><a
-                    hreff="#users"
-                    href="/pages/users.html"
-                    class="internal-link"
-                    >Back</a
-                  ></span
+                <a
+                  href="#users"
+                  data-url="/pages/users.html"
+                  class="internal-link back-link"
                 >
-                <span class="create-link" id="create-link"
-                  ><a hreff="#">Create User</a></span
+                  <span> Back </span></a
+                >
+                <a href="#" class="create-link">
+                  <span id="create-link"> Create User </span></a
                 >
               </div>
             </div>
@@ -371,11 +285,7 @@
                     src="/assets/images/users-success.svg"
                     alt="success-check"
                 /></span>
-                <a
-                  hreff="#usersProfile.html"
-                  href="/pages/users/usersProfile.html"
-                  class="internal-link"
-                >
+                <a href="/pages/users/usersProfile.html" class="internal-link">
                   <button class="modalView-Btn">View</button>
                 </a>
               </div>

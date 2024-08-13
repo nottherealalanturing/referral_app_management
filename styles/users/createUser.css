@@ -9,7 +9,7 @@ body {
   background: rgb(240, 242, 250);
 }
 .createUser-header h3 {
-  color: #353535 !important;
+  color: #353535;
 }
 
 .formDiv {
@@ -64,9 +64,9 @@ input {
   width: 100%;
   outline: none;
   font-size: 16px;
-  padding: 10px !important;
+  padding: 9px;
   margin-top: 10px;
-  border-radius: 6px !important;
+  border-radius: 10px;
   border: 1px solid #d4d4d4;
 }
 
@@ -75,11 +75,19 @@ input {
   margin-top: 10%;
   padding: 20px;
   justify-content: space-between;
+
+  /* a{
+    text-decoration: none;
+    color: #353535;
+  } */
 }
 
 .back-link {
   font-weight: 700;
   font-size: 14px;
+  /* text-decoration: none; */
+  color: #ff7a00;
+  text-decoration: none;
   text-align: center;
   background: #fff;
   border-radius: 5px;
@@ -87,25 +95,16 @@ input {
   border: 1px solid #ff7a00;
 }
 
-.back-link a {
-  color: #ff7a00;
-  text-decoration: none;
-}
-
 .create-link {
   font-weight: 700;
   text-align: center;
   font-size: 14px;
+  color: #fff;
+  text-decoration: none;
   background: #ff7a00;
   border-radius: 5px;
   padding: 10px 50px;
 }
-
-.create-link a {
-  color: #fff;
-  text-decoration: none;
-}
-
 .createUser-modal-bg {
   top: 0;
   left: 0;

@@ -91,25 +91,33 @@ body {
 }
 /* select div and it content */
 .custom-select-wrapper {
-  min-width: 184.67px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  max-width: 100%;
+  width: 184.67px;
   border-right: 0.95px solid #7f8b9480;
   border-radius: 0.95px;
   background-color: #f3f5f6;
+  font-size: 15.15px;
+  font-weight: 500;
+  line-height: 19.17px;
+  color: #34475e;
+  padding-left: 8px;
 }
 .custom-select-wrapper .custom-select {
   height: 45.46px;
-  width: 100%;
-  padding: 10px 10px 10px;
-  color: #000;
+  width: 45%;
   border: none;
   outline: none;
   border-radius: 5px;
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  background-color: transparent;
   background-image: url('../assets/images/businessimg/Group\ 2318.png');
   background-repeat: no-repeat;
-  background-position: right 10px top 50%;
+  background-position: right 5px top 50%;
   font-size: 15.15px;
   font-weight: 500;
   line-height: 19.17px;
@@ -232,8 +240,6 @@ body {
 .tpc-table td a {
   color: #353535;
 }
-/* .tpc-table tbody tr td{
-} */
 .tpc-table .td-border-rightnone {
   border-right: none;
 }
@@ -341,10 +347,13 @@ body {
 /* Business profile */
 .business-header-2 {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  font-family: 'Product Sans';
+  font-family: 'ProductSans';
+  /* align-items: center; */
 }
 .pbus {
+  /* font-family: 'ProductSans'; */
   /* font-family: Product Sans; */
   font-size: 24px;
   font-weight: 700;
@@ -354,7 +363,8 @@ body {
   color: #353535;
 }
 .aback {
-  margin-top: 2%;
+  /* font-family: 'ProductSans'; */
+  /* margin-top: 2%; */
   color: #ff6600;
   /* font-family: Product Sans; */
   font-size: 20px;
@@ -385,6 +395,7 @@ body {
   text-align: center;
 }
 .details-image p {
+  /* font-family: 'ProductSans'; */
   /* font-family: Product Sans; */
   font-size: 20px;
   font-weight: 700;
@@ -409,6 +420,7 @@ body {
   /* gap: 50px; */
   max-width: 100%;
   width: 100%;
+  font-family: 'ProductSans';
 }
 .cards-info h4 {
   font-size: 10px;
@@ -440,6 +452,7 @@ body {
   width: 168px;
   height: 45px;
   background-color: #c615311a;
+  font-family: 'ProductSans';
   font-size: 15px;
   font-weight: 700;
   line-height: 18.2px;
@@ -514,8 +527,8 @@ body {
   width: 299.53px;
   margin: 2% auto;
 }
-.logoImg img{
-    max-width: 100%;
+.logoImg img {
+  max-width: 100%;
 }
 .link-main-cont {
   margin-bottom: 0%;
@@ -660,7 +673,6 @@ body {
   .form-contanier {
     flex-direction: column;
     /* display: block; */
-    
   }
   .select-search-div {
     width: 100%;
@@ -679,21 +691,18 @@ body {
     /* max-width: 100%;
     min-width: 100px; */
   }
-  .businesslist{
+  .businesslist {
     margin-top: 5%;
   }
   .table-pagination-container {
     /* width: 98%; */
     overflow-x: auto;
   }
-  /* .td-flex p{
-    display: none;
-  } */
-  .col-none{
+  .col-none {
     display: none;
   }
   .pagination-cont {
-    gap: 100px;
+    gap: 80px;
     /* width: 100%; */
   }
   .pagination-select-cont {
@@ -736,13 +745,13 @@ body {
   }
 
   .color-cont {
-    margin: 5% auto;
+    margin: 3% auto;
     justify-content: center;
     /* width: 344px; */
   }
   .link-cont {
     /* justify-content: center; */
-    margin: 5% auto;
+    margin: 3% auto;
   }
   .preview-main-container {
     max-width: 100%;
@@ -774,9 +783,13 @@ body {
   }
   .abtn,
   .aback {
-    max-width: 100%;
-    min-width: 130px;
     font-size: 12px;
+  }
+  .abtn {
+    padding: 2% 2%;
+  }
+  .td-flex p {
+    display: none;
   }
   .arrow-down-div {
     left: 90%;
@@ -785,7 +798,8 @@ body {
     max-width: 100%;
     width: 99%;
   }
-  .color-main-cont {
+  .color-main-cont,
+  .link-main-cont {
     height: auto;
   }
   .color-cont {
@@ -814,17 +828,17 @@ body {
     margin-top: 5%;
   } */
 }
-@media screen and (max-width: 290px){
-  .business-header {
+@media screen and (max-width: 290px) {
+  /* .business-header {
     display: flex;
     flex-direction: column;
-    /* justify-content: flex-end; */
-    /* align-items: center;
-    flex-wrap: wrap; */
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
   }
   .aback {
     margin-top: 10%;
-  }
+  } */
   .card-detail {
     margin-top: 2%;
     grid-template-columns: repeat(1, 1fr);

@@ -1,302 +1,299 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 @font-face {
-    font-family: myFont;
-    src: url(/assets/fonts/circular-std-medium-500.ttf);
+  font-family: myFont;
+  src: url(/assets/fonts/circular-std-medium-500.ttf);
 }
 @font-face {
-    font-family: mysecFont;
-    src: url(/assets/fonts/Product\ Sans\ Regular.ttf);
+  font-family: mysecFont;
+  src: url(/assets/fonts/Product\ Sans\ Regular.ttf);
 }
-
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
 }
 
 .container {
-    display: flex;
-    min-height: 100vh;
-    width: 100%;
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
 }
 /* CSS properties for main content */
 
 .main-content {
-    flex-grow: 1;
-    padding: 20px;
+  flex-grow: 1;
+  padding: 20px;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .search-bar input {
-    width: 300px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 .user-profile {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .user-profile img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
 }
 /* CSS Property for the form container */
 .form-container {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 /* Head section of the form */
-.head{
-     margin: 0 auto;
-     height: 104px;
-     width: 365px;
+.head {
+  margin: 0 auto;
+  height: 104px;
+  width: 365px;
 }
-.head h1{
-    color:#34475E;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 55.5px;
-    text-align: center;
-    font-family:  mysecFont;
+.head h1 {
+  color: #34475e;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 55.5px;
+  text-align: center;
+  font-family: mysecFont;
 }
-.head p{
-    color: #FF6600;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 55.5px;
-    text-align: center;
-    font-family:  mysecFont;
-    margin-top: -20px;
+.head p {
+  color: #ff6600;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 55.5px;
+  text-align: center;
+  font-family: mysecFont;
+  margin-top: -20px;
 }
-.head img{
-    text-align: center;
-    margin-bottom: 60px;
-    margin-left: 60px;
-    width: 245px;
+.head img {
+  text-align: center;
+  margin-bottom: 60px;
+  margin-left: 60px;
+  width: 245px;
 }
 /* CSS Propety for the form */
 .form-row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 15px;
-    gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+  gap: 20px;
 }
 
 .form-group {
-    flex: 1;
-    min-width: 300px;
+  flex: 1;
+  min-width: 300px;
 }
 
 .form-group label {
-    display: block;
-    margin-bottom: 5px;
-    color: #353535;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19.41px;
-    font-family:  mysecFont;
+  display: block;
+  margin-bottom: 5px;
+  color: #353535;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.41px;
+  font-family: mysecFont;
 }
 
-.form-group input[type="text"],
-.form-group input[type="email"]
- {
-    width: 487px;
-    height: 49px;
-    border-radius: 15px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    color:#7F8B94;
-    border-radius: 4px;
+.form-group input[type='text'],
+.form-group input[type='email'] {
+  width: 487px;
+  height: 49px;
+  border-radius: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  color: #7f8b94;
+  border-radius: 4px;
 }
 /* CSS Property for the color select input */
-.check{
-    width: 108px;
-    height: 40px;
-    background-color: #F4FAFF;
-    display: flex;
-    border-radius: 5px;
-    gap: 5px;
-    align-items: center;
-    justify-content: center;
+.check {
+  width: 108px;
+  height: 40px;
+  background-color: #f4faff;
+  display: flex;
+  border-radius: 5px;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
 }
-.BizContent{
-    display: flex;
-    justify-content: left;
-    gap: 10px;
-    align-items: center;
+.BizContent {
+  display: flex;
+  justify-content: left;
+  gap: 10px;
+  align-items: center;
 }
-.checkSquare{
-    width: 24px;
-    height: 24px;
-    border-radius: 5px;
-    border: 1px 0px 0px 0px;
-    opacity: 0px; 
-    background: #142E65;   
+.checkSquare {
+  width: 24px;
+  height: 24px;
+  border-radius: 5px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  background: #142e65;
 }
-.checkText{
-font-family: Inter;
-font-size: 14px;
-font-weight: 500;
-line-height: 20px;
-text-align: left;
-width: 60px;
-height: 20px;
-top: 10px;
-left: 40px;
-gap: 0px;
-opacity: 0px;
-
+.checkText {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  width: 60px;
+  height: 20px;
+  top: 10px;
+  left: 40px;
+  gap: 0px;
+  opacity: 0px;
 }
-.secCheckText{
-width: 96px;
-height: 22px;
-top: 632px;
-left: 518px;
-gap: 0px;
-opacity: 0px;
-font-family: Roboto;
-font-size: 12px;
-font-weight: 500;
-line-height: 22px;
-text-align: left;
-color: #142E65;
+.secCheckText {
+  width: 96px;
+  height: 22px;
+  top: 632px;
+  left: 518px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 22px;
+  text-align: left;
+  color: #142e65;
 }
 /* End */
 
 .form-actions {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .form-actions .btn-back,
 .form-actions .btn-submit {
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .form-actions .btn-back {
-    color: #FF6600;
-    border: 1px solid #FF6600;
-    width: 196px;
-    height: 56px;
-    font-size: 18px;
-    line-height: 20px;
-    text-align: center;
-    font-family:  mysecFont;
-    background-color: white;
+  color: #ff6600;
+  border: 1px solid #ff6600;
+  width: 196px;
+  height: 56px;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  font-family: mysecFont;
+  background-color: white;
 }
 
 .form-actions .btn-back:hover {
-    background-color: #ccc;
+  background-color: #ccc;
 }
 
 .form-actions .btn-submit {
-    width: 196px;
-    height: 56px;
-    background-color: #FF6600;
-    color: #FFFFFF;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 20px;
-    text-align: center;
-    font-family:  mysecFont;
-    border: none;
-    outline: none;
+  width: 196px;
+  height: 56px;
+  background-color: #ff6600;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  font-family: mysecFont;
+  border: none;
+  outline: none;
 }
 
 .form-actions .btn-submit:hover {
-    background-color: #e76a00;
+  background-color: #e76a00;
 }
- /* CSS for Modal */
+/* CSS for Modal */
 .model {
-    display: none;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    gap: 0px;
-    opacity: 0px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  gap: 0px;
+  opacity: 0px;
 }
 
 .model-content {
-    background: 
-    #FFFFFF;
-    color: #000000;
-    padding: 20px;
-    text-align: center;
-    font-family: myFont;
-    font-size: 32px;
-    font-weight: 500;
-    line-height: 40.48px;
+  background: #ffffff;
+  color: #000000;
+  padding: 20px;
+  text-align: center;
+  font-family: myFont;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 40.48px;
 }
 
 .checkmark img {
-    margin: 20px 0;
-    font-size: 48px;
-    width: 85.35px;
-    height: 85.35px;
-
+  margin: 20px 0;
+  font-size: 48px;
+  width: 85.35px;
+  height: 85.35px;
 }
 
 .view-button {
-    background-color: #FF7A00;
-    color:#FFFFFF;
-    border: none;
-    width: 185.94px;
-    height: 53.13px;  
-    text-decoration: none;
-    display: inline-block;
-    font-size: 17.08px;
-    font-weight: 500;
-    line-height: 18.97px;
-    font-family: myFont;
-    cursor: pointer;
+  background-color: #ff7a00;
+  color: #ffffff;
+  border: none;
+  /*   width: 185.94px;
+    height: 53.13px;  */
+  text-decoration: none;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 17.08px;
+  font-weight: 500;
+  line-height: 18.97px;
+  font-family: myFont;
+  cursor: pointer;
+  margin: 0 auto !important;
 }
 
 .view-button:hover {
-    background-color: #FF7A00;
+  background-color: #ff7a00;
 }
-
 
 /* Responsive design */
 @media (max-width: 768px) {
-    .sidebar {
-        width: 100%;
-        padding: 10px;
-    }
+  .sidebar {
+    width: 100%;
+    padding: 10px;
+  }
 
-    .main-content {
-        padding: 10px;
-    }
+  .main-content {
+    padding: 10px;
+  }
 
-    .search-bar input {
-        width: 100%;
-    }
+  .search-bar input {
+    width: 100%;
+  }
 
-    .form-row {
-        flex-direction: column;
-        gap: 10px;
-    }
+  .form-row {
+    flex-direction: column;
+    gap: 10px;
+  }
 }

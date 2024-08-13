@@ -22,14 +22,6 @@ body {
   background-color: #f0f2fa;
 }
 
-/* .sidebar {
-  background-color: #333;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  width: 200px;
-} */
-
 .main-content {
   display: flex;
   flex-direction: column;
@@ -53,8 +45,6 @@ body {
 
 .new-business {
   background-color: #ff7a00;
-  width: 242px;
-  height: 54px;
   border-radius: 5px;
   color: #ffffff;
   font-size: 16px;
@@ -102,7 +92,7 @@ body {
 .stat-all {
   /* background-color: #7a7c87; */
   color: #f3f5f6;
-  background-image: url(/assets/images/blob-scene-haikei.svg);
+  background-image: url(/assets/images/blob-scene-hai.svg);
   background-size: cover;
 }
 .stat-reg {
@@ -260,8 +250,8 @@ body {
     margin-bottom: 20px;
   }
 }
-/* CSS on responsiveness on devices of 700px and above */
-@media (max-width: 700px) {
+/* CSS on responsiveness on devices of 700px and below */
+@media (max-width: 760px) {
   .stats {
     flex-direction: column;
   }
@@ -276,15 +266,26 @@ body {
   .stat-item {
     margin: 10px 0;
   }
-}
-/* CSS for responsiveness */
-@media (max-width: 576px) {
   .headers {
     flex-direction: column;
     font-size: 15px;
     gap: 10px;
+    align-items: flex-start;
   }
+}
+/* CSS for responsiveness */
+@media (max-width: 576px) {
   .new-business {
     padding: 5px 10px;
+  }
+}
+/* CSS on responsiveness on devices of 1500px and above */
+@media (min-width: 1500px) {
+  .stat-all,
+  .stat-reg,
+  .stat-act,
+  .stat-inac {
+    width: 20%;
+    margin-bottom: 20px;
   }
 }

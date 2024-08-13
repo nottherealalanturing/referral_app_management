@@ -1,13 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Mulish", sans-serif;
+  font-family: 'Mulish', sans-serif;
 }
+
 .userHomepage {
   background: rgb(240, 242, 250);
-  font-family: "Mulish", sans-serif;
+  font-family: 'Mulish', sans-serif;
 }
 
 .headerDiv {
@@ -39,7 +41,7 @@
     margin-right: 0.625rem;
   }
 
-  a{
+  a {
     text-decoration: none;
     color: #fff;
   }
@@ -47,11 +49,14 @@
 
 .searchDiv {
   margin-top: 3%;
+  width: 100%;
   background: #fff;
   padding: 1.5625rem;
 }
+
 .childDiv {
   gap: 2rem;
+  width: 100%;
   display: flex;
   padding: 1.5625rem;
   border-radius: 0.3125rem;
@@ -61,11 +66,11 @@
 .searchInput {
   flex: 1;
   display: flex;
-  flex-wrap: wrap;
 }
+
 .search {
   padding: 0.5rem;
-  width: 9.375rem;
+  /* width: 9.375rem; */
   font-size: 0.75rem;
   border: 1px solid #e5e5e5;
   background: rgb(243, 245, 246);
@@ -74,25 +79,37 @@
     margin-left: 0.625rem;
   }
 }
+
+.search select {
+  border: none;
+  outline: none;
+  background: none;
+}
+
 .inputDiv {
   flex: 1;
+  width: 100%;
   display: flex;
+  align-items: center;
+  padding-left: 0.625rem;
   border-left: none;
   border: 1px solid #e5e5e5;
 }
+
 .inputDiv input {
   flex: 1;
-  width: 100%;
   border: none;
   outline: none;
+  padding-left: 0.625rem;
   font-size: 16px;
 }
+
 .findBtn button {
   border: none;
   color: #fff;
   cursor: pointer;
   width: 9.375rem;
-  padding: 0.7rem;
+  padding: 0.7rem 10px;
   font-weight: 600;
   font-size: 0.75rem;
   background: #ff7a00;
@@ -101,7 +118,6 @@
 
 .contentDiv {
   margin-top: 3%;
-  background: #fff;
 }
 
 .allBtn {
@@ -118,6 +134,7 @@
     border-bottom: 0.1875rem solid #142e65;
   }
 }
+
 .activeBtn {
   border: none;
   color: #fff;
@@ -128,6 +145,7 @@
   border-radius: 0.125rem;
   padding: 0.625rem 1.5625rem;
 }
+
 .inActiveBtn {
   border: none;
   color: #fff;
@@ -149,52 +167,64 @@
   text-decoration: none;
 }
 
-.contents .th {
-  display: flex;
+.contents table {
+  width: 100%;
+  background: #fff;
+  border-collapse: collapse;
+  border: 1px solid #e5e5e5;
+}
+
+.contents thead {
   font-size: 1rem;
   cursor: pointer;
-  font-weight: 600;
-  padding: 0.625rem;
-  justify-content: space-around;
+  font-weight: 700;
+  color: #353535;
+  padding: 0.9375rem 0px;
+
+  td {
+    padding: 0.625rem 10px;
+  }
 }
 
-.contents .td {
-  display: flex;
-  margin-top: 1%;
+.contents tbody {
+  margin-top: 5%;
   cursor: pointer;
-  padding: 0.625rem;
-  font-size: 0.75rem;
-  align-items: center;
-  border: 1px solid #e5e5e5;
+  padding: 1.25rem;
   justify-content: space-around;
-}
-.td .fullstack {
-  gap: 4.375rem;
-  display: flex;
-  align-items: center;
+
+  td {
+    padding: 0.625rem 10px;
+    /* border-spacing: 0px 15px; */
+    border-collapse: collapse;
+    border-top: 1px solid #e5e5e5;
+  }
+
+  .fullstack {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+  }
 }
 
-.td .greenActive {
+.greenActive {
   color: #fff;
-  width: 5.625rem;
   cursor: pointer;
+  font-size: 0.75rem;
   font-weight: 700;
   border: 1px solid;
-  padding: 0.3125rem;
   text-align: center;
-  height: fit-content;
   background: #00b388;
   border-radius: 0.5rem;
 }
 
-.td .dots {
+.dots {
   color: black;
   font-size: 0.3125rem;
 }
 
 .footers {
   display: flex;
-  margin-top: 12%;
+  margin-top: 10%;
   font-weight: 600;
   font-size: 0.75rem;
   text-align: center;
@@ -207,6 +237,7 @@
   cursor: pointer;
   align-items: center;
 }
+
 .footers .pagesNumber .pageActive {
   font-weight: 800;
 }
@@ -221,6 +252,7 @@
   gap: 0.625rem;
   display: flex;
 }
+
 .itemsPerPage .numberBox {
   gap: 0.75rem;
   display: flex;
@@ -229,31 +261,43 @@
   border: 1px solid #b1b1b1;
 }
 
+@media screen and (max-width: 425px) {
+  .userHomepage {
+    width: 100%;
+    padding: 0.3125rem;
+  }
+}
+
 @media screen and (max-width: 767px) {
   main {
     width: 100%;
-    padding: 1.25rem;
+    padding: 0.625rem;
   }
 
   .headerDiv h3,
   .headerDiv button,
-  .headerDiv button .fa-plus{
-    font-size:16px ;
-  }
-  .headerDiv button{
-    padding:7px ;
-    width:185px ;
+  .headerDiv button .fa-plus {
+    font-size: 16px;
   }
 
-  .searchDiv{
+  .headerDiv button {
+    padding: 7px;
+    width: 185px;
+  }
+
+  .searchDiv {
     padding: 15px;
     margin-top: 7%;
   }
-  .childDiv{
-    padding:15px ;
+
+  .childDiv {
+    padding: 15px;
+    flex-direction: column;
+    /* width: 100%; */
   }
-  .search{
-    padding:5px ;
+
+  .search {
+    padding: 5px;
     text-align: center;
   }
 
@@ -262,87 +306,91 @@
     flex-wrap: wrap;
   }
 
-  .findBtn{
-    display: none;
+  .findBtn {
+    /* display: none; */
   }
+
   .allBtn,
   .activeBtn,
-  .inActiveBtn{
-    padding:6px 18px ;
+  .inActiveBtn {
+    padding: 6px 18px;
     font-size: 14px;
   }
 
-  .contentDiv{
+  .contentDiv {
     margin-top: 12%;
   }
-  .contents{
-    padding:20px ;
+
+  .contents {
+    padding: 20px;
   }
+
   .contents .th,
-  .contents .td{
+  .contents .td {
     font-size: 15px;
     padding: 5px;
   }
 
-  .td .fullstack{
+  .td .fullstack {
     gap: 10px;
   }
-  .td .greenActive{
-    width:70px;
+
+  .td .greenActive {
+    width: 70px;
   }
 
-  .none{
+  .none {
     display: none;
   }
 
-  .footers .pagesNumber{
+  .footers .pagesNumber {
     gap: 3px;
   }
-  .viewedPages{
-    gap:10px ;
+
+  .viewedPages {
+    gap: 10px;
   }
-  .entriesNumber{
+
+  .entriesNumber {
     display: none;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-    main{
-      padding: 20px;
-    }
-    .contents .th{
-      font-size: .875rem;
-      padding: 0rem;
-    }
-    .td .fullstack{
-      gap:20px ;
-    }
+  main {
+    padding: 20px;
+  }
+
+  .contents .th {
+    font-size: 0.875rem;
+    padding: 0rem;
+  }
+
+  .td .fullstack {
+    gap: 20px;
+  }
 }
 
-@media  screen and (max-width:1200px) {
-  html{
+@media screen and (max-width: 1200px) {
+  html {
     font-size: 20px;
   }
 }
 
-@media  screen and (min-width:1500px) {
-  html{
+@media screen and (min-width: 1500px) {
+  html {
     font-size: 30px;
   }
 }
 
-@media  screen and (min-width:2000px) {
-  html{
+@media screen and (min-width: 2000px) {
+  html {
     font-size: 40px;
   }
 }
 
-
-
-
-
 .circular-std {
-  font-family: "Circular Std Medium", "Mulish", system-ui, -apple-system,
-    BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
-    "Open Sans", "Helvetica Neue", sans-serif, sans-serif;
+  font-family: 'Circular Std Medium', 'Mulish', system-ui, -apple-system,
+    BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
 }
