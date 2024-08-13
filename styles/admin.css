@@ -217,7 +217,7 @@ div.tabs-container {
                     }
 
                     td:first-child {
-                        width: 5%;
+                        /* width: 5%; */
 
                         img {
                             width: 1.875rem;
