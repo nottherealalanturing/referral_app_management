@@ -800,10 +800,6 @@ div.tabs-container {
             div.dropdown-search-container {
                 justify-content: space-between;
             }
-
-            button {
-                /* width: 100%; */
-            }
         }
     }
 }
