@@ -84,7 +84,7 @@ body {
   align-items: center;
   gap: 5px;
   max-width: 100%;
-  width: 184.67px;
+  min-width: 184.67px;
   border-right: 0.95px solid #7f8b9480;
   border-radius: 0.95px;
   background-color: #f3f5f6;
@@ -92,11 +92,11 @@ body {
   font-weight: 500;
   line-height: 19.17px;
   color: #34475e;
-  padding-left: 8px;
+  padding-left: 10px;
 }
 .custom-select-wrapper .custom-select {
   height: 45.46px;
-  width: 45%;
+  width: 50%;
   border: none;
   color: #000;
   outline: none;
@@ -603,7 +603,7 @@ body {
   }
   .custom-select-wrapper {
     max-width: 100%;
-    min-width: 160px;
+    min-width: 170px;
   }
   .btn {
     padding: 2% 3%;
