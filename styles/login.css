@@ -141,7 +141,7 @@ header hgroup h5 {
 }
 
 
-@media (max-width: 378px) {
+@media (max-width: 370px) {
 
     .wrapper {
         width: 100%;
@@ -159,7 +159,7 @@ header hgroup h5 {
     }
 
     header hgroup h2 {
-        font-size: .3rem;
+        font-size: .5rem;
     }
 
     header hgroup h5 {
@@ -261,7 +261,7 @@ header hgroup h5 {
     }
 
     form {
-        width: 60%;
+        width: 0%;
         margin: 0 auto;
         padding: 2rem 0;
     }
@@ -301,9 +301,6 @@ header hgroup h5 {
         margin: 0 auto;
     }
 
-    header hgroup h2 {
-        font-size: 1rem;
-    }
 }
 
 /* LARGE SCREEN */
@@ -353,7 +350,7 @@ header hgroup h5 {
 }
 
 /* XL SCREEN */
-@media (max-width: 1280px) {
+/* @media (max-width: 1280px) {
     html {
         font-size: 20px;
     }
@@ -371,7 +368,7 @@ header hgroup h5 {
 
 }
 
-@media (max-width: 1536px) {
+ @media (max-width: 1536px) {
     html {
         font-size: 23px;
     }
@@ -382,7 +379,7 @@ header hgroup h5 {
     }
 }
 
-/* @media (max-width: 2000px) {
+@media (max-width: 2000px) {
     html {
         font-size: 28px;
     }
