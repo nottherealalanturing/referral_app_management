@@ -32,6 +32,7 @@
         <label for="password">PASSWORD</label>
         <div class="input-box">
           <input type="password" placeholder="" id="password" required />
+          <span id="toggle-password">Show</span>
           <i class="bx bx-lock-alt"></i>
         </div>
       </div>
@@ -42,12 +43,50 @@
         <a href="#">Reset password</a>
       </div>
       <button type="submit" class="btn" id="btn">
-        <a href="/layout/index.html">Login</a>
+        Login
       </button>
     </form>
 
     <img class="logo" src="assets/images/logo.png" alt="logo" />
   </div>
+
+  <script>
+    // JavaScript for form validation and show/hide password
+    document.addEventListener('DOMContentLoaded', function () {
+      const form = document.querySelector('form');
+      const usernameInput = document.getElementById('username');
+      const passwordInput = document.getElementById('password');
+      const loginButton = document.getElementById('btn');
+      const togglePassword = document.getElementById('toggle-password');
+
+      // Show/Hide Password
+      togglePassword.addEventListener('click', function () {
+        if (passwordInput.type === 'password') {
+          passwordInput.type = 'text';
+          togglePassword.textContent = 'Hide';
+        } else {
+          passwordInput.type = 'password';
+          togglePassword.textContent = 'Show';
+        }
+      });
+
+      // Form validation
+      loginButton.addEventListener('click', function (event) {
+        event.preventDefault(); // Prevent form from submitting
+
+        const username = usernameInput.value.trim();
+        const password = passwordInput.value.trim();
+
+        if (username === 'admin' && password === 'admin') {
+          // alert('Login successful');
+          // Redirect or submit the form here if needed
+          window.location.href = "/layout/index.html"; // Redirect to the desired page
+        } else {
+          alert('Invalid username or password. Please use "admin" for both fields.');
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
