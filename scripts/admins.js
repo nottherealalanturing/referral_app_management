@@ -1,55 +1,72 @@
 document.addEventListener('DOMContentLoaded', function () {
-    let showModal = document.getElementById('show-modal');
-    let modalOverlay = document.getElementById('modal-overlay');
-    let successMessageCard = document.getElementById('success-message-card');
+  let showModal = document.getElementById('show-modal');
+  let modalOverlay = document.getElementById('modal-overlay');
+  let successMessageCard = document.getElementById('success-message-card');
 
-    showModal.addEventListener('click', (e) => {
-        e.preventDefault();
-        modalOverlay.style.display = 'block';
-        successMessageCard.style.display = 'block';
-        // document.body.classList.add('modal-open');
+  showModal.addEventListener('click', (e) => {
+    e.preventDefault();
+    modalOverlay.style.display = 'block';
+    successMessageCard.style.display = 'block';
+    // document.body.classList.add('modal-open');
 
-        let successMessageCardWidth = successMessageCard.offsetWidth;
-        let successMessageCardSpaceBeside = ((window.innerWidth - successMessageCardWidth) / 2) / window.innerWidth * 100;
+    let successMessageCardWidth = successMessageCard.offsetWidth;
+    let successMessageCardSpaceBeside =
+      ((window.innerWidth - successMessageCardWidth) / 2 / window.innerWidth) *
+      100;
 
-        successMessageCard.style.left = `${successMessageCardSpaceBeside}%`;
-        successMessageCard.style.right = `${successMessageCardSpaceBeside}%`;
-    });
+    successMessageCard.style.left = `${successMessageCardSpaceBeside}%`;
+    successMessageCard.style.right = `${successMessageCardSpaceBeside}%`;
+  });
 
-    modalOverlay.addEventListener('click', () => {
-        modalOverlay.style.display = 'none';
-    });
-
+  modalOverlay.addEventListener('click', () => {
+    modalOverlay.style.display = 'none';
+  });
 });
 
 // switch tabs
 let btnActivities = document.getElementById('btn-activities');
 let btnChats = document.getElementById('btn-chats');
 
+let startAChat = document.getElementById('start-a-chat');
+let viewChat = document.getElementById('view-chat');
+
 let tabActivities = document.getElementById('tab-activities');
 let tabChats = document.getElementById('tab-chats');
 
 function resetActiveClass() {
-    btnActivities.classList.remove('active');
-    btnChats.classList.remove('active');
+  btnActivities.classList.remove('active');
+  btnChats.classList.remove('active');
 }
 
 function hideAllTables() {
-    tabActivities.classList.remove('active');
-    tabChats.classList.remove('active');
+  tabActivities.classList.remove('active');
+  tabChats.classList.remove('active');
 }
 
 btnActivities.addEventListener('click', function () {
-    resetActiveClass();
-    hideAllTables();
-    tabActivities.classList.add('active');
-    btnActivities.classList.add('active');
+  resetActiveClass();
+  hideAllTables();
+  tabActivities.classList.add('active');
+  btnActivities.classList.add('active');
 });
 
 btnChats.addEventListener('click', function () {
-    resetActiveClass();
-    hideAllTables();
-    tabChats.classList.add('active');
-    btnChats.classList.add('active');
+  resetActiveClass();
+  hideAllTables();
+  tabChats.classList.add('active');
+  btnChats.classList.add('active');
+});
+
+startAChat.addEventListener('click', function () {
+  resetActiveClass();
+  hideAllTables();
+  tabChats.classList.add('active');
+  btnChats.classList.add('active');
+});
+viewChat.addEventListener('click', function () {
+  resetActiveClass();
+  hideAllTables();
+  tabChats.classList.add('active');
+  btnChats.classList.add('active');
 });
 btnActivities.click();

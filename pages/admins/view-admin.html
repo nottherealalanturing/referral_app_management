@@ -2,459 +2,182 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="/assets/images/app_logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>View Admins</title>
-    <link rel="stylesheet" href="/styles/layout.css" />
-    <link rel="stylesheet" href="/styles/admin.css" />
+    <title>Document</title>
     <link rel="stylesheet" href="/styles/global.css" />
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css"
-    />
-
-    <link
-      rel="icon"
-      href="/assets/images/favicon/favicon.ico"
-      type="image/x-icon"
-    />
-    <link
-      rel="shortcut icon"
-      href="/assets/images/favicon/favicon.ico"
-      type="image/x-icon"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/tw-elements/css/tw-elements.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css"
-    />
+    <link rel="stylesheet" href="/styles/admin.css" />
   </head>
+
   <body>
-    <div class="container-box">
-      <div class="sidebar">
-        <a class="logo-container" href="/pages/dashboard.html">
-          <img
-            src="/assets/images/app_logo.png"
-            alt="app logo"
-            class="app-logo"
-          />
-        </a>
-        <ul>
-          <li class="nav-item">
-            <a hreff="#dashboard" href="/pages/dashboard.html" class="nav-link">
-              <img
-                src="/assets/images/dashboard-icon.png"
-                alt="Dashboard"
-                class="nav-item-image"
-              />
-              <span class="nav-text">Dashboard</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a hreff="#business" href="/pages/business.html" class="nav-link">
-              <img
-                src="/assets/images/business-icon.png"
-                alt="Business"
-                class="nav-item-image"
-              />
-              <span class="nav-text">Business</span>
-            </a>
-          </li>
-          <li class="nav-item active">
-            <a href="/pages/admins.html" class="nav-link">
-              <img
-                src="/assets/images/admins-icon.png"
-                alt="Admins"
-                class="nav-item-image"
-              />
-              <span class="nav-text">Admins</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a hfref="#users" href="/pages/users.html" class="nav-link">
-              <img
-                src="/assets/images/users-icon.png"
-                alt="Users"
-                class="nav-item-image"
-              />
-              <span class="nav-text">Users</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a hfref="#report" href="/pages/reports.html" class="nav-link">
-              <img
-                src="/assets/images/report-icon.png"
-                alt="Report"
-                class="nav-item-image"
-              />
-              <span class="nav-text">Report</span>
-            </a>
-          </li>
-        </ul>
+    <div class="page-header">
+      <h3>Admin's Profile</h3>
+      <a href="/pages/admins.html" class="internal-link link-button">
+        <i class="fa-solid fa-arrow-left"></i>
+        <span>Back to Admins</span>
+      </a>
+    </div>
+
+    <div class="bio-card">
+      <div class="left">
+        <img
+          src="/assets/images/user-cartoon-bigPicture.svg"
+          alt="profile Image"
+        />
+        <h3>Nurudeen Ibrahim</h3>
       </div>
-      <div class="main-section">
-        <div class="header">
-          <div class="mob-app-logo-container">
-            <img
-              src="/assets/images/app_logo.png"
-              alt="app logo"
-              class="mobile-app-logo"
-            />
-          </div>
-
-          <label for="search-input" class="header-search-container">
-            <img
-              src="/assets/images/search-icon.svg"
-              alt="search"
-              class="search-icon"
-            />
-            <input
-              type="text"
-              id="search"
-              class="search-input"
-              placeholder="What are you looking for?"
-            />
-          </label>
-
-          <div class="header-profile-container">
-            <img
-              src="/assets/images/notification-bell-icon.svg"
-              alt="notification-bell-icon"
-              class="notification-bell-icon"
-            />
-            <span class="user-profile-div">
-              <img
-                src="/assets/images/user-profile-pic.png"
-                alt="user"
-                class="user-profile-pic"
-              />
-              <p class="user-profile-name">Dami Oguns</p>
-            </span>
-
-            <img
-              src="/assets/images/caret-down-icon.svg"
-              alt="caretdown"
-              class="caretdown"
-            />
-
-            <button class="open-mobile-nav">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                width="24"
-                height="24"
-                class="hamburger-icon"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16m-7 6h7"
-                />
-              </svg>
-            </button>
-          </div>
-
-          <div class="mobile-nav-menu">
-            <div class="mobile-nav-menu-button">
-              <button class="close-mobile-nav">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  width="24"
-                  height="24"
-                  class="close-icon"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
-              </button>
+      <div class="right">
+        <div class="first-part">
+          <div class="data-row">
+            <div class="data-block">
+              <label for="name">Name</label>
+              <p>Lanre Oseni</p>
             </div>
-            <ul class="mobile-nav-menu-list">
-              <li class="mobile-nav-menu-item">
-                <a
-                  hreff="#dashboard"
-                  class="nav-link"
-                  href="/pages/dashboard.html"
-                >
-                  <img
-                    src="/assets/images/dashboard-icon.png"
-                    alt="Dashboard"
-                    class="nav-item-image"
-                  />
-                  <span class="nav-text">Dashboard</span>
-                </a>
-              </li>
-              <li class="mobile-nav-menu-item">
-                <a
-                  hreff="#business"
-                  href="/pages/business.html"
-                  class="nav-link"
-                >
-                  <img
-                    src="/assets/images/business-icon.png"
-                    alt="Business"
-                    class="nav-item-image"
-                  />
-                  <span class="nav-text">Business</span>
-                </a>
-              </li>
-              <li class="mobile-nav-menu-item active">
-                <a hreff="#admins" class="nav-link" href="/pages/admins.html">
-                  <img
-                    src="/assets/images/admins-icon.png"
-                    alt="Admins"
-                    class="nav-item-image"
-                  />
-                  <span class="nav-text">Admins</span>
-                </a>
-              </li>
-              <li class="mobile-nav-menu-item">
-                <a hfref="#users" class="nav-link" href="/pages/users.html">
-                  <img
-                    src="/assets/images/users-icon.png"
-                    alt="Users"
-                    class="nav-item-image"
-                  />
-                  <span class="nav-text">Users</span>
-                </a>
-              </li>
-              <li class="mobile-nav-menu-item">
-                <a hreff="#reports" class="nav-link" href="/pages/reports.html">
-                  <img
-                    src="/assets/images/report-icon.png"
-                    alt="Report"
-                    class="nav-item-image"
-                  />
-                  <span class="nav-text">Report</span>
-                </a>
-              </li>
-            </ul>
+            <div class="data-block">
+              <label for="name">Business Name</label>
+              <p>First Bank</p>
+            </div>
+            <div class="data-block">
+              <label for="name">Date Added</label>
+              <p>04 Jan 2023</p>
+            </div>
+          </div>
+          <div class="data-row">
+            <div class="data-block">
+              <label for="name">Email Address</label>
+              <p>thedeen@gmail.com</p>
+            </div>
+            <div class="data-block">
+              <label for="name">Status</label>
+              <p class="status">Active</p>
+            </div>
+          </div>
+          <div class="data-row">
+            <button type="button">Edit</button>
+            <button type="button" id="start-a-chat">Start a Chat</button>
           </div>
         </div>
-        <div class="content-section bg-[f0f2fa]">
-          <div class="page-header">
-            <h3>Admin's Profile</h3>
-            <a href="/pages/admins.html" class="internal-link link-button">
-              <i class="fa-solid fa-arrow-left"></i>
-              <span>Back to Admins</span>
-            </a>
-          </div>
-
-          <div class="bio-card">
-            <div class="left">
-              <img
-                src="/assets/images/user-cartoon-bigPicture.svg"
-                alt="profile Image"
-              />
-              <h3>Nurudeen Ibrahim</h3>
-            </div>
-            <div class="right">
-              <div class="first-part">
-                <div class="data-row">
-                  <div class="data-block">
-                    <label for="name">Name</label>
-                    <p>Lanre Oseni</p>
-                  </div>
-                  <div class="data-block">
-                    <label for="name">Business Name</label>
-                    <p>First Bank</p>
-                  </div>
-                  <div class="data-block">
-                    <label for="name">Date Added</label>
-                    <p>04 Jan 2023</p>
-                  </div>
-                </div>
-                <div class="data-row">
-                  <div class="data-block">
-                    <label for="name">Email Address</label>
-                    <p>thedeen@gmail.com</p>
-                  </div>
-                  <div class="data-block">
-                    <label for="name">Status</label>
-                    <p class="status">Active</p>
-                  </div>
-                </div>
-                <div class="data-row">
-                  <a href="#" class="">Edit</a>
-                  <a href="" class="" id="show-modal">Start a Chat</a>
-                </div>
-              </div>
-              <div class="second-part">
-                <i class="fa-solid fa-caret-up"></i>
-              </div>
-            </div>
-          </div>
-
-          <div class="tabs-container">
-            <div class="tab-buttons">
-              <button class="activities active" id="btn-activities">
-                Activity
-              </button>
-              <button class="chats" id="btn-chats">Chats</button>
-            </div>
-            <div class="tab-content">
-              <div class="activities active" id="tab-activities">
-                <table>
-                  <tbody>
-                    <tr>
-                      <td class="title">Activity Summary Today</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <i class="fa-solid fa-circle"></i>
-                        Nurudeen would like to update his email address
-                      </td>
-                      <td>9:36am</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <i class="fa-solid fa-circle"></i>
-                        Nurudeen replied to your chat
-                      </td>
-                      <td>
-                        <button type="button" class="view-btn">View</button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <i class="fa-solid fa-circle"></i>
-                        Nurudeen would like to update his first name
-                      </td>
-                      <td>9:36am</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <i class="fa-solid fa-circle"></i>
-                        Nurudeen would like to update his email address
-                      </td>
-                      <td>9:36am</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <i class="fa-solid fa-circle"></i>
-                        Nurudeen would like to update his email address
-                      </td>
-                      <td>9:36am</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <i class="fa-solid fa-circle"></i>
-                        Nurudeen would like to update his email address
-                      </td>
-                      <td>9:36am</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="chats" id="tab-chats">
-                <div class="messages">
-                  <div class="message left-message">
-                    <div class="">
-                      <p class="message-time">04 Jan 2023 | 12:02pm</p>
-                      <div class="message-block">
-                        <img
-                          src="/assets/images/user-cartoon-bigPicture.svg"
-                          alt="profile Image"
-                        />
-                        <div class="message-text">
-                          <p>
-                            Hello, I would like to update my email address
-                            please
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="message right-message">
-                    <div class="">
-                      <p class="message-time">04 Jan 2023 | 12:02pm</p>
-                      <div class="message-block">
-                        <div class="message-text">
-                          <p>Alright please hold on</p>
-                        </div>
-                        <img
-                          src="/assets/images/customer-care-pics.svg"
-                          alt="profile Image"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="message left-message">
-                    <div class="">
-                      <p class="message-time">04 Jan 2023 | 12:02pm</p>
-                      <div class="message-block">
-                        <img
-                          src="/assets/images/user-cartoon-bigPicture.svg"
-                          alt="profile Image"
-                        />
-                        <div class="message-text">
-                          <p>Thank you very much.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="send-message">
-                  <span class="emoji-picker">🙂</span>
-                  <i class="fa-regular fa-square-plus"></i>
-                  <input type="text" placeholder="Say Something" />
-                  <i class="fa-light fa-microphone"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <script src="/scripts/admins.js"></script>
+        <div class="second-part">
+          <i class="fa-solid fa-caret-up"></i>
         </div>
       </div>
     </div>
+
+    <div class="tabs-container">
+      <div class="tab-buttons">
+        <button class="activities active" id="btn-activities">Activity</button>
+        <button class="chats" id="btn-chats">Chats</button>
+      </div>
+      <div class="tab-content">
+        <div class="activities active" id="tab-activities">
+          <table>
+            <tbody>
+              <tr>
+                <td class="title">Activity Summary Today</td>
+              </tr>
+              <tr>
+                <td>
+                  <i class="fa-solid fa-circle"></i>
+                  Nurudeen would like to update his email address
+                </td>
+                <td>9:36am</td>
+              </tr>
+              <tr>
+                <td>
+                  <i class="fa-solid fa-circle"></i>
+                  Nurudeen replied to your chat
+                </td>
+                <td>
+                  <button type="button" class="view-btn" id="view-chat">
+                    View
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <i class="fa-solid fa-circle"></i>
+                  Nurudeen would like to update his first name
+                </td>
+                <td>9:36am</td>
+              </tr>
+              <tr>
+                <td>
+                  <i class="fa-solid fa-circle"></i>
+                  Nurudeen would like to update his email address
+                </td>
+                <td>9:36am</td>
+              </tr>
+              <tr>
+                <td>
+                  <i class="fa-solid fa-circle"></i>
+                  Nurudeen would like to update his email address
+                </td>
+                <td>9:36am</td>
+              </tr>
+              <tr>
+                <td>
+                  <i class="fa-solid fa-circle"></i>
+                  Nurudeen would like to update his email address
+                </td>
+                <td>9:36am</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="chats" id="tab-chats">
+          <div class="messages">
+            <div class="message left-message">
+              <div class="">
+                <p class="message-time">04 Jan 2023 | 12:02pm</p>
+                <div class="message-block">
+                  <img
+                    src="/assets/images/user-cartoon-bigPicture.svg"
+                    alt="profile Image"
+                  />
+                  <div class="message-text">
+                    <p>Hello, I would like to update my email address please</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="message right-message">
+              <div class="">
+                <p class="message-time">04 Jan 2023 | 12:02pm</p>
+                <div class="message-block">
+                  <div class="message-text">
+                    <p>Alright please hold on</p>
+                  </div>
+                  <img
+                    src="/assets/images/customer-care-pics.svg"
+                    alt="profile Image"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="message left-message">
+              <div class="">
+                <p class="message-time">04 Jan 2023 | 12:02pm</p>
+                <div class="message-block">
+                  <img
+                    src="/assets/images/user-cartoon-bigPicture.svg"
+                    alt="profile Image"
+                  />
+                  <div class="message-text">
+                    <p>Thank you very much.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="send-message">
+            <span class="emoji-picker">🙂</span>
+            <i class="fa-regular fa-square-plus"></i>
+            <input type="text" placeholder="Say Something" />
+            <i class="fa-light fa-microphone"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/scripts/admins.js"></script>
   </body>
 </html>
