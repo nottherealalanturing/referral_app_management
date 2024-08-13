@@ -30,14 +30,6 @@
       background-color: #f0f2fa;
     }
 
-    /* .sidebar {
-      background-color: #333;
-      color: white;
-      display: flex;
-      flex-direction: column;
-      width: 200px;
-    } */
-
     .main-content {
       display: flex;
       flex-direction: column;
@@ -61,8 +53,6 @@
 
     .new-business {
       background-color: #ff7a00;
-      width: 242px;
-      height: 54px;
       border-radius: 5px;
       color: #ffffff;
       font-size: 16px;
@@ -110,7 +100,7 @@
     .stat-all {
       /* background-color: #7a7c87; */
       color: #f3f5f6;
-      background-image: url(/assets/images/blob-scene-haikei.svg);
+      background-image: url(/assets/images/blob-scene-hai.svg);
       background-size: cover;
     }
     .stat-reg {
@@ -268,8 +258,8 @@
         margin-bottom: 20px;
       }
     }
-    /* CSS on responsiveness on devices of 700px and above */
-    @media (max-width: 700px) {
+    /* CSS on responsiveness on devices of 700px and below */
+    @media (max-width: 760px) {
       .stats {
         flex-direction: column;
       }
@@ -284,18 +274,28 @@
       .stat-item {
         margin: 10px 0;
       }
-    }
-    /* CSS for responsiveness */
-    @media (max-width: 576px) {
       .headers{
         flex-direction: column;
         font-size: 15px;
         gap: 10px;
+        align-items: flex-start;
       }
+    }
+    /* CSS for responsiveness */
+    @media (max-width: 576px) {
       .new-business {
         padding: 5px 10px;
       }
     }
+        /* CSS on responsiveness on devices of 1500px and above */
+        @media (min-width: 1500px) {
+      .stat-all,
+      .stat-reg,
+      .stat-act,
+      .stat-inac {
+        width: 20%;
+        margin-bottom: 20px;
+      }
   </style>
   <body>
     <!-- HTML for container holding the content -->
@@ -303,7 +303,7 @@
       <!-- HTML Business Section -->
       <main class="main-content">
         <header class="headers">
-          <h1>Welcome, Deen <img src="/assets/images/Waving Hand Dark Skin Tone.svg" alt=""></h1>
+          <h3>Welcome, Deen <img src="/assets/images/Waving Hand Dark Skin Tone.svg" alt=""></h3>
           <a
             href="#createBizForm"
             data-url="/pages/dashboard/createBizForm.html"
@@ -347,7 +347,7 @@
             <div class="task">
               <div>Create portal for NEM Insurance</div>
               <div>26/10/2022</div>
-              <div class="status approved">Approved</div>
+              <div class="status approved">Approv</div>
             </div>
             <div class="task">
               <div>Create portal for NEM Insurance</div>
@@ -372,12 +372,12 @@
             <div class="task">
               <div>Create portal for NEM Insurance</div>
               <div>26/10/2022</div>
-              <div class="status approved">Approved</div>
+              <div class="status approved">Approv</div>
             </div>
             <div class="task">
               <div>Create portal for NEM Insurance</div>
               <div>26/10/2022</div>
-              <div class="status approved">Approved</div>
+              <div class="status approved">Approv</div>
             </div>
             <div class="task">
               <div>Create portal for NEM Insurance</div>

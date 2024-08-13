@@ -11,8 +11,28 @@ const disableModal = document.querySelector (".disable-modal");
 const reActivate = document.querySelector (".usersRe-activate");
 const userStatus = document.querySelector (".users-status");
 const cancelModal = document.querySelector (".cancel-modal");
+const startChat = document.querySelector (".usersStart-chat");
+const activityView = document.querySelector (".activity-view");
 
 chats.addEventListener ("click", function (){
+    chatDiv.style.display = "block";
+    chats.classList.add ('chats-active');
+    business.style.display = "block";
+    activityDiv.style.display = "none";
+    activity.classList.add ('activity-inactive');
+
+});
+
+startChat.addEventListener ("click", function (){
+    chatDiv.style.display = "block";
+    chats.classList.add ('chats-active');
+    business.style.display = "block";
+    activityDiv.style.display = "none";
+    activity.classList.add ('activity-inactive');
+
+});
+
+activityView.addEventListener ("click", function (){
     chatDiv.style.display = "block";
     chats.classList.add ('chats-active');
     business.style.display = "block";
