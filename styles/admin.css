@@ -20,9 +20,9 @@ div.page-header {
         cursor: pointer;
         display: flex;
         align-items: center;
-        gap: 15px;
+        gap: .9375rem;
         border-radius: var(--border-radius);
-        font-size: 16px;
+        font-size: 1rem;
     }
 }
 
@@ -30,19 +30,19 @@ div.search-card {
     margin-top: var(--section-margin-top);
     background: var(--card-background);
     border-radius: var(--border-radius);
-    padding: 10px;
+    padding: .625rem;
 
     div.search-wrapper {
-        border: 1px solid var(--border-color);
+        border: .0625rem solid var(--border-color);
         border-radius: var(--border-radius);
-        padding: 10px;
+        padding: .625rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 20px;
+        gap: 1.25rem;
 
         div.dropdown-search-container {
-            border: 1px solid var(--border-color);
+            border: .0625rem solid var(--border-color);
             border-radius: var(--border-radius);
             display: flex;
             align-items: center;
@@ -52,7 +52,7 @@ div.search-card {
                 background: var(--dropdown-background);
                 display: flex;
                 align-items: center;
-                padding: 0 10px;
+                padding: 0 .625rem;
 
                 p {
                     margin: 0;
@@ -73,12 +73,12 @@ div.search-card {
 
                 i.fa-caret-down {
                     background: var(--primary-orange);
-                    padding: 5px;
+                    padding: .3125rem;
                     border-radius: 50%;
                     color: var(--primary-white);
-                    font-size: 10px;
-                    width: 15px;
-                    height: 15px;
+                    font-size: .625rem;
+                    width: .9375rem;
+                    height: .9375rem;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -90,8 +90,8 @@ div.search-card {
                 flex: 1;
                 display: flex;
                 align-items: center;
-                gap: 10px;
-                padding: 0 10px;
+                gap: .625rem;
+                padding: 0 .625rem;
 
                 i {
                     color: var(--search-icon-color);
@@ -107,7 +107,7 @@ div.search-card {
         }
 
         button {
-            padding: 10px 40px;
+            padding: .625rem 2.5rem;
             border: none;
             background: var(--primary-orange);
             color: var(--primary-white);
@@ -123,7 +123,7 @@ div.tabs-container {
     div.tab-buttons {
         display: flex;
         align-items: center;
-        gap: 2px;
+        gap: .125rem;
 
         button {
             border: none;
@@ -131,8 +131,8 @@ div.tabs-container {
             outline: none;
             color: var(--primary-white);
             cursor: pointer;
-            padding: 10px 20px;
-            font-size: 12px;
+            padding: .625rem 1.25rem;
+            font-size: .75rem;
         }
 
         button.all-tab {
@@ -140,6 +140,17 @@ div.tabs-container {
             color: var(--tab-all-color);
             border-top-left-radius: var(--border-radius);
         }
+
+        /* button.all-tab:before{
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: .3125rem;
+            transform: translateX(-50%);
+            width: 2.375rem;
+            height: .1875rem;
+            background-color: #ff6600;
+        } */
 
         button.active-tab {
             background: var(--primary-green);
@@ -157,42 +168,63 @@ div.tabs-container {
         background: var(--card-background);
         display: flex;
         flex-direction: column;
-        gap: 100px;
+        gap: 6.25rem;
         justify-content: space-between;
         /* fixme-check back */
-        padding: 20px !important;
+        padding: 1.25rem !important;
 
         table {
             width: 100%;
-            border-collapse: collapse;
+            /* border-collapse: collapse; */
+            border-spacing: 0 1.3125rem;
+            border-collapse: separate;
 
             thead {
                 th {
                     text-align: center;
-                    padding: 10px;
-                    font-size: 12px;
+                    padding: .625rem;
+                    font-size: .75rem;
                     color: var(--table-thead-color);
                     font-weight: 700;
                 }
             }
 
             tbody {
-                margin-top: 10px;
+                margin-top: .625rem;
                 color: var(--header-title-color);
 
                 tr {
-                    border: 1px solid #fbfbfb;
-                    font-size: 12px;
+                    /* border: .0625rem solid #fbfbfb; */
+                    font-size: .75rem;
 
                     td {
                         text-align: center;
-                        padding: 10px;
+                        padding: .625rem;
+                        border: .0625rem solid var(--border-color);
+                    }
+
+                    td:nth-child(1),
+                    td:nth-child(2),
+                    td:nth-child(3),
+                    td:nth-child(4),
+                    td:nth-child(5),
+                    td:nth-child(6) {
+                        border-right: none;
+                    }
+                    td:nth-child(2),
+                    td:nth-child(3),
+                    td:nth-child(4),
+                    td:nth-child(5),
+                    td:nth-child(6),
+                    td:nth-child(7) {
+                        border-left: none;
                     }
 
                     td:first-child {
+                        width: 5%;
                         img {
-                            width: 30px;
-                            height: 30px;
+                            width: 1.875rem;
+                            height: 1.875rem;
                             object-fit: cover;
                             border-radius: 50%;
                         }
@@ -201,8 +233,8 @@ div.tabs-container {
                     td:nth-child(6) {
                         span.tag {
                             border-radius: var(--border-radius);
-                            font-size: 10px;
-                            padding: 3px 10px;
+                            font-size: .625rem;
+                            padding: .1875rem .625rem;
                             color: var(--primary-white);
                         }
 
@@ -223,10 +255,6 @@ div.tabs-container {
                     }
                 }
 
-                tr:nth-child(even) {
-                    background: #f7f7f7;
-                }
-
                 tr:hover {
                     background-color: #fbfbfb;
                 }
@@ -241,15 +269,15 @@ div.tabs-container {
             div.pagination {
                 display: flex;
                 align-items: center;
-                gap: 10px;
+                gap: .625rem;
 
                 a {
                     text-decoration: none;
                     color: var(--primary-black);
-                    font-size: 12px;
-                    padding: 5px;
+                    font-size: .75rem;
+                    padding: .3125rem;
 
-                    &:hover{
+                    &:hover {
                         background-color: var(--prev-next-btn-bg);
                     }
                 }
@@ -268,16 +296,16 @@ div.tabs-container {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                gap: 50px;
-                font-size: 12px;
+                gap: 3.125rem;
+                font-size: .75rem;
 
                 div.views {
                     display: flex;
                     align-items: center;
-                    gap: 10px;
+                    gap: .625rem;
 
                     select {
-                        border: 1px solid var(--border-color);
+                        border: .0625rem solid var(--border-color);
                         border-radius: var(--border-radius);
                     }
                 }
@@ -288,10 +316,10 @@ div.tabs-container {
 
 /* create admin */
 div.form-card {
-    margin-top: 20px;
+    margin-top: 1.25rem;
     background: var(--card-background);
-    border-radius: 5px;
-    padding: 40px;
+    border-radius: .3125rem;
+    padding: 2.5rem;
 
     p.form-title,
     p.form-subtitle {
@@ -300,11 +328,11 @@ div.form-card {
 
     p.form-subtitle {
         color: var(--primary-orange);
-        border-bottom: 3px solid var(--primary-orange);
+        border-bottom: .1875rem solid var(--primary-orange);
         width: fit-content;
-        margin: 5px auto 20px;
-        padding: 5px;
-        font-size: 10px;
+        margin: .3125rem auto 1.25rem;
+        padding: .3125rem;
+        font-size: .625rem;
     }
 
     form {
@@ -312,32 +340,32 @@ div.form-card {
             div.form-row {
                 display: flex;
                 justify-content: space-between;
-                gap: 60px;
-                margin-bottom: 40px;
+                gap: 3.75rem;
+                margin-bottom: 2.5rem;
 
                 div.input-container {
                     width: 50%;
 
                     label {
-                        font-size: 12px;
+                        font-size: .75rem;
                         display: flex;
                         align-items: center;
-                        gap: 10px;
+                        gap: .625rem;
 
                         i {
                             color: var(--primary-red);
-                            font-size: 6px;
+                            font-size: .375rem;
                         }
                     }
 
                     div.input-box {
-                        margin-top: 10px;
-                        border: 1px solid var(--border-color);
-                        border-radius: 10px;
-                        padding: 10px;
+                        margin-top: .625rem;
+                        border: .0625rem solid var(--border-color);
+                        border-radius: .625rem;
+                        padding: .625rem;
                         display: flex;
                         align-items: center;
-                        gap: 10px;
+                        gap: .625rem;
 
                         i {
                             color: var(--border-color);
@@ -347,7 +375,7 @@ div.form-card {
                             flex: 1;
                             border: none;
                             outline: none;
-                            font-size: 14px;
+                            font-size: .875rem;
                         }
                     }
                 }
@@ -360,7 +388,7 @@ div.form-card {
         }
 
         div.bottom {
-            margin-top: 80px;
+            margin-top: 5rem;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -369,11 +397,11 @@ div.form-card {
                 text-decoration: none;
                 padding: var(--header-button-padding-y) var(--header-button-padding-x);
                 border-radius: var(--border-radius);
-                font-size: 12px;
+                font-size: .75rem;
             }
 
             a.back-btn {
-                border: 1px solid var(--primary-orange);
+                border: .0625rem solid var(--primary-orange);
                 color: var(--primary-orange);
 
                 &:hover {
@@ -383,9 +411,9 @@ div.form-card {
             }
 
             a.create-admin {
-                border: 1px solid var(--primary-orange);
+                border: .0625rem solid var(--primary-orange);
                 background: var(--primary-orange);
-                border: 1px solid var(--primary-orange);
+                border: .0625rem solid var(--primary-orange);
                 color: var(--primary-white);
 
                 &:hover {
@@ -417,9 +445,9 @@ div.modal-overlay {
     div.success-message-card {
         height: fit-content;
         width: max-content;
-        padding: 30px;
+        padding: 1.875rem;
         background: var(--card-background);
-        box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 .125rem .125rem -0.0625rem rgba(0, 0, 0, 0.1);
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -438,7 +466,7 @@ div.modal-overlay {
         }
 
         img {
-            margin: 30px auto;
+            margin: 1.875rem auto;
             display: flex;
             width: 20%;
         }
@@ -449,7 +477,7 @@ div.modal-overlay {
             color: var(--primary-white);
             text-decoration: none;
             padding: var(--header-button-padding-y) var(--header-button-padding-x);
-            font-size: 14px;
+            font-size: .875rem;
             text-align: center;
             margin: 0 auto;
         }
@@ -510,7 +538,7 @@ div.bio-card {
 
                 div.data-block {
                     label {
-                        font-size: 12px;
+                        font-size: .75rem;
                         color: #7A7C87;
                     }
 
@@ -538,7 +566,7 @@ div.bio-card {
                     text-decoration: none;
                     border-radius: var(--border-radius);
                     font-size: .9375rem;
-                    border: 1px solid var(--primary-orange);
+                    border: .0625rem solid var(--primary-orange);
                     padding: .3125rem 2.5rem;
                 }
 
@@ -553,7 +581,7 @@ div.bio-card {
                 }
 
                 a:last-child {
-                    border: 1px solid var(--primary-orange);
+                    border: .0625rem solid var(--primary-orange);
                     background: var(--primary-orange);
                     color: var(--primary-white);
 
@@ -749,7 +777,7 @@ div.tabs-container {
 
                 input {
                     flex: 1;
-                    font-size: 14px;
+                    font-size: .875rem;
                     color: #8F8F8F;
                     border: none;
                     outline: none;
