@@ -562,15 +562,14 @@ div.bio-card {
                 align-items: center;
                 gap: 1.25rem;
 
-                a {
-                    text-decoration: none;
+                button {
                     border-radius: var(--border-radius);
                     font-size: .9375rem;
                     border: .0625rem solid var(--primary-orange);
                     padding: .3125rem 2.5rem;
                 }
 
-                a:first-child {
+                button:first-child {
                     background: #C615311A;
                     color: var(--primary-orange);
 
@@ -580,7 +579,7 @@ div.bio-card {
                     }
                 }
 
-                a:last-child {
+                button:last-child {
                     border: .0625rem solid var(--primary-orange);
                     background: var(--primary-orange);
                     color: var(--primary-white);

@@ -26,6 +26,9 @@ document.addEventListener('DOMContentLoaded', function () {
 let btnActivities = document.getElementById('btn-activities');
 let btnChats = document.getElementById('btn-chats');
 
+let startAChat = document.getElementById('start-a-chat');
+let viewChat = document.getElementById('view-chat');
+
 let tabActivities = document.getElementById('tab-activities');
 let tabChats = document.getElementById('tab-chats');
 
@@ -47,6 +50,19 @@ btnActivities.addEventListener('click', function () {
 });
 
 btnChats.addEventListener('click', function () {
+    resetActiveClass();
+    hideAllTables();
+    tabChats.classList.add('active');
+    btnChats.classList.add('active');
+});
+
+startAChat.addEventListener('click', function () {
+    resetActiveClass();
+    hideAllTables();
+    tabChats.classList.add('active');
+    btnChats.classList.add('active');
+});
+viewChat.addEventListener('click', function () {
     resetActiveClass();
     hideAllTables();
     tabChats.classList.add('active');
