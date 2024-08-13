@@ -287,20 +287,23 @@
             <div class="headerDiv">
               <h3>Users</h3>
               <button type="button">
-                <i class="fa-solid fa-plus"></i> <a href="/pages/users/createUser.html" class="internal-link">Create new user</a>
+                <i class="fa-solid fa-plus"></i>
+                <a href="/pages/users/createUser.html" class="internal-link"
+                  >Create new user</a
+                >
               </button>
             </div>
-        
+
             <div class="searchDiv">
               <div class="childDiv">
                 <div class="searchInput">
                   <div class="search">
-                    Search By  :
+                    Search By :
                     <select name="" id="">
-                      <option value="name">  Name</option>
-                      <option value="name">  Date</option>
+                      <option value="name">Name</option>
+                      <option value="name">Date</option>
                     </select>
-                  
+
                     <!-- <i class="fa-solid fa-circle-caret-down" style="color: #f45c1a"></i> -->
                   </div>
                   <div class="inputDiv">
@@ -313,7 +316,7 @@
                 </div>
               </div>
             </div>
-        
+
             <div class="contentDiv">
               <div class="statusBtn">
                 <button type="button" class="allBtn">
@@ -326,56 +329,236 @@
                   <p>Inactive</p>
                 </button>
               </div>
-        
+
               <div class="contents">
                 <table>
                   <thead>
                     <tr>
-                      <td>Name <i class="fa-duotone fa-solid fa-caret-down"></i></td>
-                      <td class="none">Email <i class="fa-duotone fa-solid fa-caret-down"></i></td>
-                      <td class="none">Date Added <i class="fa-duotone fa-solid fa-caret-down"></i></td>
-                      <td>Status <i class="fa-duotone fa-solid fa-caret-down"></i></td>
-                      <td>Action <i class="fa-duotone fa-solid fa-caret-down"></i></td>
+                      <td>
+                        Name <i class="fa-duotone fa-solid fa-caret-down"></i>
+                      </td>
+                      <td class="none">
+                        Email <i class="fa-duotone fa-solid fa-caret-down"></i>
+                      </td>
+                      <td class="none">
+                        Date Added
+                        <i class="fa-duotone fa-solid fa-caret-down"></i>
+                      </td>
+                      <td>
+                        Status <i class="fa-duotone fa-solid fa-caret-down"></i>
+                      </td>
+                      <td>
+                        Action <i class="fa-duotone fa-solid fa-caret-down"></i>
+                      </td>
                     </tr>
                   </thead>
-        
-                  <a href="/pages/users/usersProfile.html" class="internal-link">
-                    <tbody>
-                      <tr>
-                        <td class="fullstack"><img src="/assets/images/user-cartoon-pic.png" alt="user image"/> Nafi'u Ishaq</td>
-                        <td class="none"> fullstack@gmail.com</td>
-                        <td class="none">01 jan 2023</td>
-                        <td class="greenActive">Active</td>
-                        <td><i class="fa-solid fa-circle dots"> <i class="fa-solid fa-circle dots"></i> <i class="fa-solid fa-circle dots"></i></td>
-                      </tr>
-        
-                      <tr>
-                        <td class="fullstack"><img src="/assets/images/user-cartoon-pic.png" alt="user image" /> Nafi'u Ishaq</td>
-                        <td class="none"> fullstack@gmail.com</td>
-                        <td class="none">01 jan 2023</td>
-                        <td class="greenActive">Active</td>
-                        <td><i class="fa-solid fa-circle dots"> <i class="fa-solid fa-circle dots"></i> <i class="fa-solid fa-circle dots"></i></td>
-                      </tr>
-        
-                      <tr>
-                        <td class="fullstack"><img src="/assets/images/user-cartoon-pic.png" alt="user image" /> Nafi'u Ishaq</td>
-                        <td class="none"> fullstack@gmail.com</td>
-                        <td class="none">01 jan 2023</td>
-                        <td class="greenActive">Active</td>
-                        <td><i class="fa-solid fa-circle dots"> <i class="fa-solid fa-circle dots"></i> <i class="fa-solid fa-circle dots"></i></td>
-                      </tr>
-        
-                      <tr>
-                        <td class="fullstack"><img src="/assets/images/user-cartoon-pic.png" alt="user image" /> Nafi'u Ishaq</td>
-                        <td class="none"> fullstack@gmail.com</td>
-                        <td class="none">01 jan 2023</td>
-                        <td class="greenActive">Active</td>
-                        <td><i class="fa-solid fa-circle dots"> <i class="fa-solid fa-circle dots"></i> <i class="fa-solid fa-circle dots"></i></td>
-                      </tr>
-                    </tbody>
-                  </a>
+                  <tbody>
+                    <tr>
+                      <td class="border-right">
+                        <a
+                          href="/pages/users/usersProfile.html"
+                          class="internal-link"
+                        >
+                          <div class="fullstack">
+                            <img
+                              src="/assets/images/user-cartoon-pic.png"
+                              alt="user image"
+                            />
+                            <span>Nafi'u Ishaq</span>
+                          </div>
+                        </a>
+                      </td>
+                      <td class="none both-border">
+                        <a
+                          href="/pages/users/usersProfile.html"
+                          class="internal-link"
+                        >
+                          fullstack@gmail.com
+                        </a>
+                      </td>
+                      <td class="none both-border">
+                        <a
+                          href="/pages/users/usersProfile.html"
+                          class="internal-link"
+                        >
+                          01 jan 2023
+                        </a>
+                      </td>
+                      <td class="both-border">
+                        <a
+                          href="/pages/users/usersProfile.html"
+                          class="internal-link"
+                        >
+                          <span class="greenActive">Active</span>
+                        </a>
+                      </td>
+                      <td class="border-left">
+                        <a
+                          href="/pages/users/usersProfile.html"
+                          class="internal-link"
+                        >
+                          <i class="fa-solid fa-circle dots"></i>
+                          <i class="fa-solid fa-circle dots"></i>
+                          <i class="fa-solid fa-circle dots"></i>
+                        </a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="border-right">
+                        <a
+                          href="/pages/users/usersProfile.html"
+                          class="internal-link"
+                        >
+                          <div class="fullstack">
+                            <img
+                              src="/assets/images/user-cartoon-pic.png"
+                              alt="user image"
+                            />
+                            <span>Nafi'u Ishaq</span>
+                          </div>
+                        </a>
+                      </td>
+                      <td class="none both-border">
+                        <a
+                          href="/pages/users/usersProfile.html"
+                          class="internal-link"
+                        >
+                          fullstack@gmail.com
+                        </a>
+                      </td>
+                      <td class="none both-border">
+                        <a
+                          href="/pages/users/usersProfile.html"
+                          class="internal-link"
+                        >
+                          01 jan 2023
+                        </a>
+                      </td>
+                      <td class="both-border">
+                        <a
+                          href="/pages/users/usersProfile.html"
+                          class="internal-link"
+                        >
+                          <span class="greenActive">Active</span>
+                        </a>
+                      </td>
+                      <td class="border-left">
+                        <a
+                          href="/pages/users/usersProfile.html"
+                          class="internal-link"
+                        >
+                          <i class="fa-solid fa-circle dots"></i>
+                          <i class="fa-solid fa-circle dots"></i>
+                          <i class="fa-solid fa-circle dots"></i>
+                        </a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="border-right">
+                        <a
+                          href="/pages/users/usersProfile.html"
+                          class="internal-link"
+                        >
+                          <div class="fullstack">
+                            <img
+                              src="/assets/images/user-cartoon-pic.png"
+                              alt="user image"
+                            />
+                            <span>Nafi'u Ishaq</span>
+                          </div>
+                        </a>
+                      </td>
+                      <td class="none both-border">
+                        <a
+                          href="/pages/users/usersProfile.html"
+                          class="internal-link"
+                        >
+                          fullstack@gmail.com
+                        </a>
+                      </td>
+                      <td class="none both-border">
+                        <a
+                          href="/pages/users/usersProfile.html"
+                          class="internal-link"
+                        >
+                          01 jan 2023
+                        </a>
+                      </td>
+                      <td class="both-border">
+                        <a
+                          href="/pages/users/usersProfile.html"
+                          class="internal-link"
+                        >
+                          <span class="greenActive">Active</span>
+                        </a>
+                      </td>
+                      <td class="border-left">
+                        <a
+                          href="/pages/users/usersProfile.html"
+                          class="internal-link"
+                        >
+                          <i class="fa-solid fa-circle dots"></i>
+                          <i class="fa-solid fa-circle dots"></i>
+                          <i class="fa-solid fa-circle dots"></i>
+                        </a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="border-right">
+                        <a
+                          href="/pages/users/usersProfile.html"
+                          class="internal-link"
+                        >
+                          <div class="fullstack">
+                            <img
+                              src="/assets/images/user-cartoon-pic.png"
+                              alt="user image"
+                            />
+                            <span>Nafi'u Ishaq</span>
+                          </div>
+                        </a>
+                      </td>
+                      <td class="none both-border">
+                        <a
+                          href="/pages/users/usersProfile.html"
+                          class="internal-link"
+                        >
+                          fullstack@gmail.com
+                        </a>
+                      </td>
+                      <td class="none both-border">
+                        <a
+                          href="/pages/users/usersProfile.html"
+                          class="internal-link"
+                        >
+                          01 jan 2023
+                        </a>
+                      </td>
+                      <td class="both-border">
+                        <a
+                          href="/pages/users/usersProfile.html"
+                          class="internal-link"
+                        >
+                          <span class="greenActive">Active</span>
+                        </a>
+                      </td>
+                      <td class="border-left">
+                        <a
+                          href="/pages/users/usersProfile.html"
+                          class="internal-link"
+                        >
+                          <i class="fa-solid fa-circle dots"></i>
+                          <i class="fa-solid fa-circle dots"></i>
+                          <i class="fa-solid fa-circle dots"></i>
+                        </a>
+                      </td>
+                    </tr>
+                  </tbody>
                 </table>
-        
+
                 <div class="footers">
                   <div class="pagesNumber">
                     <i class="fa-duotone fa-solid fa-angle-left"></i>
@@ -387,20 +570,20 @@
                     <span>6</span>
                     <i class="fa-duotone fa-solid fa-angle-right"></i>
                   </div>
-        
+
                   <div class="viewedPages">
                     <div class="itemsPerPage">
                       <p>Views</p>
-                        <select name="" id="">
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="15" selected>15</option>
-                        </select>
+                      <select name="" id="">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="15" selected>15</option>
+                      </select>
                       <p>items per page</p>
                     </div>
-        
+
                     <div class="entriesNumber">
                       <p>1 - 5 of 15 Entries</p>
                     </div>
